@@ -149,13 +149,14 @@ shows a "please call us" message instead of sending.**
 Cloudflare Pages hosts the static `out/` folder for free, with no commercial-use
 restriction and generous bandwidth.
 
-1. Push this project to a **GitHub** repository (the whole repo; the site lives
-   in the `izakaya-wa-site/` subfolder).
+1. This site lives in its own dedicated repository
+   ([`harukass041010-cloud/izakaya-wa-site`](https://github.com/harukass041010-cloud/izakaya-wa-site)),
+   with the project at the **repository root**.
 2. In the Cloudflare dashboard, go to **Workers & Pages → Create → Pages →
    Connect to Git** and select the repository.
 3. Configure the build:
    - **Framework preset:** None
-   - **Root directory:** `izakaya-wa-site`
+   - **Root directory:** `/` (repository root)
    - **Build command:** `npm run build`
    - **Build output directory:** `out`
 4. Add environment variables (Settings → Environment variables):
@@ -214,7 +215,7 @@ Edit `public/admin/config.yml`:
 ```yaml
 backend:
   name: github
-  repo: "OWNER/REPO"                        # ← your GitHub repository
+  repo: "harukass041010-cloud/izakaya-wa-site"   # ← your GitHub repository
   branch: main
   base_url: "https://sveltia-cms-auth.<SUBDOMAIN>.workers.dev"   # ← your Worker URL
 ```

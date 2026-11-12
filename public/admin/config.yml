@@ -8,7 +8,7 @@
 
 backend:
   name: github
-  repo: "OWNER/REPO" # ← replace with the GitHub repository, e.g. "izakayawa/website"
+  repo: "harukass041010-cloud/izakaya-wa-site" # the GitHub repository that holds this site
   branch: main
   # URL of the deployed Sveltia CMS Authenticator (Cloudflare Worker). See README.
   base_url: "https://izakaya-wa-cms-auth.YOUR-SUBDOMAIN.workers.dev"
