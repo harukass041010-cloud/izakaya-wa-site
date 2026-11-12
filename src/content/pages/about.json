@@ -1,0 +1,71 @@
+{
+  "seo": {
+    "title": "About",
+    "description": "Izakaya WA is Houston's first and only Japanese-owned and operated izakaya, founded by Akira Asano and Hajime Kubokawa. Learn about our story and the meaning of wa."
+  },
+  "hero": {
+    "eyebrow": "Since our founding",
+    "title": "An izakaya in the true sense of the word",
+    "intro": "Izakaya WA began with a simple idea: bring an honest Japanese neighborhood izakaya to Houston — no theater, just good food, good drink and a warm room.",
+    "image": {
+      "src": "/images/izakaya-interior-3.jpg",
+      "alt": "Dining room of a Japanese izakaya at night"
+    }
+  },
+  "story": {
+    "eyebrow": "Our story",
+    "title": "Houston's first and only Japanese-owned izakaya",
+    "paragraphs": [
+      "Izakaya WA was founded by Akira Asano and Hajime Kubokawa, both Japanese, and remains the only izakaya in Houston that is Japanese-owned and operated end to end. That distinction is not a marketing line — it shows up in the details, from the way the fish is broken down to the way a plate is set down.",
+      "The name carries the idea behind everything we do. WA (和) is the old Japanese word for Japan itself, and it also means harmony — the balance of flavours, textures and temperatures that makes a table feel complete.",
+      "We opened with a menu of small plates, sushi and grilled skewers and a considered list of sake, and we have kept to it. Guests come for a quick lunch or settle in for a long dinner; either way, the room is built for lingering."
+    ],
+    "stats": [
+      { "value": "2", "label": "Houston locations" },
+      { "value": "和", "label": "Wa — harmony" },
+      { "value": "100%", "label": "Japanese-owned" }
+    ],
+    "images": [
+      {
+        "src": "/images/sashimi.jpg",
+        "alt": "Slices of sashimi plated with a dipping sauce"
+      },
+      {
+        "src": "/images/yakitori-shop.jpg",
+        "alt": "The counter of a small yakitori shop"
+      },
+      {
+        "src": "/images/sake.jpg",
+        "alt": "Bottles of sake lined up on a shelf"
+      }
+    ]
+  },
+  "values": {
+    "eyebrow": "What we believe",
+    "title": "Four things that shape the room",
+    "items": [
+      {
+        "title": "Japanese-owned & operated",
+        "copy": "Founded and run by Akira Asano and Hajime Kubokawa, both Japanese — the kitchen, the counter and the hospitality are the real thing."
+      },
+      {
+        "title": "Cooked to order",
+        "copy": "Sushi is cut when you order it, skewers come off the fire in waves, and plates arrive as they are ready rather than all at once."
+      },
+      {
+        "title": "Built for sharing",
+        "copy": "Izakaya dining is a conversation. We keep the plates small and the table generous so everyone can try a little of everything."
+      },
+      {
+        "title": "Drinks that matter",
+        "copy": "Sake, shochu, Japanese whisky and beer are chosen to sit alongside the food — ask your server for a pairing."
+      }
+    ]
+  },
+  "locations": {
+    "eyebrow": "Find us",
+    "title": "Two rooms, one kitchen",
+    "intro": "Both locations serve the same menu and share the same standards. Choose the one that is closer to you.",
+    "cta": { "label": "Directions & contact", "href": "/contact" }
+  }
+}

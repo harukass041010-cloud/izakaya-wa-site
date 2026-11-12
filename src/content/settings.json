@@ -1,0 +1,53 @@
+{
+  "name": "Izakaya WA",
+  "shortName": "Izakaya WA",
+  "tagline": "Houston's first and only Japanese-owned izakaya.",
+  "description": "Izakaya WA is Houston's first and only Japanese-owned and operated izakaya. Traditional small plates, sushi, robata-grilled skewers and sake, served in the spirit of wa — harmony.",
+  "foundedBy": ["Akira Asano", "Hajime Kubokawa"],
+  "url": "https://www.izakayawa.com",
+  "cuisines": ["Japanese", "Izakaya", "Sushi", "Yakitori"],
+  "priceRange": "$$",
+  "phonePrimary": "(713) 461-0155",
+  "email": "hello@izakayawa.com",
+  "social": {
+    "instagram": "https://www.instagram.com/izakayawa/",
+    "facebook": "https://www.facebook.com/izakayawa/"
+  },
+  "logo": {
+    "top": "IZAKAYA WA",
+    "sub": "Japanese Izakaya · Houston"
+  },
+  "nav": [
+    { "label": "Home", "href": "/" },
+    { "label": "Menu", "href": "/menu" },
+    { "label": "About", "href": "/about" },
+    { "label": "Gallery", "href": "/gallery" },
+    { "label": "Reservations", "href": "/reservations" },
+    { "label": "Contact", "href": "/contact" }
+  ],
+  "highlights": [
+    "Japanese-owned & operated",
+    "Two Houston locations",
+    "Sushi, robata & yakitori",
+    "Sake & shochu selection"
+  ],
+  "labels": {
+    "skipToContent": "Skip to content",
+    "reserve": "Reserve",
+    "reserveTable": "Reserve a table",
+    "explore": "Explore",
+    "imageCredits": "Image credits"
+  },
+  "footer": {
+    "blurb": "Houston's first and only Japanese-owned izakaya. Traditional small plates, sushi, robata and sake, served in the spirit of 和 — harmony.",
+    "note": "Hours, menu and pricing are subject to change — please call to confirm before your visit."
+  },
+  "notFound": {
+    "eyebrow": "Page not found",
+    "kanji": "迷",
+    "code": "404",
+    "message": "We couldn't find that page. Perhaps you were looking for the menu, or a table?",
+    "primary": { "label": "Back home", "href": "/" },
+    "secondary": { "label": "View the menu", "href": "/menu" }
+  }
+}

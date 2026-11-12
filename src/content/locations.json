@@ -1,0 +1,124 @@
+{
+  "locations": [
+    {
+      "id": "memorial",
+      "name": "Memorial",
+      "neighborhood": "Memorial / Westside",
+      "street": "12665 Memorial Dr",
+      "city": "Houston",
+      "state": "TX",
+      "postalCode": "77024",
+      "phone": "(713) 461-0155",
+      "mapsQuery": "Izakaya WA, 12665 Memorial Dr, Houston, TX 77024",
+      "hours": [
+        {
+          "days": "Monday",
+          "hours": "Closed",
+          "note": ""
+        },
+        {
+          "days": "Tuesday – Saturday",
+          "hours": "11:30 AM – 2:00 PM · 5:00 PM – 10:00 PM",
+          "note": "Lunch & dinner"
+        },
+        {
+          "days": "Sunday",
+          "hours": "5:00 PM – 9:00 PM",
+          "note": "Dinner only"
+        }
+      ],
+      "note": "Not open for lunch on Sundays.",
+      "schemaHours": [
+        {
+          "days": [
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday"
+          ],
+          "opens": "11:30",
+          "closes": "14:00"
+        },
+        {
+          "days": [
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday"
+          ],
+          "opens": "17:00",
+          "closes": "22:00"
+        },
+        {
+          "days": [
+            "Sunday"
+          ],
+          "opens": "17:00",
+          "closes": "21:00"
+        }
+      ]
+    },
+    {
+      "id": "river-oaks",
+      "name": "River Oaks",
+      "neighborhood": "River Oaks / Inner Loop",
+      "street": "2015 W Gray St, Unit J",
+      "city": "Houston",
+      "state": "TX",
+      "postalCode": "77019",
+      "phone": "(832) 548-1889",
+      "mapsQuery": "Izakaya WA, 2015 W Gray St, Houston, TX 77019",
+      "hours": [
+        {
+          "days": "Monday",
+          "hours": "Closed",
+          "note": ""
+        },
+        {
+          "days": "Tuesday – Saturday",
+          "hours": "11:30 AM – 2:00 PM · 5:30 PM – 10:00 PM",
+          "note": "Lunch & dinner"
+        },
+        {
+          "days": "Sunday",
+          "hours": "5:00 PM – 9:00 PM",
+          "note": "Dinner only"
+        }
+      ],
+      "note": "",
+      "schemaHours": [
+        {
+          "days": [
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday"
+          ],
+          "opens": "11:30",
+          "closes": "14:00"
+        },
+        {
+          "days": [
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday"
+          ],
+          "opens": "17:30",
+          "closes": "22:00"
+        },
+        {
+          "days": [
+            "Sunday"
+          ],
+          "opens": "17:00",
+          "closes": "21:00"
+        }
+      ]
+    }
+  ]
+}

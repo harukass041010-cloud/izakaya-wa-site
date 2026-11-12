@@ -1,0 +1,433 @@
+{
+  "seo": {
+    "title": "Menu",
+    "description": "Small plates, sushi and sashimi, robata-grilled skewers, rice and noodles, and a considered sake list at Izakaya WA in Houston."
+  },
+  "hero": {
+    "eyebrow": "Small plates · Sushi · Robata · Sake",
+    "title": "The menu",
+    "intro": "An izakaya menu is meant to be shared. Order a few plates, pass them around, and add more as the evening goes on.",
+    "image": {
+      "src": "/images/nigiri.jpg",
+      "alt": "Close-up of freshly made nigiri sushi"
+    }
+  },
+  "notice": {
+    "label": "Please note:",
+    "text": "our kitchen cooks seasonally and the printed menu changes often, so the dishes below are a representative guide rather than a fixed list. Call either location for today's menu and current pricing."
+  },
+  "sections": [
+    {
+      "id": "small-plates",
+      "title": "Small Plates",
+      "japanese": "おつまみ",
+      "blurb": "The heart of an izakaya. Order a few, share them all, and let the table fill up as the evening goes on.",
+      "dishes": [
+        {
+          "name": "Edamame",
+          "japanese": "枝豆",
+          "description": "Steamed young soybeans finished with flaky sea salt.",
+          "signature": false,
+          "featured": false,
+          "featuredOrder": 0,
+          "tags": ["vegetarian"]
+        },
+        {
+          "name": "Agedashi Tofu",
+          "japanese": "揚げ出し豆腐",
+          "description": "Silken tofu in a light potato-starch crust, served in warm dashi with scallion and bonito.",
+          "signature": true,
+          "featured": false,
+          "featuredOrder": 0,
+          "tags": []
+        },
+        {
+          "name": "Shiso-Marinated Jellyfish",
+          "japanese": "くらげ",
+          "description": "Chilled jellyfish dressed with perilla leaf and sesame — clean, crisp and bright.",
+          "signature": false,
+          "featured": false,
+          "featuredOrder": 0,
+          "tags": []
+        },
+        {
+          "name": "Tako Kara Age",
+          "japanese": "タコ唐揚げ",
+          "description": "Crisp-fried octopus with a squeeze of lemon and house salt.",
+          "signature": false,
+          "featured": false,
+          "featuredOrder": 0,
+          "tags": []
+        },
+        {
+          "name": "Potato Croquettes",
+          "japanese": "コロッケ",
+          "description": "Golden korokke, creamy inside, served with tonkatsu sauce.",
+          "signature": false,
+          "featured": false,
+          "featuredOrder": 0,
+          "tags": []
+        },
+        {
+          "name": "Gyoza",
+          "japanese": "餃子",
+          "description": "Pan-seared pork dumplings with a lacy crisp skirt.",
+          "signature": false,
+          "featured": false,
+          "featuredOrder": 0,
+          "tags": []
+        },
+        {
+          "name": "Chawanmushi",
+          "japanese": "茶碗蒸し",
+          "description": "Delicate steamed egg custard with dashi and seasonal garnish.",
+          "signature": false,
+          "featured": false,
+          "featuredOrder": 0,
+          "tags": []
+        },
+        {
+          "name": "Hamachi Carpaccio",
+          "japanese": "はまちカルパッチョ",
+          "description": "Thin-sliced yellowtail with serrano pepper, citrus and olive oil.",
+          "signature": true,
+          "featured": false,
+          "featuredOrder": 0,
+          "tags": []
+        }
+      ]
+    },
+    {
+      "id": "sushi",
+      "title": "Sushi & Sashimi",
+      "japanese": "寿司・刺身",
+      "blurb": "Cut to order by our sushi chefs, with fish selected for the day's board.",
+      "dishes": [
+        {
+          "name": "Nigiri Selection",
+          "japanese": "握り",
+          "description": "Two pieces per order — salmon, tuna, yellowtail, shrimp and more.",
+          "signature": false,
+          "featured": false,
+          "featuredOrder": 0,
+          "tags": []
+        },
+        {
+          "name": "Sashimi Platter",
+          "japanese": "刺身盛り",
+          "description": "Chef's selection of the day, sliced and plated simply.",
+          "signature": false,
+          "featured": false,
+          "featuredOrder": 0,
+          "tags": []
+        },
+        {
+          "name": "Hamachi (Yellowtail)",
+          "japanese": "はまち",
+          "description": "Buttery yellowtail, a house favorite.",
+          "signature": true,
+          "featured": true,
+          "featuredOrder": 3,
+          "tags": [],
+          "image": {
+            "src": "/images/sashimi.jpg",
+            "alt": "Slices of sashimi plated with a dipping sauce"
+          }
+        },
+        {
+          "name": "Memorial Roll",
+          "japanese": "メモリアルロール",
+          "description": "Our signature roll, named for the Memorial Drive dining room.",
+          "signature": true,
+          "featured": true,
+          "featuredOrder": 2,
+          "tags": [],
+          "image": {
+            "src": "/images/nigiri.jpg",
+            "alt": "Close-up of freshly made nigiri sushi"
+          }
+        },
+        {
+          "name": "Crunchy Shrimp Roll",
+          "japanese": "エビロール",
+          "description": "Crisp shrimp, avocado and a light drizzle of sauce.",
+          "signature": false,
+          "featured": false,
+          "featuredOrder": 0,
+          "tags": []
+        },
+        {
+          "name": "Spicy Tuna Roll",
+          "japanese": "スパイシーツナ",
+          "description": "Chopped tuna with chili and scallion.",
+          "signature": false,
+          "featured": false,
+          "featuredOrder": 0,
+          "tags": []
+        },
+        {
+          "name": "Sushi Combo",
+          "japanese": "寿司セット",
+          "description": "A composed set of nigiri and a roll — a good way to start.",
+          "signature": false,
+          "featured": false,
+          "featuredOrder": 0,
+          "tags": []
+        }
+      ]
+    },
+    {
+      "id": "robata",
+      "title": "From the Grill",
+      "japanese": "炉端焼き・焼き鳥",
+      "blurb": "Skewers and grilled plates cooked over the fire — ask what's on the grill tonight.",
+      "dishes": [
+        {
+          "name": "Pork Belly",
+          "japanese": "豚バラ",
+          "description": "Charred, unctuous and salted — the most-ordered skewer.",
+          "signature": true,
+          "featured": true,
+          "featuredOrder": 1,
+          "tags": [],
+          "image": {
+            "src": "/images/yakitori.jpg",
+            "alt": "Grilled yakitori skewers on a plate"
+          }
+        },
+        {
+          "name": "Chicken Thigh Yakitori",
+          "japanese": "焼き鳥",
+          "description": "Glazed with tare or seasoned with salt.",
+          "signature": false,
+          "featured": false,
+          "featuredOrder": 0,
+          "tags": []
+        },
+        {
+          "name": "Japanese Sausage",
+          "japanese": "ソーセージ",
+          "description": "Snappy grilled sausage, sliced for sharing.",
+          "signature": false,
+          "featured": false,
+          "featuredOrder": 0,
+          "tags": []
+        },
+        {
+          "name": "Beef Tongue",
+          "japanese": "牛タン",
+          "description": "Gyutan skewers, tender and smoky.",
+          "signature": false,
+          "featured": false,
+          "featuredOrder": 0,
+          "tags": []
+        },
+        {
+          "name": "Grilled Whole Squid",
+          "japanese": "イカ焼き",
+          "description": "Ika brushed with sweet soy and grilled to order.",
+          "signature": false,
+          "featured": false,
+          "featuredOrder": 0,
+          "tags": []
+        },
+        {
+          "name": "Grilled Fish",
+          "japanese": "焼き魚",
+          "description": "Whole fish grilled simply and served with grated daikon.",
+          "signature": false,
+          "featured": true,
+          "featuredOrder": 5,
+          "tags": [],
+          "image": {
+            "src": "/images/grilled-fish.jpg",
+            "alt": "A whole fish grilled and served on a plate"
+          }
+        },
+        {
+          "name": "Bacon-Wrapped Asparagus",
+          "japanese": "アスパラベーコン",
+          "description": "Crisp asparagus wrapped in smoky bacon.",
+          "signature": false,
+          "featured": false,
+          "featuredOrder": 0,
+          "tags": []
+        },
+        {
+          "name": "Shiitake Mushroom",
+          "japanese": "椎茸",
+          "description": "Grilled mushrooms with a touch of soy.",
+          "signature": false,
+          "featured": false,
+          "featuredOrder": 0,
+          "tags": ["vegetarian"]
+        }
+      ]
+    },
+    {
+      "id": "rice-noodles",
+      "title": "Rice & Noodles",
+      "japanese": "ご飯・麺",
+      "blurb": "Hearty plates to round out the table.",
+      "dishes": [
+        {
+          "name": "Katsu Curry Rice",
+          "japanese": "カツカレー",
+          "description": "Crisp pork cutlet over rice with our house Japanese curry.",
+          "signature": true,
+          "featured": true,
+          "featuredOrder": 4,
+          "tags": [],
+          "image": {
+            "src": "/images/donburi.jpg",
+            "alt": "A rice bowl topped with sliced pork"
+          }
+        },
+        {
+          "name": "Pork Chashu Don",
+          "japanese": "チャーシュー丼",
+          "description": "Braised pork over steamed rice with scallion.",
+          "signature": false,
+          "featured": false,
+          "featuredOrder": 0,
+          "tags": []
+        },
+        {
+          "name": "Udon",
+          "japanese": "うどん",
+          "description": "Thick wheat noodles in a warm dashi broth.",
+          "signature": false,
+          "featured": false,
+          "featuredOrder": 0,
+          "tags": []
+        },
+        {
+          "name": "Onigiri",
+          "japanese": "おにぎり",
+          "description": "Hand-shaped rice balls with a savory filling.",
+          "signature": false,
+          "featured": false,
+          "featuredOrder": 0,
+          "tags": []
+        },
+        {
+          "name": "Miso Soup",
+          "japanese": "味噌汁",
+          "description": "Daily miso with tofu, wakame and scallion.",
+          "signature": false,
+          "featured": false,
+          "featuredOrder": 0,
+          "tags": []
+        }
+      ]
+    },
+    {
+      "id": "sweets",
+      "title": "Sweets",
+      "japanese": "甘味",
+      "blurb": "A quiet finish.",
+      "dishes": [
+        {
+          "name": "Matcha Ice Cream",
+          "japanese": "抹茶アイス",
+          "description": "Stone-ground green tea, bittersweet and cool.",
+          "signature": false,
+          "featured": false,
+          "featuredOrder": 0,
+          "tags": []
+        },
+        {
+          "name": "Mochi Ice Cream",
+          "japanese": "餅アイス",
+          "description": "Chewy mochi wrapped around ice cream.",
+          "signature": false,
+          "featured": false,
+          "featuredOrder": 0,
+          "tags": []
+        },
+        {
+          "name": "Black Sesame Pudding",
+          "japanese": "ごまプリン",
+          "description": "Silky goma purin with a toasted-sesame aroma.",
+          "signature": false,
+          "featured": false,
+          "featuredOrder": 0,
+          "tags": []
+        }
+      ]
+    },
+    {
+      "id": "drinks",
+      "title": "Sake & Drinks",
+      "japanese": "お酒",
+      "blurb": "Drinks matter as much as the food here. Ask your server about the current sake flight.",
+      "dishes": [
+        {
+          "name": "Sake Flight",
+          "japanese": "利き酒",
+          "description": "A guided tasting of three sakes, chosen by the house.",
+          "signature": true,
+          "featured": true,
+          "featuredOrder": 6,
+          "tags": [],
+          "image": {
+            "src": "/images/sake.jpg",
+            "alt": "Bottles of sake lined up on a shelf"
+          }
+        },
+        {
+          "name": "Junmai · Ginjo · Daiginjo",
+          "japanese": "日本酒",
+          "description": "By the glass or the bottle, from crisp to fragrant.",
+          "signature": false,
+          "featured": false,
+          "featuredOrder": 0,
+          "tags": []
+        },
+        {
+          "name": "Shochu Highball",
+          "japanese": "酎ハイ",
+          "description": "Shochu and soda, bright and easy — a classic izakaya drink.",
+          "signature": false,
+          "featured": false,
+          "featuredOrder": 0,
+          "tags": []
+        },
+        {
+          "name": "Japanese Beer",
+          "japanese": "ビール",
+          "description": "Asahi, Sapporo and Kirin, ice cold.",
+          "signature": false,
+          "featured": false,
+          "featuredOrder": 0,
+          "tags": []
+        },
+        {
+          "name": "Japanese Whisky",
+          "japanese": "ウイスキー",
+          "description": "Neat, on the rocks, or as a highball.",
+          "signature": false,
+          "featured": false,
+          "featuredOrder": 0,
+          "tags": []
+        },
+        {
+          "name": "Umeshu",
+          "japanese": "梅酒",
+          "description": "Sweet-sour plum wine, served chilled.",
+          "signature": false,
+          "featured": false,
+          "featuredOrder": 0,
+          "tags": []
+        }
+      ]
+    }
+  ],
+  "cta": {
+    "eyebrow": "Order for the table",
+    "title": "Not sure where to start?",
+    "intro": "Tell us what you like and we'll build a course for the table — a few small plates, something from the grill, and a sake to match.",
+    "callLabels": ["Call Memorial", "Call River Oaks"],
+    "request": { "label": "Request a table", "href": "/reservations" }
+  }
+}

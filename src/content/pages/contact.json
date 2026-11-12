@@ -1,0 +1,32 @@
+{
+  "seo": {
+    "title": "Contact",
+    "description": "Find Izakaya WA at 12665 Memorial Dr and 2015 W Gray St in Houston, TX. Phone numbers, hours and directions for both locations."
+  },
+  "hero": {
+    "eyebrow": "Contact & directions",
+    "title": "Find us in Houston",
+    "intro": "Two dining rooms, open Tuesday through Sunday. Call ahead or just come by.",
+    "image": {
+      "src": "/images/interior-kaiten.jpg",
+      "alt": "Interior of a Japanese sushi restaurant"
+    }
+  },
+  "labels": {
+    "address": "Address",
+    "phone": "Phone",
+    "hours": "Hours",
+    "directions": "Get directions",
+    "reserve": "Call to reserve"
+  },
+  "social": {
+    "eyebrow": "Stay in touch",
+    "title": "Follow along",
+    "intro": "Menus, specials and events change with the seasons — the fastest way to keep up is on social.",
+    "instagramTitle": "Instagram",
+    "instagramBody": "Photos from the kitchen and the room.",
+    "facebookTitle": "Facebook",
+    "facebookBody": "Updates, hours and announcements.",
+    "callTitle": "Call us"
+  }
+}

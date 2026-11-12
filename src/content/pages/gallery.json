@@ -1,0 +1,162 @@
+{
+  "seo": {
+    "title": "Gallery",
+    "description": "A look at the food, drink and rooms at Izakaya WA in Houston — sushi, robata skewers, sake and more."
+  },
+  "hero": {
+    "eyebrow": "The room & the plates",
+    "title": "Gallery",
+    "intro": "A look at what lands on the table and the rooms we serve it in.",
+    "image": {
+      "src": "/images/izakaya-interior.jpg",
+      "alt": "Warm interior of a Japanese izakaya"
+    }
+  },
+  "photos": [
+    {
+      "src": "/images/izakaya-interior.jpg",
+      "alt": "Warm interior of a Japanese izakaya",
+      "credit": "Quality izakaya in Ebisu — Syced",
+      "license": "CC0",
+      "href": "https://commons.wikimedia.org/wiki/File:Quality_izakaya_in_Ebisu_7.jpg"
+    },
+    {
+      "src": "/images/nigiri.jpg",
+      "alt": "Close-up of freshly made nigiri sushi",
+      "credit": "Nigiri Sushi — Tim Reckmann",
+      "license": "CC BY 2.0",
+      "href": "https://commons.wikimedia.org/wiki/File:Nigiri_Sushi_(25966163204).jpg"
+    },
+    {
+      "src": "/images/yakitori.jpg",
+      "alt": "Grilled yakitori skewers on a plate",
+      "credit": "Yakitori — Francesc Fort",
+      "license": "CC BY-SA 4.0",
+      "href": "https://commons.wikimedia.org/wiki/File:Yakitori_-_Tora.jpg"
+    },
+    {
+      "src": "/images/sake.jpg",
+      "alt": "Bottles of sake lined up on a shelf",
+      "credit": "Sake bottles — koutalou",
+      "license": "CC BY 2.0",
+      "href": "https://commons.wikimedia.org/wiki/File:Sake_bottles.jpg"
+    },
+    {
+      "src": "/images/sashimi.jpg",
+      "alt": "Slices of sashimi plated with a dipping sauce",
+      "credit": "Kawahagi sashimi with liver sauce — Jpatokal",
+      "license": "CC BY-SA 4.0",
+      "href": "https://commons.wikimedia.org/wiki/File:Kawahagi_sashimi_with_liver_sauce.jpg"
+    },
+    {
+      "src": "/images/izakaya-interior-2.jpg",
+      "alt": "Counter seating inside an izakaya",
+      "credit": "Quality izakaya in Ebisu — Syced",
+      "license": "CC0",
+      "href": "https://commons.wikimedia.org/wiki/File:Quality_izakaya_in_Ebisu_2.jpg"
+    },
+    {
+      "src": "/images/tempura.jpg",
+      "alt": "A plate of crisp golden tempura",
+      "credit": "Tempura — Ocdp",
+      "license": "CC0",
+      "href": "https://commons.wikimedia.org/wiki/File:Tempura_003.jpg"
+    },
+    {
+      "src": "/images/hero-sushi-platter.jpg",
+      "alt": "A generous platter of assorted sushi arranged on a dark tray",
+      "credit": "Sushi platter, Nikko, Japan — Joli Rumi",
+      "license": "CC BY-SA 4.0",
+      "href": "https://commons.wikimedia.org/wiki/File:Sushi_platter,_Nikko,_Japan.jpg"
+    },
+    {
+      "src": "/images/yakitori-shop.jpg",
+      "alt": "The counter of a small yakitori shop",
+      "credit": "Yakitori shop in Setagaya — Syced",
+      "license": "CC0",
+      "href": "https://commons.wikimedia.org/wiki/File:Yakitori_shop_in_Setagaya.jpg"
+    },
+    {
+      "src": "/images/donburi.jpg",
+      "alt": "A rice bowl topped with sliced pork",
+      "credit": "Pork Chashu Rice Bowl — Andy Li",
+      "license": "CC0",
+      "href": "https://commons.wikimedia.org/wiki/File:Pork_Chashu_Rice_Bowl_(M)_-_Kitokito_2023-06-09.jpg"
+    },
+    {
+      "src": "/images/izakaya-interior-3.jpg",
+      "alt": "Dining room of a Japanese izakaya at night",
+      "credit": "Quality izakaya in Ebisu — Syced",
+      "license": "CC0",
+      "href": "https://commons.wikimedia.org/wiki/File:Quality_izakaya_in_Ebisu_10.jpg"
+    },
+    {
+      "src": "/images/grilled-fish.jpg",
+      "alt": "A whole fish grilled and served on a plate",
+      "credit": "Grilled fish at restaurant in Tokyo — Syced",
+      "license": "CC0",
+      "href": "https://commons.wikimedia.org/wiki/File:Grilled_fish_at_restaurant_in_Tokyo.jpg"
+    },
+    {
+      "src": "/images/wagyu.jpg",
+      "alt": "Slices of marbled beef on a plate",
+      "credit": "Wagyū on plate — Shisma",
+      "license": "CC BY 4.0",
+      "href": "https://commons.wikimedia.org/wiki/File:Wagyū_on_plate.jpg"
+    },
+    {
+      "src": "/images/ramen.jpg",
+      "alt": "A steaming bowl of noodles",
+      "credit": "Ramen Bowl — Shisma",
+      "license": "CC BY 4.0",
+      "href": "https://commons.wikimedia.org/wiki/File:Ramen_Bowl_2.jpg"
+    },
+    {
+      "src": "/images/matcha.jpg",
+      "alt": "A cup of matcha green tea with latte art",
+      "credit": "Matcha tea art — John Beans",
+      "license": "CC BY 2.0",
+      "href": "https://commons.wikimedia.org/wiki/File:Matcha_tea_art.jpg"
+    },
+    {
+      "src": "/images/miso-soup.jpg",
+      "alt": "A bowl of miso soup",
+      "credit": "Miso Soup — Ocdp",
+      "license": "CC0",
+      "href": "https://commons.wikimedia.org/wiki/File:Miso_Soup_001.jpg"
+    },
+    {
+      "src": "/images/udon.jpg",
+      "alt": "A bowl of udon noodles with tofu",
+      "credit": "Udon Tofu — Mantelmoewe",
+      "license": "CC0",
+      "href": "https://commons.wikimedia.org/wiki/File:Udon_Tofu.jpg"
+    },
+    {
+      "src": "/images/beer.jpg",
+      "alt": "A selection of Japanese beers",
+      "credit": "Selection of Japanese beer — uba",
+      "license": "CC BY-SA 2.0",
+      "href": "https://commons.wikimedia.org/wiki/File:Selection_of_Japanese_beer.jpg"
+    },
+    {
+      "src": "/images/interior-kaiten.jpg",
+      "alt": "Interior of a Japanese sushi restaurant",
+      "credit": "Kaitenzushi restaurant interior — Savannah Rivka",
+      "license": "CC BY-SA 4.0",
+      "href": "https://commons.wikimedia.org/wiki/File:Kaitenzushi_restaurant_interior_(124).jpg"
+    },
+    {
+      "src": "/images/omakase-donburi.jpg",
+      "alt": "A take-out rice bowl of assorted fish",
+      "credit": "Take-out omakase donburi — Andy Li",
+      "license": "CC0",
+      "href": "https://commons.wikimedia.org/wiki/File:Take-out_omakase_donburi_on_2022-02-26.jpg"
+    }
+  ],
+  "credits": {
+    "eyebrow": "Attribution",
+    "title": "Image credits",
+    "intro": "The photography on this site is placeholder imagery sourced from Wikimedia Commons under open licenses. Replace it with the restaurant's own photography before launch."
+  }
+}

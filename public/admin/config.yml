@@ -1,0 +1,549 @@
+# yaml-language-server: $schema=https://unpkg.com/@sveltia/cms/schema/sveltia-cms.json
+#
+# Sveltia CMS configuration for the Izakaya WA website.
+#
+# This file is public — never put secrets in it. Everything the CMS edits lives
+# in /src/content, and uploaded photos are committed to /public/images.
+# See README.md for the one-time GitHub + Cloudflare setup steps.
+
+backend:
+  name: github
+  repo: "OWNER/REPO" # ← replace with the GitHub repository, e.g. "izakayawa/website"
+  branch: main
+  # URL of the deployed Sveltia CMS Authenticator (Cloudflare Worker). See README.
+  base_url: "https://izakaya-wa-cms-auth.YOUR-SUBDOMAIN.workers.dev"
+
+# Uploaded images go into public/images and are referenced as /images/....
+media_folder: public/images
+public_folder: /images
+
+site_url: https://www.izakayawa.com
+display_url: https://www.izakayawa.com
+logo_url: https://www.izakayawa.com/icon.svg
+app_title: Izakaya WA — Content
+publish_mode: simple
+
+collections:
+  # --------------------------------------------------------------------------
+  # The six pages of the site. Each one opens like a form.
+  # --------------------------------------------------------------------------
+  - name: pages
+    label: Pages
+    label_singular: Page
+    description: Every word and photo on the site's pages.
+    files:
+      # ================================================================ Home
+      - name: home
+        label: Home
+        file: src/content/pages/home.json
+        preview_path: /
+        fields:
+          - &seo
+            name: seo
+            label: Search & social
+            widget: object
+            fields:
+              - { name: title, label: Page title, widget: string }
+              - { name: description, label: Meta description, widget: text }
+
+          - name: hero
+            label: Hero
+            widget: object
+            fields:
+              - { name: eyebrow, label: Small label above the title, widget: string, required: false }
+              - { name: title, label: Headline, widget: string }
+              - { name: intro, label: Intro text, widget: text }
+              - &image
+                name: image
+                label: Image
+                widget: object
+                fields:
+                  - &srcField { name: src, label: Image, widget: image }
+                  - &altField { name: alt, label: Alt text (describe the photo), widget: string }
+              # Reusable button shape. `&cta` is anchored on the first button and
+              # re-used below with a different name.
+              - &cta
+                name: primaryCta
+                label: Primary button
+                widget: object
+                fields:
+                  - { name: label, label: Button text, widget: string }
+                  - { name: href, label: Link, widget: string, required: false }
+              - <<: *cta
+                name: secondaryCta
+                label: Secondary button
+
+          - name: philosophy
+            label: "Philosophy (the name)"
+            widget: object
+            fields:
+              - { name: eyebrow, label: Small label, widget: string, required: false }
+              - { name: kanji, label: Large kanji, widget: string, required: false }
+              - { name: title, label: Heading, widget: string }
+              - name: body
+                label: Paragraphs
+                widget: list
+                field: { name: paragraph, label: Paragraph, widget: text }
+              - <<: *cta
+                name: cta
+                label: Button
+              - name: images
+                label: Photos
+                widget: list
+                summary: "{{fields.alt}}"
+                fields:
+                  - *srcField
+                  - *altField
+
+          - name: signature
+            label: Signature dishes
+            widget: object
+            fields:
+              - { name: eyebrow, label: Small label, widget: string, required: false }
+              - { name: title, label: Heading, widget: string }
+              - { name: intro, label: Intro text, widget: text }
+              - <<: *cta
+                name: cta
+                label: Button
+
+          - name: experience
+            label: The experience
+            widget: object
+            fields:
+              - { name: eyebrow, label: Small label, widget: string, required: false }
+              - { name: title, label: Heading, widget: string }
+              - { name: intro, label: Intro text, widget: text }
+              - name: items
+                label: Cards
+                widget: list
+                summary: "{{fields.title}}"
+                fields:
+                  - { name: japanese, label: Japanese label, widget: string, required: false }
+                  - { name: title, label: Title, widget: string }
+                  - { name: copy, label: Text, widget: text }
+                  - *image
+
+          - name: locations
+            label: Locations heading
+            widget: object
+            fields:
+              - { name: eyebrow, label: Small label, widget: string, required: false }
+              - { name: title, label: Heading, widget: string }
+              - { name: intro, label: Intro text, widget: text }
+
+          - name: cta
+            label: Closing call to action
+            widget: object
+            fields:
+              - { name: eyebrow, label: Small label, widget: string, required: false }
+              - { name: title, label: Heading, widget: string }
+              - { name: body, label: Text, widget: text }
+              - <<: *cta
+                name: primary
+                label: Primary button
+              - <<: *cta
+                name: secondary
+                label: Secondary button
+
+      # ================================================================ Menu
+      - name: menu
+        label: Menu
+        file: src/content/pages/menu.json
+        preview_path: /menu/
+        fields:
+          - *seo
+
+          - &hero
+            name: hero
+            label: Hero
+            widget: object
+            fields:
+              - { name: eyebrow, label: Small label above the title, widget: string, required: false }
+              - { name: title, label: Headline, widget: string }
+              - { name: intro, label: Intro text, widget: text }
+              - *image
+
+          - name: notice
+            label: Notice
+            widget: object
+            fields:
+              - { name: label, label: Bold lead-in, widget: string }
+              - { name: text, label: Notice text, widget: text }
+
+          - name: sections
+            label: Menu sections
+            widget: list
+            summary: "{{fields.title}}"
+            fields:
+              - { name: id, label: Section id (used for links), widget: string, hint: "Lowercase, no spaces, e.g. small-plates." }
+              - { name: title, label: Section title, widget: string }
+              - { name: japanese, label: Japanese title, widget: string, required: false }
+              - { name: blurb, label: Short description, widget: text }
+              - name: dishes
+                label: Dishes
+                widget: list
+                summary: "{{fields.name}}"
+                fields:
+                  - { name: name, label: Name, widget: string }
+                  - { name: japanese, label: Japanese name, widget: string, required: false }
+                  - { name: description, label: Description, widget: text }
+                  - { name: signature, label: Signature dish, widget: boolean, default: false, required: false }
+                  - { name: featured, label: Show on the home page, widget: boolean, default: false, required: false }
+                  - { name: featuredOrder, label: Home-page order, widget: number, value_type: int, default: 0, required: false, hint: "Lower numbers appear first (1, 2, 3…)." }
+                  - name: tags
+                    label: Tags
+                    widget: list
+                    required: false
+                    field: { name: tag, label: Tag, widget: string }
+                  - <<: *image
+                    required: false
+
+          - name: cta
+            label: Closing call to action
+            widget: object
+            fields:
+              - { name: eyebrow, label: Small label, widget: string, required: false }
+              - { name: title, label: Heading, widget: string }
+              - { name: intro, label: Text, widget: text }
+              - name: callLabels
+                label: Call button labels
+                widget: list
+                hint: "One label per location, in the same order as the Locations list."
+                field: { name: label, label: Label, widget: string }
+              - <<: *cta
+                name: request
+                label: Request button
+
+      # =============================================================== About
+      - name: about
+        label: About
+        file: src/content/pages/about.json
+        preview_path: /about/
+        fields:
+          - *seo
+          - *hero
+          - name: story
+            label: Story
+            widget: object
+            fields:
+              - { name: eyebrow, label: Small label, widget: string, required: false }
+              - { name: title, label: Heading, widget: string }
+              - name: paragraphs
+                label: Paragraphs
+                widget: list
+                field: { name: paragraph, label: Paragraph, widget: text }
+              - name: stats
+                label: Stats
+                widget: list
+                summary: "{{fields.value}} — {{fields.label}}"
+                fields:
+                  - { name: value, label: Value, widget: string }
+                  - { name: label, label: Label, widget: string }
+              - name: images
+                label: Photos
+                widget: list
+                summary: "{{fields.alt}}"
+                fields:
+                  - *srcField
+                  - *altField
+          - name: values
+            label: What we believe
+            widget: object
+            fields:
+              - { name: eyebrow, label: Small label, widget: string, required: false }
+              - { name: title, label: Heading, widget: string }
+              - name: items
+                label: Items
+                widget: list
+                summary: "{{fields.title}}"
+                fields:
+                  - { name: title, label: Title, widget: string }
+                  - { name: copy, label: Text, widget: text }
+          - name: locations
+            label: Locations heading
+            widget: object
+            fields:
+              - { name: eyebrow, label: Small label, widget: string, required: false }
+              - { name: title, label: Heading, widget: string }
+              - { name: intro, label: Intro text, widget: text }
+              - <<: *cta
+                name: cta
+                label: Button
+
+      # ============================================================= Gallery
+      - name: gallery
+        label: Gallery
+        file: src/content/pages/gallery.json
+        preview_path: /gallery/
+        fields:
+          - *seo
+          - *hero
+          - name: photos
+            label: Photos
+            widget: list
+            summary: "{{fields.alt}}"
+            fields:
+              - *srcField
+              - *altField
+              - { name: credit, label: Photographer / credit, widget: string, required: false }
+              - { name: license, label: License, widget: string, required: false }
+              - { name: href, label: Source link, widget: string, required: false }
+          - name: credits
+            label: Credits heading
+            widget: object
+            fields:
+              - { name: eyebrow, label: Small label, widget: string, required: false }
+              - { name: title, label: Heading, widget: string }
+              - { name: intro, label: Intro text, widget: text }
+
+      # ======================================================== Reservations
+      - name: reservations
+        label: Reservations
+        file: src/content/pages/reservations.json
+        preview_path: /reservations/
+        fields:
+          - *seo
+          - *hero
+          - name: intro
+            label: How it works
+            widget: object
+            fields:
+              - { name: eyebrow, label: Small label, widget: string, required: false }
+              - { name: title, label: Heading, widget: string }
+              - { name: paragraph, label: Text, widget: text }
+          - name: form
+            label: Reservation form
+            widget: object
+            fields:
+              - { name: title, label: Form title, widget: string }
+              - { name: intro, label: Form intro, widget: text }
+              - name: lunchTimes
+                label: Lunch times
+                widget: list
+                field: { name: time, label: Time, widget: string }
+              - name: dinnerTimes
+                label: Dinner times
+                widget: list
+                field: { name: time, label: Time, widget: string }
+              - name: copy
+                label: Form wording
+                widget: object
+                fields:
+                  - name: labels
+                    label: Field labels
+                    widget: object
+                    fields:
+                      - { name: name, label: Name, widget: string }
+                      - { name: phone, label: Phone, widget: string }
+                      - { name: email, label: Email, widget: string }
+                      - { name: location, label: Location, widget: string }
+                      - { name: partySize, label: Party size, widget: string }
+                      - { name: date, label: Date, widget: string }
+                      - { name: time, label: Time, widget: string }
+                      - { name: notes, label: Notes, widget: string }
+                  - name: placeholders
+                    label: Placeholders
+                    widget: object
+                    fields:
+                      - { name: name, label: Name, widget: string, required: false }
+                      - { name: phone, label: Phone, widget: string, required: false }
+                      - { name: email, label: Email, widget: string, required: false }
+                      - { name: notes, label: Notes, widget: string, required: false }
+                  - { name: locationPlaceholder, label: Location placeholder, widget: string }
+                  - { name: timePlaceholder, label: Time placeholder, widget: string }
+                  - { name: guestSingular, label: "Guest label (singular)", widget: string }
+                  - { name: guestPlural, label: "Guest label (plural)", widget: string }
+                  - { name: largeParty, label: Large-party option, widget: string }
+                  - { name: lunchGroup, label: Lunch group label, widget: string }
+                  - { name: dinnerGroup, label: Dinner group label, widget: string }
+                  - { name: submit, label: Submit button, widget: string }
+                  - { name: submitting, label: Submit button (while sending), widget: string }
+                  - { name: disclaimer, label: Disclaimer, widget: text }
+                  - { name: successKanji, label: Success kanji, widget: string, required: false }
+                  - { name: successTitle, label: Success title, widget: string }
+                  - { name: successMessage, label: Success message, widget: text }
+                  - { name: successNote, label: Success note, widget: text }
+                  - { name: validationMessage, label: Validation message, widget: text }
+                  - { name: missingKeyMessage, label: Message when email is not set up, widget: text }
+                  - { name: sendErrorMessage, label: Message when sending fails, widget: text }
+                  - name: errors
+                    label: Field error messages
+                    widget: object
+                    fields:
+                      - { name: name, label: Name, widget: string }
+                      - { name: phone, label: Phone, widget: string }
+                      - { name: email, label: Email, widget: string }
+                      - { name: location, label: Location, widget: string }
+                      - { name: date, label: Date, widget: string }
+                      - { name: time, label: Time, widget: string }
+                      - { name: partySize, label: Party size, widget: string }
+          - name: faqs
+            label: FAQs
+            widget: list
+            summary: "{{fields.question}}"
+            fields:
+              - { name: question, label: Question, widget: string }
+              - { name: answer, label: Answer, widget: text }
+          - name: closing
+            label: Closing
+            widget: object
+            fields:
+              - { name: text, label: Text, widget: text }
+              - { name: callPrefix, label: Call button prefix, widget: string }
+
+      # ============================================================= Contact
+      - name: contact
+        label: Contact
+        file: src/content/pages/contact.json
+        preview_path: /contact/
+        fields:
+          - *seo
+          - *hero
+          - name: labels
+            label: Labels
+            widget: object
+            fields:
+              - { name: address, label: Address, widget: string }
+              - { name: phone, label: Phone, widget: string }
+              - { name: hours, label: Hours, widget: string }
+              - { name: directions, label: Directions button, widget: string }
+              - { name: reserve, label: Reserve button, widget: string }
+          - name: social
+            label: Stay in touch
+            widget: object
+            fields:
+              - { name: eyebrow, label: Small label, widget: string, required: false }
+              - { name: title, label: Heading, widget: string }
+              - { name: intro, label: Intro text, widget: text }
+              - { name: instagramTitle, label: Instagram title, widget: string }
+              - { name: instagramBody, label: Instagram text, widget: text }
+              - { name: facebookTitle, label: Facebook title, widget: string }
+              - { name: facebookBody, label: Facebook text, widget: text }
+              - { name: callTitle, label: Call card title, widget: string }
+
+  # --------------------------------------------------------------------------
+  # The two restaurant locations, their hours and contact details.
+  # --------------------------------------------------------------------------
+  - name: locations
+    label: Locations
+    description: Addresses, phone numbers and opening hours.
+    files:
+      - name: locations
+        label: Locations
+        file: src/content/locations.json
+        fields:
+          - name: locations
+            label: Locations
+            widget: list
+            summary: "{{fields.name}}"
+            fields:
+              - { name: id, label: ID, widget: string, hint: "Internal key, lowercase, e.g. memorial." }
+              - { name: name, label: Name, widget: string }
+              - { name: neighborhood, label: Neighborhood, widget: string }
+              - { name: street, label: Street, widget: string }
+              - { name: city, label: City, widget: string }
+              - { name: state, label: State, widget: string }
+              - { name: postalCode, label: ZIP code, widget: string }
+              - { name: phone, label: Phone, widget: string }
+              - { name: mapsQuery, label: Google Maps search text, widget: string, hint: "Used to build the map links, e.g. 'Izakaya WA, 12665 Memorial Dr, Houston, TX 77024'." }
+              - name: hours
+                label: Hours (shown on the site)
+                widget: list
+                summary: "{{fields.days}}"
+                fields:
+                  - { name: days, label: Days, widget: string }
+                  - { name: hours, label: Hours, widget: string }
+                  - { name: note, label: Note, widget: string, required: false }
+              - { name: note, label: Extra note, widget: text, required: false }
+              - name: schemaHours
+                label: Hours (for search engines)
+                widget: list
+                summary: "{{fields.opens}} – {{fields.closes}}"
+                hint: "Machine-readable hours. Use 24-hour times like 11:30 and 22:00."
+                fields:
+                  - name: days
+                    label: Days
+                    widget: list
+                    field: { name: day, label: Day, widget: string }
+                  - { name: opens, label: Opens, widget: string }
+                  - { name: closes, label: Closes, widget: string }
+
+  # --------------------------------------------------------------------------
+  # Site-wide text: name, navigation, footer and the 404 page.
+  # --------------------------------------------------------------------------
+  - name: settings
+    label: Site settings
+    description: Global text used across every page — name, navigation, footer and the 404 page.
+    files:
+      - name: settings
+        label: Site settings
+        file: src/content/settings.json
+        fields:
+          - { name: name, label: Site name, widget: string }
+          - { name: shortName, label: Short name, widget: string }
+          - { name: tagline, label: Tagline, widget: string }
+          - { name: description, label: Site description, widget: text }
+          - name: foundedBy
+            label: Founded by
+            widget: list
+            field: { name: person, label: Name, widget: string }
+          - { name: url, label: Website URL, widget: string }
+          - name: cuisines
+            label: Cuisines
+            widget: list
+            field: { name: cuisine, label: Cuisine, widget: string }
+          - { name: priceRange, label: Price range, widget: string }
+          - { name: phonePrimary, label: Primary phone, widget: string }
+          - { name: email, label: Email, widget: string }
+          - name: social
+            label: Social links
+            widget: object
+            fields:
+              - { name: instagram, label: Instagram URL, widget: string, required: false }
+              - { name: facebook, label: Facebook URL, widget: string, required: false }
+          - name: logo
+            label: Logo wordmark
+            widget: object
+            fields:
+              - { name: top, label: Main text, widget: string }
+              - { name: sub, label: Subtitle, widget: string }
+          - name: nav
+            label: Navigation
+            widget: list
+            summary: "{{fields.label}}"
+            fields:
+              - { name: label, label: Label, widget: string }
+              - { name: href, label: Link, widget: string }
+          - name: highlights
+            label: Hero highlights
+            widget: list
+            field: { name: highlight, label: Highlight, widget: string }
+          - name: labels
+            label: Buttons & labels
+            widget: object
+            fields:
+              - { name: skipToContent, label: Skip-to-content link, widget: string }
+              - { name: reserve, label: Reserve (header), widget: string }
+              - { name: reserveTable, label: Reserve a table (menu), widget: string }
+              - { name: explore, label: Explore (footer), widget: string }
+              - { name: imageCredits, label: Image credits link, widget: string }
+          - name: footer
+            label: Footer
+            widget: object
+            fields:
+              - { name: blurb, label: Blurb, widget: text }
+              - { name: note, label: Note, widget: text }
+          - name: notFound
+            label: 404 page
+            widget: object
+            fields:
+              - { name: eyebrow, label: Small label, widget: string, required: false }
+              - { name: kanji, label: Kanji, widget: string, required: false }
+              - { name: code, label: Code, widget: string }
+              - { name: message, label: Message, widget: text }
+              - <<: *cta
+                name: primary
+                label: Primary button
+              - <<: *cta
+                name: secondary
+                label: Secondary button

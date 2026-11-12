@@ -1,0 +1,102 @@
+{
+  "seo": {
+    "title": "Reservations",
+    "description": "Reserve a table at Izakaya WA in Houston. Call the Memorial or River Oaks location, or send a reservation request and we'll confirm by phone."
+  },
+  "hero": {
+    "eyebrow": "Reservations",
+    "title": "Reserve your table",
+    "intro": "Call either location, or send a request below and we'll confirm by phone. Walk-ins are always welcome.",
+    "image": {
+      "src": "/images/izakaya-interior-2.jpg",
+      "alt": "Counter seating inside an izakaya"
+    }
+  },
+  "intro": {
+    "eyebrow": "How it works",
+    "title": "A table, a few plates, and time to enjoy them",
+    "paragraph": "We keep our booking simple. Call the location you'd like to visit and we'll take care of the rest. If you'd rather send a request, use the form and we'll call you back to confirm."
+  },
+  "form": {
+    "title": "Request a reservation",
+    "intro": "Tell us the details and we'll be in touch to confirm. Required fields are marked by their validation.",
+    "lunchTimes": ["11:30 AM", "12:00 PM", "12:30 PM", "1:00 PM", "1:30 PM"],
+    "dinnerTimes": [
+      "5:00 PM",
+      "5:30 PM",
+      "6:00 PM",
+      "6:30 PM",
+      "7:00 PM",
+      "7:30 PM",
+      "8:00 PM",
+      "8:30 PM",
+      "9:00 PM"
+    ],
+    "copy": {
+      "labels": {
+        "name": "Name",
+        "phone": "Phone",
+        "email": "Email",
+        "location": "Location",
+        "partySize": "Party size",
+        "date": "Date",
+        "time": "Time",
+        "notes": "Notes"
+      },
+      "placeholders": {
+        "name": "Your full name",
+        "phone": "(713) 555-0123",
+        "email": "you@example.com",
+        "notes": "Allergies, celebrations, seating preferences…"
+      },
+      "locationPlaceholder": "Choose a location",
+      "timePlaceholder": "Choose a time",
+      "guestSingular": "guest",
+      "guestPlural": "guests",
+      "largeParty": "13+ guests (call us)",
+      "lunchGroup": "Lunch",
+      "dinnerGroup": "Dinner",
+      "submit": "Request a table",
+      "submitting": "Sending…",
+      "disclaimer": "Requests are confirmed by phone. For same-day tables or parties larger than 12, please call us directly.",
+      "successKanji": "ありがとう",
+      "successTitle": "Request received",
+      "successMessage": "Thank you — your request has been received. We'll confirm your table by phone.",
+      "successNote": "Need to change something? Call the location you selected and we'll sort it out.",
+      "validationMessage": "Please check the highlighted fields and try again.",
+      "missingKeyMessage": "Online requests aren't connected yet. Please call the restaurant and we'll take care of you.",
+      "sendErrorMessage": "We couldn't send your request just now. Please call the restaurant and we'll take care of you.",
+      "errors": {
+        "name": "Please tell us your name.",
+        "phone": "A phone number lets us confirm.",
+        "email": "Enter a valid email address.",
+        "location": "Choose a location.",
+        "date": "Choose a date.",
+        "time": "Choose a time.",
+        "partySize": "Party size must be between 1 and 20."
+      }
+    }
+  },
+  "faqs": [
+    {
+      "question": "Do you take reservations?",
+      "answer": "Yes. We are not on an online booking network, so the fastest way to reserve is to call either location. You can also send the request form below and we'll confirm by phone."
+    },
+    {
+      "question": "Do you take walk-ins?",
+      "answer": "Always. We keep seats for walk-in guests, though weekends and holidays fill up quickly — a call ahead is the surest way to get the table you want."
+    },
+    {
+      "question": "Can you host a large party?",
+      "answer": "For parties larger than 12, or for a private event, please call us directly so we can plan the menu and the room with you."
+    },
+    {
+      "question": "Is there outdoor seating?",
+      "answer": "Yes, both rooms offer outdoor seating and we're happy for groups. It's first-come, first-served unless arranged in advance."
+    }
+  ],
+  "closing": {
+    "text": "Planning something larger — a birthday, a tasting, a company dinner? Call us and we'll build a menu for the table.",
+    "callPrefix": "Call"
+  }
+}

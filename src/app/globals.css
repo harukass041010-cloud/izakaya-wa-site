@@ -1,0 +1,95 @@
+@import "tailwindcss";
+
+/*
+  Izakaya WA — design tokens
+  A warm, ink-and-paper palette inspired by a traditional Japanese izakaya:
+  sumi ink, rice paper, vermilion (shu-iro) and muted brass.
+*/
+@theme {
+  --font-display: var(--font-shippori), "Hiragino Mincho ProN", "Yu Mincho",
+    Georgia, serif;
+  --font-sans: var(--font-zen), "Hiragino Kaku Gothic ProN", ui-sans-serif,
+    system-ui, sans-serif;
+
+  --color-ink: #16130e;
+  --color-charcoal: #211c15;
+  --color-stone: #3a322a;
+  --color-clay: #6f6153;
+  --color-sand: #a89a86;
+  --color-rice: #f5efe4;
+  --color-paper: #fcfaf5;
+  --color-vermilion: #b23a2e;
+  --color-vermilion-dark: #8c2a20;
+  --color-gold: #c6a15b;
+  --color-gold-soft: #e6d6ad;
+  --color-shiso: #5b6b4e;
+
+  --shadow-soft: 0 1px 2px rgba(22, 19, 14, 0.04),
+    0 14px 40px -16px rgba(22, 19, 14, 0.22);
+  --shadow-lift: 0 2px 4px rgba(22, 19, 14, 0.06),
+    0 28px 60px -24px rgba(22, 19, 14, 0.32);
+
+  --animate-fade-up: fade-up 0.7s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+    scroll-padding-top: 6rem;
+  }
+
+  body {
+    background-color: var(--color-rice);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    text-rendering: optimizeLegibility;
+  }
+
+  ::selection {
+    background: var(--color-vermilion);
+    color: #fff;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-vermilion);
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-display);
+    font-weight: 500;
+    letter-spacing: -0.01em;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .text-pretty {
+    text-wrap: pretty;
+  }
+
+  /* Vertical Japanese-style label */
+  .vertical-rl {
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+  }
+}
