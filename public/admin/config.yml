@@ -17,9 +17,12 @@ backend:
 media_folder: public/images
 public_folder: /images
 
-site_url: https://www.izakayawa.com
-display_url: https://www.izakayawa.com
-logo_url: https://www.izakayawa.com/icon.svg
+# Live site URL. While the site is on Cloudflare Pages' preview domain, point
+# these at it so the CMS "view site" links go to the new site. Switch back to
+# https://www.izakayawa.com once the custom domain is connected.
+site_url: https://izakaya-wa-site.pages.dev
+display_url: https://izakaya-wa-site.pages.dev
+logo_url: https://izakaya-wa-site.pages.dev/icon.svg
 app_title: Izakaya WA — Content
 publish_mode: simple
 
