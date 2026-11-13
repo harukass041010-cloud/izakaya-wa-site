@@ -8,10 +8,9 @@
     "title": "Houston's first and only Japanese-owned izakaya.",
     "intro": "Traditional small plates, sushi, robata-grilled skewers and sake — served in the spirit of 和, harmony.",
     "image": {
-      "src": "/images/IMG_8157.jpeg",
+      "src": "/images/izakaya-interior.jpg",
       "alt": "A generous platter of assorted sushi arranged on a dark tray"
     },
-    "video": "/images/hero.mp4",
     "primaryCta": {
       "label": "View the menu",
       "href": "/menu"
@@ -19,7 +18,8 @@
     "secondaryCta": {
       "label": "Reserve a table",
       "href": "/reservations"
-    }
+    },
+    "video": "/images/hero.mp4"
   },
   "philosophy": {
     "eyebrow": "The name",
