@@ -1,43 +1,25 @@
 "use client";
 
 /*
-  The home hero's visual layer.
+  The home hero's visual layer: a muted, looping background video with the
+  restaurant photo as its poster and fallback.
 
-  Renders the existing photo as a base/fallback, and — when the browser supports
-  WebGL and the visitor hasn't asked for reduced motion — overlays a lazily
-  loaded 3D chirashi scene. Keeping this in a client component lets the page
-  itself stay a static server component.
+  - Visitors who prefer reduced motion — or whose browser can't play the video —
+    simply see the photo.
+  - Playback pauses while the hero is scrolled out of view.
+  - Keeping this in a client component lets the page stay a static server
+    component.
 */
 
-import dynamic from "next/dynamic";
-import { useSyncExternalStore } from "react";
+import { useEffect, useRef, useState, useSyncExternalStore } from "react";
 import { Photo } from "@/components/photo";
 
-const ChirashiScene = dynamic(() => import("./chirashi-scene"), {
-  ssr: false,
-  loading: () => null,
-});
-
-type Mode = "scene" | "photo";
-
-function supportsWebGL() {
-  try {
-    const canvas = document.createElement("canvas");
-    return Boolean(
-      window.WebGLRenderingContext &&
-        (canvas.getContext("webgl2") || canvas.getContext("webgl")),
-    );
-  } catch {
-    return false;
-  }
-}
-
 /*
-  The choice never changes once the page is open, so it is exposed through a
-  tiny external store: the expensive feature detection runs in `subscribe`
-  (after hydration) rather than during render.
+  "Reduce motion" never changes while the page is open, so it is exposed through
+  a tiny external store: the check runs in `subscribe` (after hydration) rather
+  than during render, which keeps React happy and avoids a hydration mismatch.
 */
-let currentMode: Mode = "photo";
+let prefersReduced = false;
 let initialised = false;
 const listeners = new Set<() => void>();
 
@@ -45,10 +27,9 @@ function subscribe(onChange: () => void) {
   listeners.add(onChange);
   if (!initialised) {
     initialised = true;
-    const reduced = window.matchMedia(
+    prefersReduced = window.matchMedia(
       "(prefers-reduced-motion: reduce)",
     ).matches;
-    currentMode = supportsWebGL() && !reduced ? "scene" : "photo";
     listeners.forEach((notify) => notify());
   }
   return () => {
@@ -56,11 +37,42 @@ function subscribe(onChange: () => void) {
   };
 }
 
-const getMode = () => currentMode;
-const getServerMode = (): Mode => "photo";
+const getReduced = () => prefersReduced;
+const getServerReduced = () => false;
 
-export function HeroVisual({ src, alt }: { src: string; alt: string }) {
-  const mode = useSyncExternalStore(subscribe, getMode, getServerMode);
+export function HeroVisual({
+  src,
+  alt,
+  video,
+}: {
+  src: string;
+  alt: string;
+  video?: string;
+}) {
+  const reduced = useSyncExternalStore(subscribe, getReduced, getServerReduced);
+  const videoRef = useRef<HTMLVideoElement>(null);
+  const [failed, setFailed] = useState(false);
+  const showVideo = Boolean(video) && !reduced && !failed;
+
+  useEffect(() => {
+    const element = videoRef.current;
+    if (!element) return;
+    // Setting the property (not just the attribute) is what lets autoplay run.
+    element.muted = true;
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (entries[0]?.isIntersecting) {
+          void element.play().catch(() => {});
+        } else {
+          element.pause();
+        }
+      },
+      { threshold: 0 },
+    );
+    observer.observe(element);
+    return () => observer.disconnect();
+  }, [showVideo]);
 
   return (
     <>
@@ -70,16 +82,24 @@ export function HeroVisual({ src, alt }: { src: string; alt: string }) {
         priority
         sizes="100vw"
         className="absolute inset-0 -z-20 h-full w-full"
-        imageClassName={mode === "scene" ? "opacity-30" : "opacity-55"}
+        imageClassName="opacity-55"
       />
 
-      {mode === "scene" ? (
-        <div
+      {showVideo ? (
+        <video
+          ref={videoRef}
           aria-hidden
-          className="pointer-events-none absolute inset-x-0 top-0 h-[54%] lg:inset-y-0 lg:left-auto lg:right-0 lg:h-full lg:w-[52%]"
+          autoPlay
+          muted
+          loop
+          playsInline
+          preload="metadata"
+          poster={src}
+          onError={() => setFailed(true)}
+          className="absolute inset-0 -z-20 h-full w-full object-cover"
         >
-          <ChirashiScene />
-        </div>
+          <source src={video} type="video/mp4" />
+        </video>
       ) : null}
     </>
   );

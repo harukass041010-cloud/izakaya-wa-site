@@ -24,7 +24,11 @@ export default function HomePage() {
     <>
       {/* Hero */}
       <section className="relative isolate flex min-h-[92svh] items-end overflow-hidden bg-ink text-rice">
-        <HeroVisual src={hero.image.src} alt={hero.image.alt} />
+        <HeroVisual
+          src={hero.image.src}
+          alt={hero.image.alt}
+          video={hero.video}
+        />
         <div
           aria-hidden
           className="absolute inset-0 -z-10 bg-gradient-to-t from-ink via-ink/75 to-ink/35"
@@ -36,10 +40,10 @@ export default function HomePage() {
 
         <Container className="relative pt-32 pb-16 sm:pb-24">
           <Eyebrow className="text-gold">{hero.eyebrow}</Eyebrow>
-          <h1 className="mt-6 max-w-4xl text-balance text-5xl leading-[1.05] sm:text-6xl md:text-7xl lg:max-w-[26rem] xl:max-w-[32rem]">
+          <h1 className="mt-6 max-w-4xl text-balance text-5xl leading-[1.05] sm:text-6xl md:text-7xl">
             {hero.title}
           </h1>
-          <p className="mt-7 max-w-2xl text-pretty text-lg leading-relaxed text-rice/75 sm:text-xl lg:max-w-[24rem] xl:max-w-md">
+          <p className="mt-7 max-w-2xl text-pretty text-lg leading-relaxed text-rice/75 sm:text-xl">
             {hero.intro}
           </p>
 

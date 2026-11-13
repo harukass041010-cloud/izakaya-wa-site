@@ -31,6 +31,8 @@ export type Hero = {
   title: string;
   intro: string;
   image: ImageRef;
+  /* Optional background video (e.g. /videos/hero.mp4); the photo is the fallback. */
+  video?: string;
 };
 
 export type HomeContent = {

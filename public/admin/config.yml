@@ -63,6 +63,13 @@ collections:
                 fields:
                   - &srcField { name: src, label: Image, widget: image }
                   - &altField { name: alt, label: Alt text (describe the photo), widget: string }
+              # Optional looping background video for the home hero. Leave empty
+              # to show only the photo. Uploaded files are stored in public/images.
+              - name: video
+                label: Background video (optional)
+                widget: file
+                required: false
+                hint: "MP4, about 10–20 seconds, no sound. Upload it with the media button, or leave empty to use the photo only."
               # Reusable button shape. `&cta` is anchored on the first button and
               # re-used below with a different name.
               - &cta
