@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Container } from "@/components/container";
 import { Photo } from "@/components/photo";
+import { HeroVisual } from "@/components/hero-visual";
 import { Section, SectionHeading, Eyebrow } from "@/components/section";
 import { Seigaiha } from "@/components/seigaiha";
 import { LocationCard } from "@/components/location-card";
@@ -23,14 +24,7 @@ export default function HomePage() {
     <>
       {/* Hero */}
       <section className="relative isolate flex min-h-[92svh] items-end overflow-hidden bg-ink text-rice">
-        <Photo
-          src={hero.image.src}
-          alt={hero.image.alt}
-          priority
-          sizes="100vw"
-          className="absolute inset-0 -z-20 h-full w-full"
-          imageClassName="opacity-55"
-        />
+        <HeroVisual src={hero.image.src} alt={hero.image.alt} />
         <div
           aria-hidden
           className="absolute inset-0 -z-10 bg-gradient-to-t from-ink via-ink/75 to-ink/35"
@@ -42,10 +36,10 @@ export default function HomePage() {
 
         <Container className="relative pt-32 pb-16 sm:pb-24">
           <Eyebrow className="text-gold">{hero.eyebrow}</Eyebrow>
-          <h1 className="mt-6 max-w-4xl text-balance text-5xl leading-[1.05] sm:text-6xl md:text-7xl">
+          <h1 className="mt-6 max-w-4xl text-balance text-5xl leading-[1.05] sm:text-6xl md:text-7xl lg:max-w-[26rem] xl:max-w-[32rem]">
             {hero.title}
           </h1>
-          <p className="mt-7 max-w-2xl text-pretty text-lg leading-relaxed text-rice/75 sm:text-xl">
+          <p className="mt-7 max-w-2xl text-pretty text-lg leading-relaxed text-rice/75 sm:text-xl lg:max-w-[24rem] xl:max-w-md">
             {hero.intro}
           </p>
 
