@@ -1,7 +1,7 @@
 {
   "seo": {
     "title": "Japanese Izakaya in Houston, TX",
-    "description": "Izakaya WA is Houston's first and only Japanese-owned and operated izakaya. Traditional small plates, sushi, robata-grilled skewers and sake, served in the spirit of wa — harmony."
+    "description": "Izakaya WA is Houston's first Haruka Haruka and only Japanese-owned and operated izakaya. Traditional small plates, sushi, robata-grilled skewers and sake, served in the spirit of wa — harmony."
   },
   "hero": {
     "eyebrow": "Japanese-owned & operated · Houston",
@@ -11,8 +11,14 @@
       "src": "/images/hero-sushi-platter.jpg",
       "alt": "A generous platter of assorted sushi arranged on a dark tray"
     },
-    "primaryCta": { "label": "View the menu", "href": "/menu" },
-    "secondaryCta": { "label": "Reserve a table", "href": "/reservations" }
+    "primaryCta": {
+      "label": "View the menu",
+      "href": "/menu"
+    },
+    "secondaryCta": {
+      "label": "Reserve a table",
+      "href": "/reservations"
+    }
   },
   "philosophy": {
     "eyebrow": "The name",
@@ -22,7 +28,10 @@
       "In Japan, an izakaya is a neighborhood place to drink, eat and linger — a table that keeps filling up as the evening goes on. It is casual by design and generous by nature.",
       "Izakaya WA is Houston's first and only Japanese-owned and operated izakaya, founded by Akira Asano and Hajime Kubokawa. Everything here is built around wa: the balance of small plates shared among friends, the rhythm of the grill, and a glass of sake poured to match."
     ],
-    "cta": { "label": "Our story", "href": "/about" },
+    "cta": {
+      "label": "Our story",
+      "href": "/about"
+    },
     "images": [
       {
         "src": "/images/izakaya-interior.jpg",
@@ -42,7 +51,10 @@
     "eyebrow": "From the kitchen",
     "title": "A few of our signatures",
     "intro": "The menu changes with the seasons and the day's catch. These are the plates our guests come back for.",
-    "cta": { "label": "See the full menu", "href": "/menu" }
+    "cta": {
+      "label": "See the full menu",
+      "href": "/menu"
+    }
   },
   "experience": {
     "eyebrow": "The experience",
@@ -87,7 +99,13 @@
     "eyebrow": "Reservations",
     "title": "Join us for dinner tonight",
     "body": "Call either location to reserve, or send us a request and we'll confirm by phone.",
-    "primary": { "label": "Request a table", "href": "/reservations" },
-    "secondary": { "label": "Call", "href": "" }
+    "primary": {
+      "label": "Request a table",
+      "href": "/reservations"
+    },
+    "secondary": {
+      "label": "Call",
+      "href": ""
+    }
   }
 }
