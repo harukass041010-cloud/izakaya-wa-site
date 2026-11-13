@@ -5,10 +5,10 @@
   },
   "hero": {
     "eyebrow": "Japanese-owned & operated · Houston",
-    "title": "Houston's first and Haruka only Japanese-owned izakaya.",
+    "title": "Houston's first and only Japanese-owned izakaya.",
     "intro": "Traditional small plates, sushi, robata-grilled skewers and sake — served in the spirit of 和, harmony.",
     "image": {
-      "src": "/images/hero-sushi-platter.jpg",
+      "src": "/images/IMG_8157.jpeg",
       "alt": "A generous platter of assorted sushi arranged on a dark tray"
     },
     "primaryCta": {
@@ -22,7 +22,7 @@
   },
   "philosophy": {
     "eyebrow": "The name",
-    "kanji": "和",
+    "kanji": "和 Haruka",
     "title": "— wa, meaning harmony",
     "body": [
       "In Japan, an izakaya is a neighborhood place to drink, eat and linger — a table that keeps filling up as the evening goes on. It is casual by design and generous by nature.",
