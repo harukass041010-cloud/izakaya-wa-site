@@ -33,6 +33,11 @@ export default function HomePage() {
           aria-hidden
           className="absolute inset-0 -z-10 bg-gradient-to-t from-ink via-ink/75 to-ink/35"
         />
+        {/* Extra scrim behind the text column so the headline always reads. */}
+        <div
+          aria-hidden
+          className="absolute inset-0 -z-10 bg-gradient-to-r from-ink/80 via-ink/30 to-transparent lg:from-ink/70 lg:via-ink/20"
+        />
         <Seigaiha
           id="home-hero-waves"
           className="pointer-events-none absolute inset-x-0 bottom-0 -z-10 h-56 text-rice/[0.07]"
