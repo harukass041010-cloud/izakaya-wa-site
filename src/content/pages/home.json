@@ -11,7 +11,7 @@
       "src": "/images/izakaya-interior.jpg",
       "alt": "Warm interior of Izakaya WA"
     },
-    "video": "",
+    "video": "/images/hero.mp4",
     "primaryCta": {
       "label": "View the menu",
       "href": "/menu"

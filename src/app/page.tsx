@@ -5,6 +5,7 @@ import { Photo } from "@/components/photo";
 import { HeroVisual } from "@/components/hero-visual";
 import { Section, SectionHeading, Eyebrow } from "@/components/section";
 import { Seigaiha } from "@/components/seigaiha";
+import { SeasonalDecor, SeasonalRow } from "@/components/seasonal";
 import { LocationCard } from "@/components/location-card";
 import { buttonClasses } from "@/components/button";
 import { featuredDishes, homeContent } from "@/lib/content";
@@ -23,58 +24,65 @@ export default function HomePage() {
   return (
     <>
       {/* Hero */}
-      <section className="relative isolate flex min-h-[92svh] items-end overflow-hidden bg-ink text-rice">
+      <section className="relative isolate flex min-h-[92svh] items-end overflow-hidden bg-ink text-rice lg:items-center">
         <HeroVisual
           src={hero.image.src}
           alt={hero.image.alt}
           video={hero.video}
         />
+        {/* On phones the copy sits over the foot of the film, so darken upward. */}
         <div
           aria-hidden
-          className="absolute inset-0 -z-10 bg-gradient-to-t from-ink via-ink/75 to-ink/35"
+          className="absolute inset-0 -z-10 bg-gradient-to-t from-ink via-ink/70 to-ink/25 lg:hidden"
         />
-        {/* Extra scrim behind the text column so the headline always reads. */}
+        {/* On wide screens the copy sits left, so darken left-to-right and
+            leave the portrait panel on the right vivid. */}
         <div
           aria-hidden
-          className="absolute inset-0 -z-10 bg-gradient-to-r from-ink/80 via-ink/30 to-transparent lg:from-ink/70 lg:via-ink/20"
+          className="absolute inset-0 -z-10 hidden bg-gradient-to-r from-ink/90 via-ink/45 to-transparent lg:block"
         />
+        <SeasonalDecor className="-z-10" />
         <Seigaiha
           id="home-hero-waves"
           className="pointer-events-none absolute inset-x-0 bottom-0 -z-10 h-56 text-rice/[0.07]"
         />
 
-        <Container className="relative pt-32 pb-16 sm:pb-24">
-          <Eyebrow className="text-gold">{hero.eyebrow}</Eyebrow>
-          <h1 className="mt-6 max-w-4xl text-balance text-5xl leading-[1.05] sm:text-6xl md:text-7xl">
-            {hero.title}
-          </h1>
-          <p className="mt-7 max-w-2xl text-pretty text-lg leading-relaxed text-rice/75 sm:text-xl">
-            {hero.intro}
-          </p>
+        <Container className="relative pt-32 pb-16 sm:pb-24 lg:py-24">
+          <div className="lg:max-w-[34rem] xl:max-w-[40rem]">
+            <Eyebrow className="text-gold">{hero.eyebrow}</Eyebrow>
+            <h1 className="mt-6 max-w-4xl text-balance text-5xl leading-[1.05] sm:text-6xl xl:text-7xl">
+              {hero.title}
+            </h1>
+            <p className="mt-7 max-w-2xl text-pretty text-lg leading-relaxed text-rice/75 sm:text-xl">
+              {hero.intro}
+            </p>
 
-          <div className="mt-9 flex flex-wrap gap-3">
-            <Link
-              href={hero.primaryCta.href}
-              className={buttonClasses("primary", "lg")}
-            >
-              {hero.primaryCta.label}
-            </Link>
-            <Link
-              href={hero.secondaryCta.href}
-              className={buttonClasses("outlineLight", "lg")}
-            >
-              {hero.secondaryCta.label}
-            </Link>
+            <div className="mt-9 flex flex-wrap gap-3">
+              <Link
+                href={hero.primaryCta.href}
+                className={buttonClasses("primary", "lg")}
+              >
+                {hero.primaryCta.label}
+              </Link>
+              <Link
+                href={hero.secondaryCta.href}
+                className={buttonClasses("outlineLight", "lg")}
+              >
+                {hero.secondaryCta.label}
+              </Link>
+            </div>
+
+            <ul className="mt-12 flex flex-wrap gap-x-8 gap-y-3 border-t border-rice/15 pt-6 text-sm text-rice/60">
+              {highlights.map((item) => (
+                <li key={item} className="flex items-center gap-2.5">
+                  <span aria-hidden className="h-1 w-1 rounded-full bg-gold" />
+                  {item}
+                </li>
+              ))}
+            </ul>
+
+            <SeasonalRow className="mt-7" />
           </div>
-
-          <ul className="mt-14 flex flex-wrap gap-x-8 gap-y-3 border-t border-rice/15 pt-6 text-sm text-rice/60">
-            {highlights.map((item) => (
-              <li key={item} className="flex items-center gap-2.5">
-                <span aria-hidden className="h-1 w-1 rounded-full bg-gold" />
-                {item}
-              </li>
-            ))}
-          </ul>
         </Container>
       </section>
 

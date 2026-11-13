@@ -93,3 +93,59 @@
     text-orientation: upright;
   }
 }
+
+/*
+  Seasonal ornament — a few motifs drifting slowly through the hero.
+  Each motif sets --petal-* inline; the animation is off for anyone who
+  prefers reduced motion, who instead sees the motifs sitting still.
+*/
+@keyframes season-drift {
+  0% {
+    transform: translate3d(0, -10px, 0) rotate(0deg);
+    opacity: 0;
+  }
+  14% {
+    opacity: var(--petal-o, 0.45);
+  }
+  86% {
+    opacity: var(--petal-o, 0.45);
+  }
+  100% {
+    transform: translate3d(var(--petal-x, 26px), 104px, 0)
+      rotate(var(--petal-r, 70deg));
+    opacity: 0;
+  }
+}
+
+.season-drift {
+  animation: season-drift var(--petal-dur, 17s) linear infinite;
+  animation-delay: var(--petal-delay, 0s);
+  will-change: transform, opacity;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .season-drift {
+    animation: none;
+    opacity: var(--petal-o, 0.45);
+  }
+}
+
+/*
+  The home hero's portrait panel is feathered into the blurred backdrop so
+  there is no hard edge between film and background. Applied on wide screens,
+  where the panel sits beside the text; on phones it fills the frame.
+*/
+@media (min-width: 1024px) {
+  .hero-panel-mask {
+    -webkit-mask-image: radial-gradient(
+      64% 82% at 56% 50%,
+      #000 52%,
+      transparent 100%
+    );
+    mask-image: radial-gradient(
+      64% 82% at 56% 50%,
+      #000 52%,
+      transparent 100%
+    );
+  }
+}
