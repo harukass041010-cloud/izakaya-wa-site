@@ -11,7 +11,6 @@
       "src": "/images/izakaya-interior.jpg",
       "alt": "Warm interior of Izakaya WA"
     },
-    "video": "/images/hero.mp4",
     "primaryCta": {
       "label": "View the menu",
       "href": "/menu"
@@ -19,7 +18,8 @@
     "secondaryCta": {
       "label": "Reserve a table",
       "href": "/reservations"
-    }
+    },
+    "video": "/images/hero.mp4"
   },
   "philosophy": {
     "eyebrow": "The name",
@@ -35,15 +35,15 @@
     },
     "images": [
       {
-        "src": "/images/izakaya-interior.jpg",
+        "src": "/images/IMG_0237.jpeg",
         "alt": "Warm interior of a Japanese izakaya"
       },
       {
-        "src": "/images/nigiri.jpg",
+        "src": "/images/IMG_9164.jpeg",
         "alt": "Close-up of freshly made nigiri sushi"
       },
       {
-        "src": "/images/tempura.jpg",
+        "src": "/images/IMG_9208.jpeg",
         "alt": "A plate of crisp golden tempura"
       }
     ]
