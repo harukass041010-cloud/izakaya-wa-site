@@ -335,14 +335,6 @@ collections:
             fields:
               - { name: title, label: Form title, widget: string }
               - { name: intro, label: Form intro, widget: text }
-              - name: lunchTimes
-                label: Lunch times
-                widget: list
-                field: { name: time, label: Time, widget: string }
-              - name: dinnerTimes
-                label: Dinner times
-                widget: list
-                field: { name: time, label: Time, widget: string }
               - name: copy
                 label: Form wording
                 widget: object
@@ -354,11 +346,7 @@ collections:
                       - { name: name, label: Name, widget: string }
                       - { name: phone, label: Phone, widget: string }
                       - { name: email, label: Email, widget: string }
-                      - { name: location, label: Location, widget: string }
-                      - { name: partySize, label: Party size, widget: string }
-                      - { name: date, label: Date, widget: string }
-                      - { name: time, label: Time, widget: string }
-                      - { name: notes, label: Notes, widget: string }
+                      - { name: message, label: Message, widget: string }
                   - name: placeholders
                     label: Placeholders
                     widget: object
@@ -366,14 +354,7 @@ collections:
                       - { name: name, label: Name, widget: string, required: false }
                       - { name: phone, label: Phone, widget: string, required: false }
                       - { name: email, label: Email, widget: string, required: false }
-                      - { name: notes, label: Notes, widget: string, required: false }
-                  - { name: locationPlaceholder, label: Location placeholder, widget: string }
-                  - { name: timePlaceholder, label: Time placeholder, widget: string }
-                  - { name: guestSingular, label: "Guest label (singular)", widget: string }
-                  - { name: guestPlural, label: "Guest label (plural)", widget: string }
-                  - { name: largeParty, label: Large-party option, widget: string }
-                  - { name: lunchGroup, label: Lunch group label, widget: string }
-                  - { name: dinnerGroup, label: Dinner group label, widget: string }
+                      - { name: message, label: Message, widget: string, required: false }
                   - { name: submit, label: Submit button, widget: string }
                   - { name: submitting, label: Submit button (while sending), widget: string }
                   - { name: disclaimer, label: Disclaimer, widget: text }
@@ -391,10 +372,6 @@ collections:
                       - { name: name, label: Name, widget: string }
                       - { name: phone, label: Phone, widget: string }
                       - { name: email, label: Email, widget: string }
-                      - { name: location, label: Location, widget: string }
-                      - { name: date, label: Date, widget: string }
-                      - { name: time, label: Time, widget: string }
-                      - { name: partySize, label: Party size, widget: string }
           - name: faqs
             label: FAQs
             widget: list

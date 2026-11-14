@@ -3,14 +3,15 @@
 import { useState } from "react";
 import { cn } from "@/lib/cn";
 import { buttonClasses } from "@/components/button";
-import { locations } from "@/lib/site";
 import type { ReservationCopy } from "@/lib/content";
 
 /*
-  Reservations are delivered by Web3Forms, a free form-to-email service that
-  works from a fully static site. Create an access key at
-  https://web3forms.com and set it as NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY
+  Questions and general inquiries are delivered by Web3Forms, a free
+  form-to-email service that works from a fully static site. Create an access
+  key at https://web3forms.com and set it as NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY
   (see `.env.example`). The key is public, so it is safe to inline at build time.
+
+  Reservations are not taken here — they are handled by phone.
 */
 const WEB3FORMS_ENDPOINT = "https://api.web3forms.com/submit";
 const ACCESS_KEY = process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY;
@@ -50,15 +51,7 @@ function Field({
 
 type Status = "idle" | "submitting" | "success" | "error";
 
-export function ReservationForm({
-  copy,
-  lunchTimes,
-  dinnerTimes,
-}: {
-  copy: ReservationCopy;
-  lunchTimes: string[];
-  dinnerTimes: string[];
-}) {
+export function ReservationForm({ copy }: { copy: ReservationCopy }) {
   const [status, setStatus] = useState<Status>("idle");
   const [message, setMessage] = useState("");
   const [errors, setErrors] = useState<Record<string, string>>({});
@@ -73,25 +66,12 @@ export function ReservationForm({
       name: get("name"),
       email: get("email"),
       phone: get("phone"),
-      location: get("location"),
-      date: get("date"),
-      time: get("time"),
-      partySize: get("partySize"),
-      notes: get("notes"),
     };
 
     const nextErrors: Record<string, string> = {};
     if (!values.name) nextErrors.name = copy.errors.name;
     if (!values.phone) nextErrors.phone = copy.errors.phone;
     if (!emailPattern.test(values.email)) nextErrors.email = copy.errors.email;
-    if (!values.location) nextErrors.location = copy.errors.location;
-    if (!values.date) nextErrors.date = copy.errors.date;
-    if (!values.time) nextErrors.time = copy.errors.time;
-
-    const party = Number(values.partySize);
-    if (!party || party < 1 || party > 20) {
-      nextErrors.partySize = copy.errors.partySize;
-    }
 
     if (Object.keys(nextErrors).length > 0) {
       setErrors(nextErrors);
@@ -215,97 +195,15 @@ export function ReservationForm({
             placeholder={copy.placeholders.email}
           />
         </Field>
-
-        <Field
-          label={copy.labels.location}
-          htmlFor="location"
-          error={errors.location}
-        >
-          <select
-            id="location"
-            name="location"
-            defaultValue=""
-            aria-invalid={Boolean(errors.location)}
-            className={inputClass}
-          >
-            <option value="" disabled>
-              {copy.locationPlaceholder}
-            </option>
-            {locations.map((location) => (
-              <option key={location.id} value={location.name}>
-                {location.name} — {location.street}
-              </option>
-            ))}
-          </select>
-        </Field>
-
-        <Field
-          label={copy.labels.partySize}
-          htmlFor="partySize"
-          error={errors.partySize}
-        >
-          <select
-            id="partySize"
-            name="partySize"
-            defaultValue="2"
-            aria-invalid={Boolean(errors.partySize)}
-            className={inputClass}
-          >
-            {Array.from({ length: 12 }, (_, index) => index + 1).map((size) => (
-              <option key={size} value={String(size)}>
-                {size} {size === 1 ? copy.guestSingular : copy.guestPlural}
-              </option>
-            ))}
-            <option value="13">{copy.largeParty}</option>
-          </select>
-        </Field>
-
-        <Field label={copy.labels.date} htmlFor="date" error={errors.date}>
-          <input
-            id="date"
-            name="date"
-            type="date"
-            aria-invalid={Boolean(errors.date)}
-            className={inputClass}
-          />
-        </Field>
-
-        <Field label={copy.labels.time} htmlFor="time" error={errors.time}>
-          <select
-            id="time"
-            name="time"
-            defaultValue=""
-            aria-invalid={Boolean(errors.time)}
-            className={inputClass}
-          >
-            <option value="" disabled>
-              {copy.timePlaceholder}
-            </option>
-            <optgroup label={copy.lunchGroup}>
-              {lunchTimes.map((time) => (
-                <option key={time} value={time}>
-                  {time}
-                </option>
-              ))}
-            </optgroup>
-            <optgroup label={copy.dinnerGroup}>
-              {dinnerTimes.map((time) => (
-                <option key={time} value={time}>
-                  {time}
-                </option>
-              ))}
-            </optgroup>
-          </select>
-        </Field>
       </div>
 
-      <Field label={copy.labels.notes} htmlFor="notes">
+      <Field label={copy.labels.message} htmlFor="message">
         <textarea
-          id="notes"
-          name="notes"
-          rows={4}
+          id="message"
+          name="message"
+          rows={5}
           className={cn(inputClass, "resize-y")}
-          placeholder={copy.placeholders.notes}
+          placeholder={copy.placeholders.message}
         />
       </Field>
 

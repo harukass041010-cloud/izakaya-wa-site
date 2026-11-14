@@ -131,11 +131,7 @@ export default function ReservationsPage() {
             <p className="mt-2 mb-7 text-sm leading-relaxed text-clay">
               {form.intro}
             </p>
-            <ReservationForm
-              copy={form.copy}
-              lunchTimes={form.lunchTimes}
-              dinnerTimes={form.dinnerTimes}
-            />
+            <ReservationForm copy={form.copy} />
           </div>
         </div>
       </Section>

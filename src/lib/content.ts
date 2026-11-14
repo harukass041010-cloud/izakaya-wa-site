@@ -151,25 +151,14 @@ export type ReservationCopy = {
     name: string;
     phone: string;
     email: string;
-    location: string;
-    partySize: string;
-    date: string;
-    time: string;
-    notes: string;
+    message: string;
   };
   placeholders: {
     name: string;
     phone: string;
     email: string;
-    notes: string;
+    message: string;
   };
-  locationPlaceholder: string;
-  timePlaceholder: string;
-  guestSingular: string;
-  guestPlural: string;
-  largeParty: string;
-  lunchGroup: string;
-  dinnerGroup: string;
   submit: string;
   submitting: string;
   disclaimer: string;
@@ -184,10 +173,6 @@ export type ReservationCopy = {
     name: string;
     phone: string;
     email: string;
-    location: string;
-    date: string;
-    time: string;
-    partySize: string;
   };
 };
 
@@ -200,8 +185,6 @@ export type ReservationsContent = {
   form: {
     title: string;
     intro: string;
-    lunchTimes: string[];
-    dinnerTimes: string[];
     copy: ReservationCopy;
   };
   faqs: Array<{ question: string; answer: string }>;

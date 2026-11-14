@@ -25,60 +25,33 @@
   "form": {
     "title": "Questions & inquiries",
     "intro": "This form is for questions and general inquiries — not for reservations. To book a table, please call us. We'll reply to messages as soon as we can.",
-    "lunchTimes": ["11:30 AM", "12:00 PM", "12:30 PM", "1:00 PM", "1:30 PM"],
-    "dinnerTimes": [
-      "5:00 PM",
-      "5:30 PM",
-      "6:00 PM",
-      "6:30 PM",
-      "7:00 PM",
-      "7:30 PM",
-      "8:00 PM",
-      "8:30 PM",
-      "9:00 PM"
-    ],
     "copy": {
       "labels": {
         "name": "Name",
         "phone": "Phone",
         "email": "Email",
-        "location": "Location",
-        "partySize": "Party size",
-        "date": "Date",
-        "time": "Time",
-        "notes": "Your question or message"
+        "message": "Your question or message"
       },
       "placeholders": {
         "name": "Your full name",
         "phone": "(713) 555-0123",
         "email": "you@example.com",
-        "notes": "What would you like to ask? Allergies, large parties, private events…"
+        "message": "What would you like to ask? Allergies, large parties, private events…"
       },
-      "locationPlaceholder": "Choose a location",
-      "timePlaceholder": "Choose a time",
-      "guestSingular": "guest",
-      "guestPlural": "guests",
-      "largeParty": "13+ guests (call us)",
-      "lunchGroup": "Lunch",
-      "dinnerGroup": "Dinner",
       "submit": "Send message",
       "submitting": "Sending…",
-      "disclaimer": "Reservations are by phone only. This form is for questions and inquiries — if your message is about a visit, a date and time help us answer faster.",
+      "disclaimer": "Reservations are by phone only. This form is for questions and inquiries, and we'll reply by email or phone.",
       "successKanji": "ありがとう",
       "successTitle": "Message received",
       "successMessage": "Thank you — your message has reached us. We'll get back to you as soon as we can.",
-      "successNote": "Need a table right away? Call the location you selected and we'll take care of it.",
+      "successNote": "Need a table right away? Call either location and we'll take care of it.",
       "validationMessage": "Please check the highlighted fields and try again.",
       "missingKeyMessage": "Messages aren't connected yet. Please call the restaurant and we'll take care of you.",
       "sendErrorMessage": "We couldn't send your message just now. Please call the restaurant and we'll take care of you.",
       "errors": {
         "name": "Please tell us your name.",
         "phone": "A phone number lets us get back to you.",
-        "email": "Enter a valid email address.",
-        "location": "Choose a location.",
-        "date": "Choose a date.",
-        "time": "Choose a time.",
-        "partySize": "Party size must be between 1 and 20."
+        "email": "Enter a valid email address."
       }
     }
   },
