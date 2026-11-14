@@ -95,38 +95,47 @@
 }
 
 /*
-  Seasonal ornament — a few motifs drifting slowly through the hero.
-  Each motif sets --petal-* inline; the animation is off for anyone who
-  prefers reduced motion, who instead sees the motifs sitting still.
+  Sakura ornament — petals drifting slowly down through the hero, swaying as
+  they fall. Each petal sets its --petal-* values inline; the drift is off for
+  anyone who prefers reduced motion, who instead sees the petals sitting still.
 */
-@keyframes season-drift {
+@keyframes petal-drift {
   0% {
-    transform: translate3d(0, -10px, 0) rotate(0deg);
+    transform: translate3d(0, -6vh, 0) rotate(var(--petal-r, 0deg));
     opacity: 0;
   }
-  14% {
-    opacity: var(--petal-o, 0.45);
+  10% {
+    opacity: var(--petal-o, 0.3);
   }
-  86% {
-    opacity: var(--petal-o, 0.45);
+  55% {
+    transform: translate3d(var(--petal-sway, 20px), 26vh, 0)
+      rotate(calc(var(--petal-r, 0deg) + 140deg));
+  }
+  90% {
+    opacity: var(--petal-o, 0.3);
   }
   100% {
-    transform: translate3d(var(--petal-x, 26px), 104px, 0)
-      rotate(var(--petal-r, 70deg));
+    transform: translate3d(calc(var(--petal-sway, 20px) * -0.4), 52vh, 0)
+      rotate(calc(var(--petal-r, 0deg) + 280deg));
     opacity: 0;
   }
 }
 
-.season-drift {
-  animation: season-drift var(--petal-dur, 17s) linear infinite;
+.petal-drift {
+  animation: petal-drift var(--petal-dur, 22s) linear infinite;
   animation-delay: var(--petal-delay, 0s);
   will-change: transform, opacity;
 }
 
+/* A touch of blur so the petal field has some depth. */
+.petal-soft {
+  filter: blur(1.6px);
+}
+
 @media (prefers-reduced-motion: reduce) {
-  .season-drift {
+  .petal-drift {
     animation: none;
-    opacity: var(--petal-o, 0.45);
+    opacity: var(--petal-o, 0.3);
   }
 }
 
