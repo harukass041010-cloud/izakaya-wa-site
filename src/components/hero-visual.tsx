@@ -118,8 +118,10 @@ export function HeroVisual({
             <source src={video} type="video/mp4" />
           </video>
 
-          {/* The sharp portrait panel. */}
-          <div className="pointer-events-none absolute inset-0 -z-10 overflow-hidden lg:inset-y-[7%] lg:left-auto lg:right-[2.5%] lg:w-[38%] lg:rounded-[2.5rem]">
+          {/* The sharp portrait panel. Its top lines up with the eyebrow
+              ("Japanese-owned & operated") and its foot with the last line of
+              copy, so the film sits level with the words beside it. */}
+          <div className="pointer-events-none absolute inset-0 -z-10 overflow-hidden lg:inset-y-24 lg:left-auto lg:right-[2.5%] lg:w-[38%] lg:rounded-[2.5rem]">
             <video
               ref={panelRef}
               aria-hidden
