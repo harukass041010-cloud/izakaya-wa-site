@@ -428,6 +428,6 @@
     "title": "Not sure where to start?",
     "intro": "Tell us what you like and we'll build a course for the table — a few small plates, something from the grill, and a sake to match.",
     "callLabels": ["Call Memorial", "Call River Oaks"],
-    "request": { "label": "Request a table", "href": "/reservations" }
+    "request": { "label": "Reserve by phone", "href": "/reservations" }
   }
 }

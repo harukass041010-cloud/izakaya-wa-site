@@ -99,9 +99,9 @@
   "cta": {
     "eyebrow": "Reservations",
     "title": "Join us for dinner tonight",
-    "body": "Call either location to reserve, or send us a request and we'll confirm by phone.",
+    "body": "Reservations are taken by phone only. Call either location and we'll take care of the rest — or send us a question and we'll reply as soon as we can.",
     "primary": {
-      "label": "Request a table",
+      "label": "Reserve by phone",
       "href": "/reservations"
     },
     "secondary": {

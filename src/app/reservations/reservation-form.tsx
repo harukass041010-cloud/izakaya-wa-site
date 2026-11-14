@@ -112,7 +112,7 @@ export function ReservationForm({
 
     // Web3Forms reads these fields along with the form values.
     formData.set("access_key", ACCESS_KEY);
-    formData.set("subject", `Reservation request — ${values.name}`);
+    formData.set("subject", `Website inquiry — ${values.name}`);
     formData.set("from_name", "Izakaya WA website");
 
     try {

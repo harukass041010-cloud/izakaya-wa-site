@@ -1,25 +1,30 @@
 {
   "seo": {
     "title": "Reservations",
-    "description": "Reserve a table at Izakaya WA in Houston. Call the Memorial or River Oaks location, or send a reservation request and we'll confirm by phone."
+    "description": "Reservations at Izakaya WA in Houston are taken by phone only. Call the Memorial or River Oaks location to book a table. Questions and inquiries are welcome through the form on this page."
   },
   "hero": {
-    "eyebrow": "Reservations",
-    "title": "Reserve your table",
-    "intro": "Call either location, or send a request below and we'll confirm by phone. Walk-ins are always welcome.",
+    "eyebrow": "Reservations · By phone only",
+    "title": "Reserve your table by phone",
+    "intro": "We take reservations by phone only — there is no online booking. Call the location you'd like to visit and we'll take care of the rest. Walk-ins are always welcome.",
     "image": {
       "src": "/images/izakaya-interior-2.jpg",
       "alt": "Counter seating inside an izakaya"
     }
   },
+  "phoneOnly": {
+    "badge": "Reservations by phone only",
+    "title": "To book a table, please call us",
+    "text": "We don't take reservations online, by email, or through the form on this page. Call either location during opening hours and we'll find you a table. If you'd simply like to ask a question, use the form below and we'll get back to you."
+  },
   "intro": {
     "eyebrow": "How it works",
-    "title": "A table, a few plates, and time to enjoy them",
-    "paragraph": "We keep our booking simple. Call the location you'd like to visit and we'll take care of the rest. If you'd rather send a request, use the form and we'll call you back to confirm."
+    "title": "One call, and the table is yours",
+    "paragraph": "Reservations are handled by phone at each location — no online booking. Call us and we'll take care of the rest. For questions about the menu, a large party, or a special occasion, send us a message and we'll reply as soon as we can."
   },
   "form": {
-    "title": "Request a reservation",
-    "intro": "Tell us the details and we'll be in touch to confirm. Required fields are marked by their validation.",
+    "title": "Questions & inquiries",
+    "intro": "This form is for questions and general inquiries — not for reservations. To book a table, please call us. We'll reply to messages as soon as we can.",
     "lunchTimes": ["11:30 AM", "12:00 PM", "12:30 PM", "1:00 PM", "1:30 PM"],
     "dinnerTimes": [
       "5:00 PM",
@@ -41,13 +46,13 @@
         "partySize": "Party size",
         "date": "Date",
         "time": "Time",
-        "notes": "Notes"
+        "notes": "Your question or message"
       },
       "placeholders": {
         "name": "Your full name",
         "phone": "(713) 555-0123",
         "email": "you@example.com",
-        "notes": "Allergies, celebrations, seating preferences…"
+        "notes": "What would you like to ask? Allergies, large parties, private events…"
       },
       "locationPlaceholder": "Choose a location",
       "timePlaceholder": "Choose a time",
@@ -56,19 +61,19 @@
       "largeParty": "13+ guests (call us)",
       "lunchGroup": "Lunch",
       "dinnerGroup": "Dinner",
-      "submit": "Request a table",
+      "submit": "Send message",
       "submitting": "Sending…",
-      "disclaimer": "Requests are confirmed by phone. For same-day tables or parties larger than 12, please call us directly.",
+      "disclaimer": "Reservations are by phone only. This form is for questions and inquiries — if your message is about a visit, a date and time help us answer faster.",
       "successKanji": "ありがとう",
-      "successTitle": "Request received",
-      "successMessage": "Thank you — your request has been received. We'll confirm your table by phone.",
-      "successNote": "Need to change something? Call the location you selected and we'll sort it out.",
+      "successTitle": "Message received",
+      "successMessage": "Thank you — your message has reached us. We'll get back to you as soon as we can.",
+      "successNote": "Need a table right away? Call the location you selected and we'll take care of it.",
       "validationMessage": "Please check the highlighted fields and try again.",
-      "missingKeyMessage": "Online requests aren't connected yet. Please call the restaurant and we'll take care of you.",
-      "sendErrorMessage": "We couldn't send your request just now. Please call the restaurant and we'll take care of you.",
+      "missingKeyMessage": "Messages aren't connected yet. Please call the restaurant and we'll take care of you.",
+      "sendErrorMessage": "We couldn't send your message just now. Please call the restaurant and we'll take care of you.",
       "errors": {
         "name": "Please tell us your name.",
-        "phone": "A phone number lets us confirm.",
+        "phone": "A phone number lets us get back to you.",
         "email": "Enter a valid email address.",
         "location": "Choose a location.",
         "date": "Choose a date.",
@@ -79,8 +84,12 @@
   },
   "faqs": [
     {
-      "question": "Do you take reservations?",
-      "answer": "Yes. We are not on an online booking network, so the fastest way to reserve is to call either location. You can also send the request form below and we'll confirm by phone."
+      "question": "How do I make a reservation?",
+      "answer": "By phone only. Call the Memorial or River Oaks location during opening hours and we'll book your table. We don't take reservations online, by email, or through the form on this page."
+    },
+    {
+      "question": "Can I reserve using the form below?",
+      "answer": "No — the form is for questions and general inquiries only. To book a table, please call us. It's the fastest way and we can confirm your table right away."
     },
     {
       "question": "Do you take walk-ins?",

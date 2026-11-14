@@ -314,6 +314,14 @@ collections:
         fields:
           - *seo
           - *hero
+          - name: phoneOnly
+            label: "By-phone notice (shown at the top)"
+            widget: object
+            hint: "The bold reminder that reservations are taken by phone only."
+            fields:
+              - { name: badge, label: Small badge text, widget: string }
+              - { name: title, label: Heading, widget: string }
+              - { name: text, label: Text, widget: text }
           - name: intro
             label: How it works
             widget: object
@@ -322,7 +330,7 @@ collections:
               - { name: title, label: Heading, widget: string }
               - { name: paragraph, label: Text, widget: text }
           - name: form
-            label: Reservation form
+            label: Questions & inquiries form
             widget: object
             fields:
               - { name: title, label: Form title, widget: string }

@@ -194,6 +194,8 @@ export type ReservationCopy = {
 export type ReservationsContent = {
   seo: Seo;
   hero: Hero;
+  /* The loud "reservations are by phone only" notice at the top of the page. */
+  phoneOnly: { badge: string; title: string; text: string };
   intro: { eyebrow: string; title: string; paragraph: string };
   form: {
     title: string;
