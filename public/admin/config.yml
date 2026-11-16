@@ -195,6 +195,15 @@ collections:
               - { name: japanese, label: Japanese label, widget: string, required: false }
               - { name: hours, label: Serving hours, widget: string, required: false }
               - { name: blurb, label: Short description, widget: text, required: false }
+              - name: photos
+                label: Photos for this menu
+                widget: list
+                required: false
+                summary: "{{fields.alt}}"
+                hint: "The first three photos appear as a large spread at the top; the rest appear as a gallery at the end."
+                fields:
+                  - *srcField
+                  - *altField
               - name: sections
                 label: Sections
                 widget: list
@@ -204,6 +213,9 @@ collections:
                   - { name: title, label: Section title, widget: string }
                   - { name: japanese, label: Japanese title, widget: string, required: false }
                   - { name: blurb, label: Short description, widget: text, required: false }
+                  - <<: *image
+                    required: false
+                    hint: "Optional photo shown with this section. Leave empty for no photo."
                   - name: dishes
                     label: Dishes
                     widget: list

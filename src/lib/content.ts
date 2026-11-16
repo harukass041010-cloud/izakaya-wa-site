@@ -116,6 +116,8 @@ export type MenuSection = {
   title: string;
   japanese: string;
   blurb: string;
+  /* Optional feature photo, shown as a wide band under the section heading. */
+  image?: ImageRef;
   dishes: Dish[];
 };
 
@@ -126,6 +128,9 @@ export type MenuTab = {
   japanese: string;
   hours: string;
   blurb: string;
+  /* Photos for the tab: the first three form the lead collage, the rest a
+     gallery at the end. All optional, so a tab with no photos still works. */
+  photos?: ImageRef[];
   sections: MenuSection[];
 };
 

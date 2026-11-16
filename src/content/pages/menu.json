@@ -24,12 +24,54 @@
       "japanese": "ランチ",
       "hours": "Tuesday – Saturday · 11:30 am – 2:00 pm",
       "blurb": "Lunch sets, noodle soups and sushi combos.",
+      "photos": [
+        {
+          "src": "/images/nigiri.jpg",
+          "alt": "Close-up of freshly made nigiri sushi"
+        },
+        {
+          "src": "/images/tempura.jpg",
+          "alt": "A plate of crisp golden tempura"
+        },
+        {
+          "src": "/images/matcha.jpg",
+          "alt": "A cup of matcha green tea"
+        },
+        {
+          "src": "/images/ramen.jpg",
+          "alt": "A steaming bowl of noodles"
+        },
+        {
+          "src": "/images/donburi.jpg",
+          "alt": "A rice bowl topped with sliced pork"
+        },
+        {
+          "src": "/images/udon.jpg",
+          "alt": "A bowl of udon noodles with tofu"
+        },
+        {
+          "src": "/images/hero-sushi-platter.jpg",
+          "alt": "A generous platter of assorted sushi"
+        },
+        {
+          "src": "/images/wagyu.jpg",
+          "alt": "Slices of marbled beef on a plate"
+        },
+        {
+          "src": "/images/grilled-fish.jpg",
+          "alt": "A whole fish grilled and served on a plate"
+        }
+      ],
       "sections": [
         {
           "id": "lunch-appetizers",
           "title": "Appetizers",
           "japanese": "前菜",
           "blurb": "Small plates to start — order a few and share.",
+          "image": {
+            "src": "/images/tempura.jpg",
+            "alt": "A plate of crisp golden tempura"
+          },
           "dishes": [
             {
               "name": "Edamame",
@@ -122,6 +164,10 @@
           "title": "Soups & Salads",
           "japanese": "汁物・サラダ",
           "blurb": "",
+          "image": {
+            "src": "/images/miso-soup.jpg",
+            "alt": "A bowl of miso soup"
+          },
           "dishes": [
             {
               "name": "Tofu Miso Soup",
@@ -148,6 +194,10 @@
           "title": "Teishoku — Lunch Plate",
           "japanese": "定食",
           "blurb": "Includes miso soup, a side dish and rice. (The nigiri sushi teishoku excludes miso soup and rice.) No substitutions.",
+          "image": {
+            "src": "/images/donburi.jpg",
+            "alt": "A rice bowl topped with sliced pork"
+          },
           "dishes": [
             {
               "name": "Chicken Teriyaki Teishoku",
@@ -216,6 +266,10 @@
           "title": "Weekly Half & Half",
           "japanese": "ハーフ＆ハーフ",
           "blurb": "A half portion rice bowl and a half portion noodle soup as a weekly set, with a small salad and one side dish of your choice. Ask your server for this week's pairing.",
+          "image": {
+            "src": "/images/udon.jpg",
+            "alt": "A bowl of udon noodles with tofu"
+          },
           "dishes": [
             {
               "name": "Weekly Half & Half",
@@ -230,6 +284,10 @@
           "title": "Gourmet Curry Rice",
           "japanese": "カレーライス",
           "blurb": "Our original curry, simmered for 48 hours. Includes house salad.",
+          "image": {
+            "src": "/images/omakase-donburi.jpg",
+            "alt": "A rice bowl of assorted fish"
+          },
           "dishes": [
             {
               "name": "Mugifuji Pork Cutlet Curry",
@@ -250,6 +308,10 @@
           "title": "Noodle Soup",
           "japanese": "麺",
           "blurb": "Premium Inaniwa udon from Japan in a light Kansai-style dashi broth.",
+          "image": {
+            "src": "/images/ramen.jpg",
+            "alt": "A steaming bowl of noodles"
+          },
           "dishes": [
             {
               "name": "Gomoku Udon",
@@ -282,6 +344,10 @@
           "title": "Sushi Combos",
           "japanese": "寿司コンボ",
           "blurb": "Includes miso soup and house salad. No substitutions.",
+          "image": {
+            "src": "/images/hero-sushi-platter.jpg",
+            "alt": "A generous platter of assorted sushi"
+          },
           "dishes": [
             {
               "name": "Today's Sushi Special",
@@ -332,6 +398,10 @@
           "title": "Nigiri & Sashimi",
           "japanese": "握り・刺身",
           "blurb": "The first price is nigiri (2 pieces); the second is sashimi. Sea urchin is market price. Add-ons are listed at the end.",
+          "image": {
+            "src": "/images/nigiri.jpg",
+            "alt": "Close-up of freshly made nigiri sushi"
+          },
           "dishes": [
             {
               "name": "Bluefin Tuna",
@@ -490,6 +560,10 @@
           "title": "Rolls & Hand Rolls",
           "japanese": "ロール",
           "blurb": "Made with top-quality seaweed for our hand rolls.",
+          "image": {
+            "src": "/images/sashimi.jpg",
+            "alt": "Slices of sashimi plated with a dipping sauce"
+          },
           "dishes": [
             {
               "name": "Memorial Roll",
@@ -651,12 +725,54 @@
       "japanese": "ディナー",
       "hours": "Tuesday – Saturday · 5:30 pm – 10:00 pm · Sunday · 5:00 pm – 9:00 pm",
       "blurb": "Small plates, skewers, sushi and a final bowl of rice or noodles.",
+      "photos": [
+        {
+          "src": "/images/sashimi.jpg",
+          "alt": "Slices of sashimi plated with a dipping sauce"
+        },
+        {
+          "src": "/images/yakitori.jpg",
+          "alt": "Grilled yakitori skewers on a plate"
+        },
+        {
+          "src": "/images/sake.jpg",
+          "alt": "Bottles of sake lined up on a shelf"
+        },
+        {
+          "src": "/images/grilled-fish.jpg",
+          "alt": "A whole fish grilled and served on a plate"
+        },
+        {
+          "src": "/images/omakase-donburi.jpg",
+          "alt": "A rice bowl of assorted fish"
+        },
+        {
+          "src": "/images/yakitori-shop.jpg",
+          "alt": "The counter of a small yakitori shop"
+        },
+        {
+          "src": "/images/izakaya-interior-2.jpg",
+          "alt": "Counter seating inside an izakaya"
+        },
+        {
+          "src": "/images/wagyu.jpg",
+          "alt": "Slices of marbled beef on a plate"
+        },
+        {
+          "src": "/images/tempura.jpg",
+          "alt": "A plate of crisp golden tempura"
+        }
+      ],
       "sections": [
         {
           "id": "dinner-sharable-starters",
           "title": "Sharable Starters",
           "japanese": "おつまみ",
           "blurb": "Very quick appetizers suitable for sharing.",
+          "image": {
+            "src": "/images/yakitori.jpg",
+            "alt": "Grilled yakitori skewers on a plate"
+          },
           "dishes": [
             {
               "name": "Edamame",
@@ -719,6 +835,10 @@
           "title": "Vegetables & Tofu",
           "japanese": "野菜",
           "blurb": "",
+          "image": {
+            "src": "/images/tempura.jpg",
+            "alt": "A plate of crisp golden tempura"
+          },
           "dishes": [
             {
               "name": "Miso Soup",
@@ -757,6 +877,10 @@
           "title": "From the Sushi Bar",
           "japanese": "寿司場から",
           "blurb": "Served with real wasabi.",
+          "image": {
+            "src": "/images/sashimi.jpg",
+            "alt": "Slices of sashimi plated with a dipping sauce"
+          },
           "dishes": [
             {
               "name": "Salmon Trio Sashimi",
@@ -795,6 +919,10 @@
           "title": "From the Kitchen",
           "japanese": "キッチンから",
           "blurb": "Fried, grilled and steamed plates.",
+          "image": {
+            "src": "/images/grilled-fish.jpg",
+            "alt": "A whole fish grilled and served on a plate"
+          },
           "dishes": [
             {
               "name": "Potato Croquette",
@@ -899,6 +1027,10 @@
           "title": "Fried Skewers",
           "japanese": "串揚げ",
           "blurb": "Two skewers per order, with Japanese panko and our house-made sauce.",
+          "image": {
+            "src": "/images/yakitori.jpg",
+            "alt": "Grilled yakitori skewers on a plate"
+          },
           "dishes": [
             {
               "name": "Torimune",
@@ -955,6 +1087,10 @@
           "title": "Grilled Skewers",
           "japanese": "串焼き",
           "blurb": "Dinner only. Two skewers per order, hand-turned and seasoned with kosher salt and our house-made sauce.",
+          "image": {
+            "src": "/images/yakitori-shop.jpg",
+            "alt": "The counter of a small yakitori shop"
+          },
           "dishes": [
             {
               "name": "Yakitori Mune",
@@ -1047,6 +1183,10 @@
           "title": "Nigiri & Sashimi",
           "japanese": "握り・刺身",
           "blurb": "The first price is nigiri (2 pieces); the second is sashimi. Sea urchin is market price. Add-ons are listed at the end.",
+          "image": {
+            "src": "/images/nigiri.jpg",
+            "alt": "Close-up of freshly made nigiri sushi"
+          },
           "dishes": [
             {
               "name": "Bluefin Tuna",
@@ -1199,6 +1339,10 @@
           "title": "Rolls & Hand Rolls",
           "japanese": "ロール",
           "blurb": "Made with top-quality seaweed for our hand rolls. Signature rolls are marked in red on our printed menu.",
+          "image": {
+            "src": "/images/hero-sushi-platter.jpg",
+            "alt": "A generous platter of assorted sushi"
+          },
           "dishes": [
             {
               "name": "Memorial Roll",
@@ -1381,6 +1525,10 @@
           "title": "Rice Dishes",
           "japanese": "お米",
           "blurb": "Half-size portions are available. We use Tamanishiki premium rice.",
+          "image": {
+            "src": "/images/donburi.jpg",
+            "alt": "A rice bowl topped with sliced pork"
+          },
           "dishes": [
             {
               "name": "Mugifuji Pork Katsu Curry",
@@ -1437,6 +1585,10 @@
           "title": "Noodle Dishes",
           "japanese": "麺類",
           "blurb": "Premium Inaniwa udon in a light Kansai-style dashi broth.",
+          "image": {
+            "src": "/images/udon.jpg",
+            "alt": "A bowl of udon noodles with tofu"
+          },
           "dishes": [
             {
               "name": "Beef Udon",
@@ -1475,6 +1627,10 @@
           "title": "Sweets",
           "japanese": "でざーと",
           "blurb": "Traditional Japanese desserts.",
+          "image": {
+            "src": "/images/matcha.jpg",
+            "alt": "A cup of matcha green tea"
+          },
           "dishes": [
             {
               "name": "Maccha Montblanc Parfait",
@@ -1510,12 +1666,42 @@
       "japanese": "ドリンク",
       "hours": "",
       "blurb": "Sake, beer, chu-hai and more.",
+      "photos": [
+        {
+          "src": "/images/sake.jpg",
+          "alt": "Bottles of sake lined up on a shelf"
+        },
+        {
+          "src": "/images/beer.jpg",
+          "alt": "A selection of Japanese beers"
+        },
+        {
+          "src": "/images/izakaya-interior-3.jpg",
+          "alt": "Dining room of a Japanese izakaya at night"
+        },
+        {
+          "src": "/images/matcha.jpg",
+          "alt": "A cup of matcha green tea"
+        },
+        {
+          "src": "/images/interior-kaiten.jpg",
+          "alt": "Interior of a Japanese sushi restaurant"
+        },
+        {
+          "src": "/images/izakaya-interior.jpg",
+          "alt": "Warm interior of a Japanese izakaya"
+        }
+      ],
       "sections": [
         {
           "id": "drinks-non-alcoholic",
           "title": "Non-Alcoholic",
           "japanese": "お茶・ジュース",
           "blurb": "",
+          "image": {
+            "src": "/images/matcha.jpg",
+            "alt": "A cup of matcha green tea"
+          },
           "dishes": [
             {
               "name": "Bottled Sodas",
@@ -1572,6 +1758,10 @@
           "title": "Beer",
           "japanese": "麦酒",
           "blurb": "Draft and bottled. Draft prices are for a glass or a 26 oz mug.",
+          "image": {
+            "src": "/images/beer.jpg",
+            "alt": "A selection of Japanese beers"
+          },
           "dishes": [
             {
               "name": "Asahi Super Dry Draft",
@@ -1696,6 +1886,10 @@
           "title": "Sake — Nigori & Sparkling",
           "japanese": "にごり・発泡",
           "blurb": "",
+          "image": {
+            "src": "/images/sake.jpg",
+            "alt": "Bottles of sake lined up on a shelf"
+          },
           "dishes": [
             {
               "name": "Hana Awaka Peach Sparkling",
@@ -1880,6 +2074,10 @@
           "title": "Wine",
           "japanese": "葡萄酒",
           "blurb": "By the glass or the bottle.",
+          "image": {
+            "src": "/images/izakaya-interior-3.jpg",
+            "alt": "Dining room of a Japanese izakaya at night"
+          },
           "dishes": [
             {
               "name": "Choya Plum Wine",
@@ -1972,6 +2170,10 @@
           "title": "Liquor",
           "japanese": "強いお酒",
           "blurb": "",
+          "image": {
+            "src": "/images/izakaya-interior-2.jpg",
+            "alt": "Counter seating inside an izakaya"
+          },
           "dishes": [
             {
               "name": "Bombay Sapphire",
@@ -2134,6 +2336,10 @@
           "title": "Japanese Whisky",
           "japanese": "日本産ウイスキー",
           "blurb": "",
+          "image": {
+            "src": "/images/interior-kaiten.jpg",
+            "alt": "Interior of a Japanese sushi restaurant"
+          },
           "dishes": [
             {
               "name": "Iwai Mars",
@@ -2342,7 +2548,13 @@
     "eyebrow": "Order for the table",
     "title": "Not sure where to start?",
     "intro": "Tell us what you like and we'll build a course for the table — a few small plates, something from the grill, and a sake to match.",
-    "callLabels": ["Call Memorial", "Call River Oaks"],
-    "request": { "label": "Reserve by phone", "href": "/reservations" }
+    "callLabels": [
+      "Call Memorial",
+      "Call River Oaks"
+    ],
+    "request": {
+      "label": "Reserve by phone",
+      "href": "/reservations"
+    }
   }
 }
