@@ -104,9 +104,9 @@ export type Dish = {
   name: string;
   japanese?: string;
   description: string;
+  /* Display price, including the currency symbol, e.g. "$5", "$4.5 / $18" or "MKT". */
+  price?: string;
   signature?: boolean;
-  featured?: boolean;
-  featuredOrder?: number;
   tags?: string[];
   image?: ImageRef;
 };
@@ -119,11 +119,32 @@ export type MenuSection = {
   dishes: Dish[];
 };
 
+/* One meal — Lunch, Dinner or Drinks — shown as a tab on the menu page. */
+export type MenuTab = {
+  id: string;
+  label: string;
+  japanese: string;
+  hours: string;
+  blurb: string;
+  sections: MenuSection[];
+};
+
+/* A dish card on the home page. Kept separate from the menu so the home page
+   can show a handful of highlights without duplicating the full menu. */
+export type FeaturedDish = {
+  name: string;
+  japanese?: string;
+  description: string;
+  image: ImageRef;
+};
+
 export type MenuContent = {
   seo: Seo;
   hero: Hero;
   notice: { label: string; text: string };
-  sections: MenuSection[];
+  locationNote: string;
+  menus: MenuTab[];
+  featured: FeaturedDish[];
   cta: {
     eyebrow: string;
     title: string;
@@ -220,8 +241,5 @@ export const galleryContent = galleryJson as GalleryContent;
 export const reservationsContent = reservationsJson as ReservationsContent;
 export const contactContent = contactJson as ContactContent;
 
-/* Dishes flagged for the home page, in the order set in the CMS. */
-export const featuredDishes = menuContent.sections
-  .flatMap((section) => section.dishes)
-  .filter((dish) => dish.featured && dish.image)
-  .sort((a, b) => (a.featuredOrder ?? 0) - (b.featuredOrder ?? 0));
+/* Dishes highlighted on the home page, in the order set in the CMS. */
+export const featuredDishes = menuContent.featured;

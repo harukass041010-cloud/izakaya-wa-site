@@ -180,33 +180,55 @@ collections:
               - { name: label, label: Bold lead-in, widget: string }
               - { name: text, label: Notice text, widget: text }
 
-          - name: sections
-            label: Menu sections
+          - name: locationNote
+            label: Location note
+            widget: string
+            hint: "Shown beside the notice, e.g. 'The menu shown is for our River Oaks location.'"
+
+          - name: menus
+            label: Menus (Lunch / Dinner / Drinks)
             widget: list
-            summary: "{{fields.title}}"
+            summary: "{{fields.label}}"
             fields:
-              - { name: id, label: Section id (used for links), widget: string, hint: "Lowercase, no spaces, e.g. small-plates." }
-              - { name: title, label: Section title, widget: string }
-              - { name: japanese, label: Japanese title, widget: string, required: false }
-              - { name: blurb, label: Short description, widget: text }
-              - name: dishes
-                label: Dishes
+              - { name: id, label: Menu id, widget: string, hint: "Lowercase, no spaces: lunch, dinner, drinks." }
+              - { name: label, label: Tab label, widget: string }
+              - { name: japanese, label: Japanese label, widget: string, required: false }
+              - { name: hours, label: Serving hours, widget: string, required: false }
+              - { name: blurb, label: Short description, widget: text, required: false }
+              - name: sections
+                label: Sections
                 widget: list
-                summary: "{{fields.name}}"
+                summary: "{{fields.title}}"
                 fields:
-                  - { name: name, label: Name, widget: string }
-                  - { name: japanese, label: Japanese name, widget: string, required: false }
-                  - { name: description, label: Description, widget: text }
-                  - { name: signature, label: Signature dish, widget: boolean, default: false, required: false }
-                  - { name: featured, label: Show on the home page, widget: boolean, default: false, required: false }
-                  - { name: featuredOrder, label: Home-page order, widget: number, value_type: int, default: 0, required: false, hint: "Lower numbers appear first (1, 2, 3…)." }
-                  - name: tags
-                    label: Tags
+                  - { name: id, label: Section id, widget: string, hint: "Lowercase, no spaces, e.g. lunch-appetizers." }
+                  - { name: title, label: Section title, widget: string }
+                  - { name: japanese, label: Japanese title, widget: string, required: false }
+                  - { name: blurb, label: Short description, widget: text, required: false }
+                  - name: dishes
+                    label: Dishes
                     widget: list
-                    required: false
-                    field: { name: tag, label: Tag, widget: string }
-                  - <<: *image
-                    required: false
+                    summary: "{{fields.name}}"
+                    fields:
+                      - { name: name, label: Name, widget: string }
+                      - { name: japanese, label: Japanese name, widget: string, required: false }
+                      - { name: description, label: Description, widget: text, required: false }
+                      - { name: price, label: Price, widget: string, required: false, hint: "Include the $ sign: $5, $4.5 / $18 or MKT." }
+                      - name: tags
+                        label: Tags
+                        widget: list
+                        required: false
+                        field: { name: tag, label: Tag, widget: string }
+
+          - name: featured
+            label: Home-page highlights
+            widget: list
+            summary: "{{fields.name}}"
+            hint: "The dish cards shown on the home page, in this order."
+            fields:
+              - { name: name, label: Name, widget: string }
+              - { name: japanese, label: Japanese name, widget: string, required: false }
+              - { name: description, label: Description, widget: text }
+              - *image
 
           - name: cta
             label: Closing call to action

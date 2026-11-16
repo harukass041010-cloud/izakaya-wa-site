@@ -115,11 +115,17 @@ the image field and upload the restaurant's own photo. Always fill in the
 
 ### Menus and the home page
 
-- A dish shows a **Signature** badge when **Signature dish** is on.
-- A dish appears in the **"A few of our signatures"** grid on the home page
-  when **Show on the home page** is on. Use **Home-page order** to control the
-  order (1, 2, 3…).
-- Menu sections and dishes can be added, reordered or removed freely.
+- The menu page is split into three tabs — **Lunch**, **Dinner** and
+  **Drinks** — under **Menus**. Each tab holds its own **Sections**, and each
+  section holds its **Dishes**.
+- Every dish has a **Price** field. Type the price exactly as it should appear,
+  including the dollar sign — for example `$5`, `$4.5 / $18` (nigiri / sashimi)
+  or `MKT` for market price. Leave it blank for no price.
+- Menu tabs, sections and dishes can be added, reordered or removed freely.
+- The **Home-page highlights** list controls the **"A few of our signatures"**
+  grid on the home page, in order. Add a photo to each highlight.
+- **Location note** appears beside the notice at the top of the menu page — use
+  it while only one location's menu is shown.
 
 ## Reservations
 

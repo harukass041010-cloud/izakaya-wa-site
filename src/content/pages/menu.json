@@ -1,10 +1,10 @@
 {
   "seo": {
     "title": "Menu",
-    "description": "Small plates, sushi and sashimi, robata-grilled skewers, rice and noodles, and a considered sake list at Izakaya WA in Houston."
+    "description": "The River Oaks lunch, dinner and drinks menus at Izakaya WA in Houston — small plates, sushi and sashimi, robata skewers, rice and noodles, and a considered sake list."
   },
   "hero": {
-    "eyebrow": "Small plates · Sushi · Robata · Sake",
+    "eyebrow": "River Oaks · Lunch · Dinner · Drinks",
     "title": "The menu",
     "intro": "An izakaya menu is meant to be shared. Order a few plates, pass them around, and add more as the evening goes on.",
     "image": {
@@ -14,413 +14,2328 @@
   },
   "notice": {
     "label": "Please note:",
-    "text": "our kitchen cooks seasonally and the printed menu changes often, so the dishes below are a representative guide rather than a fixed list. Call either location for today's menu and current pricing."
+    "text": "prices are taken from our printed River Oaks menu and may change with the seasons or with the day's fish. Lunch is served Tuesday to Saturday, 11:30 am to 2:00 pm. Call us for today's selection."
   },
-  "sections": [
+  "locationNote": "The menu shown is for our River Oaks location.",
+  "menus": [
     {
-      "id": "small-plates",
-      "title": "Small Plates",
-      "japanese": "おつまみ",
-      "blurb": "The heart of an izakaya. Order a few, share them all, and let the table fill up as the evening goes on.",
-      "dishes": [
+      "id": "lunch",
+      "label": "Lunch",
+      "japanese": "ランチ",
+      "hours": "Tuesday – Saturday · 11:30 am – 2:00 pm",
+      "blurb": "Lunch sets, noodle soups and sushi combos.",
+      "sections": [
         {
-          "name": "Edamame",
-          "japanese": "枝豆",
-          "description": "Steamed young soybeans finished with flaky sea salt.",
-          "signature": false,
-          "featured": false,
-          "featuredOrder": 0,
-          "tags": ["vegetarian"]
+          "id": "lunch-appetizers",
+          "title": "Appetizers",
+          "japanese": "前菜",
+          "blurb": "Small plates to start — order a few and share.",
+          "dishes": [
+            {
+              "name": "Edamame",
+              "japanese": "枝豆",
+              "description": "Boiled soybeans.",
+              "price": "$5"
+            },
+            {
+              "name": "Mac & Potato",
+              "japanese": "まかろにぽてとさらだ",
+              "description": "Japanese macaroni, bacon, mayo & potato salad.",
+              "price": "$5"
+            },
+            {
+              "name": "Sashimi Combo A",
+              "japanese": "3種刺身盛り合わせ",
+              "description": "Bluefin tuna, salmon, white tuna.",
+              "price": "$23"
+            },
+            {
+              "name": "Sashimi Combo B",
+              "japanese": "6種刺身盛り合わせ",
+              "description": "Bluefin tuna, salmon, yellowtail, white tuna, white fish, scallop.",
+              "price": "$46"
+            },
+            {
+              "name": "Seared Sashimi",
+              "japanese": "炙り三種刺身",
+              "description": "Pepper bluefin tuna, seared salmon, seared scallop.",
+              "price": "$24"
+            },
+            {
+              "name": "Potato Croquette",
+              "japanese": "男爵コロッケ",
+              "description": "Fried Hokkaido mashed potato.",
+              "price": "$3.5"
+            },
+            {
+              "name": "Agedashi Tofu",
+              "japanese": "揚げだし豆腐",
+              "description": "Flash-fried tofu with bonito and green onion.",
+              "price": "$6"
+            },
+            {
+              "name": "Tako Wasabi",
+              "japanese": "たこわさび",
+              "description": "Spicy marinated raw octopus with wasabi root.",
+              "price": "$6"
+            },
+            {
+              "name": "Tako Kara Age",
+              "japanese": "たこのから揚げ",
+              "description": "Deep-fried octopus.",
+              "price": "$6.5"
+            },
+            {
+              "name": "Carpaccio",
+              "japanese": "カルパッチョ各種",
+              "description": "Choice of salmon, yellowtail or pepper tuna with serrano pepper.",
+              "price": "$15"
+            },
+            {
+              "name": "Kara Age",
+              "japanese": "若鶏のから揚げ",
+              "description": "6 oz fried natural chicken nuggets.",
+              "price": "$7.5"
+            },
+            {
+              "name": "Age Takoyaki",
+              "japanese": "屋台風揚げたこ焼き",
+              "description": "Deep-fried octopus balls with bonito, mayo, sauce and ginger.",
+              "price": "$8"
+            },
+            {
+              "name": "5 Kinds of Assorted Fried Skewers",
+              "japanese": "串揚げ5種",
+              "description": "Torimune, kushikatsu, ebi, shishito, nasu.",
+              "price": "$12"
+            },
+            {
+              "name": "Nasu Torimiso",
+              "japanese": "揚げ茄子の鶏みそ添え",
+              "description": "Flash-fried eggplant with sweet miso and ground chicken.",
+              "price": "$6.5"
+            }
+          ]
         },
         {
-          "name": "Agedashi Tofu",
-          "japanese": "揚げ出し豆腐",
-          "description": "Silken tofu in a light potato-starch crust, served in warm dashi with scallion and bonito.",
-          "signature": true,
-          "featured": false,
-          "featuredOrder": 0,
-          "tags": []
+          "id": "lunch-soups-salads",
+          "title": "Soups & Salads",
+          "japanese": "汁物・サラダ",
+          "blurb": "",
+          "dishes": [
+            {
+              "name": "Tofu Miso Soup",
+              "japanese": "お味噌汁",
+              "description": "Tofu, seaweed, green onion.",
+              "price": "$3"
+            },
+            {
+              "name": "Seaweed Salad",
+              "japanese": "海藻サラダ",
+              "description": "Marinated seaweed.",
+              "price": "$5"
+            },
+            {
+              "name": "House Salad",
+              "japanese": "ハウスサラダ",
+              "description": "Romaine lettuce, spring mix and carrot with creamy miso or ginger dressing.",
+              "price": "$4"
+            }
+          ]
         },
         {
-          "name": "Shiso-Marinated Jellyfish",
-          "japanese": "くらげ",
-          "description": "Chilled jellyfish dressed with perilla leaf and sesame — clean, crisp and bright.",
-          "signature": false,
-          "featured": false,
-          "featuredOrder": 0,
-          "tags": []
+          "id": "lunch-teishoku",
+          "title": "Teishoku — Lunch Plate",
+          "japanese": "定食",
+          "blurb": "Includes miso soup, a side dish and rice. (The nigiri sushi teishoku excludes miso soup and rice.) No substitutions.",
+          "dishes": [
+            {
+              "name": "Chicken Teriyaki Teishoku",
+              "japanese": "チキン照り焼き定食",
+              "description": "Grilled natural chicken breast with homemade teriyaki sauce. Allow 15 min.",
+              "price": "$15"
+            },
+            {
+              "name": "Salmon Teriyaki Teishoku",
+              "japanese": "サーモン照り焼き定食",
+              "description": "Grilled sashimi-grade salmon with homemade teriyaki sauce.",
+              "price": "$17"
+            },
+            {
+              "name": "Nigiri Sushi Teishoku",
+              "japanese": "握り寿司定食",
+              "description": "Bluefin tuna, salmon, yellowtail, California roll (4) and a small noodle.",
+              "price": "$18"
+            },
+            {
+              "name": "Chicken Cutlet Teishoku",
+              "japanese": "チキンカツ定食",
+              "description": "6 oz panko-breaded fried natural chicken breast.",
+              "price": "$16"
+            },
+            {
+              "name": "Mixed Fried Teishoku",
+              "japanese": "ミックスフライ定食",
+              "description": "Panko-fried shrimp, fried salmon, tonkatsu and chicken katsu.",
+              "price": "$16"
+            },
+            {
+              "name": "Beef Sukiyaki Gozen",
+              "japanese": "牛リブアイすき焼き御膳",
+              "description": "4 oz beef ribeye, tofu, onion, eringi, nappa, carrots and crystal noodle.",
+              "price": "$21"
+            },
+            {
+              "name": "Sabashio Teishoku",
+              "japanese": "鯖塩定食",
+              "description": "Grilled salted mackerel with grated daikon radish.",
+              "price": "$16"
+            },
+            {
+              "name": "Angus Beef Kalbi Yakiniku",
+              "japanese": "アンガス牛カルビ定食",
+              "description": "Grilled Angus beef kalbi with homemade yakiniku sauce and onion.",
+              "price": "$21"
+            },
+            {
+              "name": "Mugifuji Pork Cutlet Donburi",
+              "japanese": "ふわとろ麦富士かつ丼",
+              "description": "Panko-breaded fried wheat pork loin, half-boiled egg and onion.",
+              "price": "$18"
+            },
+            {
+              "name": "Buta Shogayaki Teishoku",
+              "japanese": "豚の生姜焼き定食",
+              "description": "Simmered wheat-fed pork belly with sweet soy ginger sauce.",
+              "price": "$16"
+            }
+          ]
         },
         {
-          "name": "Tako Kara Age",
-          "japanese": "タコ唐揚げ",
-          "description": "Crisp-fried octopus with a squeeze of lemon and house salt.",
-          "signature": false,
-          "featured": false,
-          "featuredOrder": 0,
-          "tags": []
+          "id": "lunch-half-and-half",
+          "title": "Weekly Half & Half",
+          "japanese": "ハーフ＆ハーフ",
+          "blurb": "A half portion rice bowl and a half portion noodle soup as a weekly set, with a small salad and one side dish of your choice. Ask your server for this week's pairing.",
+          "dishes": [
+            {
+              "name": "Weekly Half & Half",
+              "japanese": "週替わりハーフ＆ハーフ",
+              "description": "Side dish choices: mac & potato salad, cucumber sunomono, seaweed salad.",
+              "price": "$15"
+            }
+          ]
         },
         {
-          "name": "Potato Croquettes",
-          "japanese": "コロッケ",
-          "description": "Golden korokke, creamy inside, served with tonkatsu sauce.",
-          "signature": false,
-          "featured": false,
-          "featuredOrder": 0,
-          "tags": []
+          "id": "lunch-curry",
+          "title": "Gourmet Curry Rice",
+          "japanese": "カレーライス",
+          "blurb": "Our original curry, simmered for 48 hours. Includes house salad.",
+          "dishes": [
+            {
+              "name": "Mugifuji Pork Cutlet Curry",
+              "japanese": "絶品麦富士豚カツカレー",
+              "description": "4 oz panko-breaded fried wheat-fed pork loin.",
+              "price": "$17"
+            },
+            {
+              "name": "Chicken Cutlet Curry",
+              "japanese": "チキンカツカレー",
+              "description": "6 oz panko-breaded fried natural chicken breast.",
+              "price": "$16"
+            }
+          ]
         },
         {
-          "name": "Gyoza",
-          "japanese": "餃子",
-          "description": "Pan-seared pork dumplings with a lacy crisp skirt.",
-          "signature": false,
-          "featured": false,
-          "featuredOrder": 0,
-          "tags": []
+          "id": "lunch-noodles",
+          "title": "Noodle Soup",
+          "japanese": "麺",
+          "blurb": "Premium Inaniwa udon from Japan in a light Kansai-style dashi broth.",
+          "dishes": [
+            {
+              "name": "Gomoku Udon",
+              "japanese": "五目うどん",
+              "description": "Shrimp tempura, tofu skin, fish cake, beef, seaweed and green onion.",
+              "price": "$16"
+            },
+            {
+              "name": "Tempura Udon",
+              "japanese": "天ぷらうどん",
+              "description": "Shrimp, onion, eggplant, sweet potato, fish cake and green onion.",
+              "price": "$15"
+            },
+            {
+              "name": "Beef Udon",
+              "japanese": "牛肉うどん",
+              "description": "4 oz sliced beef ribeye, green onion and fish cake.",
+              "price": "$16"
+            },
+            {
+              "name": "Chicken Curry Udon",
+              "japanese": "特製カレーうどん",
+              "description": "Natural chicken, yellow onion, green onion and curry sauce.",
+              "price": "$16"
+            }
+          ]
         },
         {
-          "name": "Chawanmushi",
-          "japanese": "茶碗蒸し",
-          "description": "Delicate steamed egg custard with dashi and seasonal garnish.",
-          "signature": false,
-          "featured": false,
-          "featuredOrder": 0,
-          "tags": []
+          "id": "lunch-sushi-combos",
+          "title": "Sushi Combos",
+          "japanese": "寿司コンボ",
+          "blurb": "Includes miso soup and house salad. No substitutions.",
+          "dishes": [
+            {
+              "name": "Today's Sushi Special",
+              "japanese": "本日の寿司スペシャル",
+              "description": "4 kinds of nigiri and 2 kinds of rolls — ask your server.",
+              "price": "$15"
+            },
+            {
+              "name": "Nigiri Sushi Combo",
+              "japanese": "握り寿司コンボ",
+              "description": "Bluefin tuna, salmon, yellowtail, eel, scallop, ebi, Cali & Shaggy roll.",
+              "price": "$18"
+            },
+            {
+              "name": "Sushi & Sashimi Combo",
+              "japanese": "寿司とお刺身のコンボ",
+              "description": "Bluefin tuna & salmon sashimi, yellowtail, scallop, shrimp and California roll (4).",
+              "price": "$18"
+            },
+            {
+              "name": "Chirashi",
+              "japanese": "ちらし寿司",
+              "description": "Bluefin tuna, salmon, yellowtail, eel, shrimp, ikura, white tuna and egg over rice.",
+              "price": "$20"
+            },
+            {
+              "name": "Roll Combo A",
+              "japanese": "ロールコンボA",
+              "description": "California roll (8), spicy tuna (8) and salmon avocado roll (5).",
+              "price": "$16"
+            },
+            {
+              "name": "Roll Combo B",
+              "japanese": "ロールコンボB",
+              "description": "Spider roll (5), rock-n-roll (5) and California roll (8).",
+              "price": "$18"
+            },
+            {
+              "name": "Spicy Roll Combo",
+              "japanese": "スパイシーロールコンボ",
+              "description": "Spicy tuna (8), spicy salmon (8) and spicy yellowtail (4).",
+              "price": "$17"
+            }
+          ]
         },
         {
-          "name": "Hamachi Carpaccio",
-          "japanese": "はまちカルパッチョ",
-          "description": "Thin-sliced yellowtail with serrano pepper, citrus and olive oil.",
-          "signature": true,
-          "featured": false,
-          "featuredOrder": 0,
-          "tags": []
+          "id": "lunch-nigiri-sashimi",
+          "title": "Nigiri & Sashimi",
+          "japanese": "握り・刺身",
+          "blurb": "The first price is nigiri (2 pieces); the second is sashimi. Sea urchin is market price. Add-ons are listed at the end.",
+          "dishes": [
+            {
+              "name": "Bluefin Tuna",
+              "japanese": "本まぐろ",
+              "description": "",
+              "price": "$4.5 / $18"
+            },
+            {
+              "name": "Pepper Tuna",
+              "japanese": "炙り本まぐろ",
+              "description": "",
+              "price": "$4.75 / $19"
+            },
+            {
+              "name": "Medium Fatty Tuna",
+              "japanese": "中とろ",
+              "description": "",
+              "price": "$9 / $36"
+            },
+            {
+              "name": "Fatty Tuna",
+              "japanese": "とろ",
+              "description": "",
+              "price": "$12 / $48"
+            },
+            {
+              "name": "Negitoro Gunkan",
+              "japanese": "ねぎとろ軍艦",
+              "description": "",
+              "price": "$4.5"
+            },
+            {
+              "name": "White Tuna",
+              "japanese": "びんちょうまぐろ",
+              "description": "",
+              "price": "$4 / $16"
+            },
+            {
+              "name": "Fresh Salmon",
+              "japanese": "サーモン",
+              "description": "",
+              "price": "$4 / $16"
+            },
+            {
+              "name": "Ora King Salmon",
+              "japanese": "紅鮭",
+              "description": "",
+              "price": "$5 / $20"
+            },
+            {
+              "name": "Smoked Salmon",
+              "japanese": "燻製サーモン",
+              "description": "",
+              "price": "$4.5 / $18"
+            },
+            {
+              "name": "Amberjack",
+              "japanese": "かんぱち",
+              "description": "",
+              "price": "$4.5 / $18"
+            },
+            {
+              "name": "Yellowtail",
+              "japanese": "はまち",
+              "description": "",
+              "price": "$4.5 / $18"
+            },
+            {
+              "name": "Freshwater Eel",
+              "japanese": "うなぎ",
+              "description": "",
+              "price": "$4 / $16"
+            },
+            {
+              "name": "Shrimp",
+              "japanese": "えび",
+              "description": "",
+              "price": "$3 / $12"
+            },
+            {
+              "name": "Sweet Shrimp",
+              "japanese": "甘えび",
+              "description": "",
+              "price": "$9 / $18"
+            },
+            {
+              "name": "Salmon Roe",
+              "japanese": "いくら",
+              "description": "",
+              "price": "$4.5 / $18"
+            },
+            {
+              "name": "Hokkaido Scallop",
+              "japanese": "ほたて",
+              "description": "",
+              "price": "$4.25 / $17"
+            },
+            {
+              "name": "Spicy Chopped Scallop",
+              "japanese": "ぴりからほたて",
+              "description": "",
+              "price": "$4.75 / $19"
+            },
+            {
+              "name": "Japanese Snapper",
+              "japanese": "まだい",
+              "description": "",
+              "price": "$4.5 / $18"
+            },
+            {
+              "name": "Sea Urchin",
+              "japanese": "うに",
+              "description": "",
+              "price": "MKT"
+            },
+            {
+              "name": "Egg Omelet",
+              "japanese": "玉子",
+              "description": "Homemade tamago.",
+              "price": "$2.5 / $7.5"
+            },
+            {
+              "name": "Mackerel",
+              "japanese": "さば",
+              "description": "",
+              "price": "$3.5 / $14"
+            },
+            {
+              "name": "Wasabi Flying Fish Egg",
+              "japanese": "わさびとびこ",
+              "description": "",
+              "price": "$3.5 / $14"
+            },
+            {
+              "name": "Kizami Wasabi (chopped)",
+              "japanese": "刻みわさび",
+              "description": "Add to your sushi.",
+              "price": "$3"
+            },
+            {
+              "name": "Fresh Grated Wasabi",
+              "japanese": "本生わさび",
+              "description": "Add to your sushi.",
+              "price": "$5"
+            },
+            {
+              "name": "Quail Egg",
+              "japanese": "うずら",
+              "description": "Add to your sushi.",
+              "price": "$1.5"
+            }
+          ]
+        },
+        {
+          "id": "lunch-rolls",
+          "title": "Rolls & Hand Rolls",
+          "japanese": "ロール",
+          "blurb": "Made with top-quality seaweed for our hand rolls.",
+          "dishes": [
+            {
+              "name": "Memorial Roll",
+              "japanese": "メモリアルロール",
+              "description": "Spicy tuna or spicy salmon with fresh salmon on top, avocado and spicy mayo.",
+              "price": "$19"
+            },
+            {
+              "name": "Crunchy Shrimp",
+              "japanese": "クランチーシュリンプ",
+              "description": "Fried shrimp, avocado, salmon, eel, spicy mayo and red tobiko.",
+              "price": "$16"
+            },
+            {
+              "name": "Skydiver Roll",
+              "japanese": "スカイダイバーロール",
+              "description": "Softshell crab, eel, avocado, cucumber and eel sauce.",
+              "price": "$20"
+            },
+            {
+              "name": "5 Spices Roll",
+              "japanese": "5スパイスロール",
+              "description": "Pepper bluefin tuna, avocado, spicy sake, sriracha, wasabi mayo and wasabi tobiko.",
+              "price": "$19"
+            },
+            {
+              "name": "Boheme Roll",
+              "japanese": "ボヘミアンロール",
+              "description": "Shrimp tempura, spicy salmon, serrano pepper and spicy mayo.",
+              "price": "$16"
+            },
+            {
+              "name": "Wa Fu Futomaki",
+              "japanese": "和風太巻き",
+              "description": "Bluefin tuna, salmon, yellowtail, unagi, ikura and shiso.",
+              "price": "$16"
+            },
+            {
+              "name": "Rainbow Roll",
+              "japanese": "レインボーロール",
+              "description": "Bluefin tuna, salmon, yellowtail, white tuna, hotate, ebi, kanikama, avocado and cucumber.",
+              "price": "$19"
+            },
+            {
+              "name": "Cowboy Roll",
+              "japanese": "カウボーイロール",
+              "description": "Seared beef, cucumber, avocado, spicy mayo, chili, eel sauce and negi.",
+              "price": "$18"
+            },
+            {
+              "name": "California Roll",
+              "japanese": "カリフォルニアロール",
+              "description": "Kanikama, avocado, cucumber and sesame.",
+              "price": "$9"
+            },
+            {
+              "name": "Spicy Scallop",
+              "japanese": "スパイシーほたて",
+              "description": "Spicy scallop, green onion and spicy mayo.",
+              "price": "$13"
+            },
+            {
+              "name": "Spicy Tuna",
+              "japanese": "スパイシーツナ",
+              "description": "Spicy tuna and sesame.",
+              "price": "$12"
+            },
+            {
+              "name": "Spicy Salmon",
+              "japanese": "スパイシーサーモン",
+              "description": "Spicy salmon and sesame.",
+              "price": "$11"
+            },
+            {
+              "name": "Spicy Yellowtail",
+              "japanese": "スパイシーはまち",
+              "description": "Spicy yellowtail and sesame.",
+              "price": "$12"
+            },
+            {
+              "name": "Shaggy Dog",
+              "japanese": "シャギードッグ",
+              "description": "Shrimp tempura, kanikama and spicy mayo.",
+              "price": "$16"
+            },
+            {
+              "name": "Crazy Roll",
+              "japanese": "クレイジーロール",
+              "description": "Shrimp tempura, spicy tuna, cucumber, spicy mayo and soy paper.",
+              "price": "$14"
+            },
+            {
+              "name": "Tiger Eye Roll",
+              "japanese": "タイガーアイロール",
+              "description": "Tempura salmon, jalapeno, cream cheese, masago, spicy mayo, soy paper and seaweed.",
+              "price": "$11"
+            },
+            {
+              "name": "Caterpillar Roll",
+              "japanese": "キャタピラーロール",
+              "description": "Eel, avocado, ebi, eel sauce and sesame.",
+              "price": "$14"
+            },
+            {
+              "name": "Salmon Roll",
+              "japanese": "サーモンロール",
+              "description": "Fresh salmon.",
+              "price": "$10"
+            },
+            {
+              "name": "Philadelphia Roll",
+              "japanese": "フィラデルフィアロール",
+              "description": "Smoked salmon, cream cheese, avocado and sesame.",
+              "price": "$11"
+            },
+            {
+              "name": "Rock-n-Roll",
+              "japanese": "ロックンロール",
+              "description": "Shrimp tempura, masago, cucumber and spicy mayo.",
+              "price": "$10"
+            },
+            {
+              "name": "Spider Roll",
+              "japanese": "スパイダーロール",
+              "description": "Softshell crab, masago, cucumber and spicy mayo.",
+              "price": "$11"
+            },
+            {
+              "name": "Negihama Roll",
+              "japanese": "ねぎはまロール",
+              "description": "Yellowtail and green onion.",
+              "price": "$10"
+            },
+            {
+              "name": "Tekka Roll",
+              "japanese": "鉄火ロール",
+              "description": "Bluefin tuna.",
+              "price": "$12"
+            },
+            {
+              "name": "Oshinko Roll",
+              "japanese": "おしんこロール",
+              "description": "Takuwan and sesame.",
+              "price": "$6"
+            },
+            {
+              "name": "Toro Taku Roll",
+              "japanese": "とろたくロール",
+              "description": "Toro, takuwan and shiso. Limited supply daily.",
+              "price": "$13"
+            }
+          ]
         }
       ]
     },
     {
-      "id": "sushi",
-      "title": "Sushi & Sashimi",
-      "japanese": "寿司・刺身",
-      "blurb": "Cut to order by our sushi chefs, with fish selected for the day's board.",
-      "dishes": [
+      "id": "dinner",
+      "label": "Dinner",
+      "japanese": "ディナー",
+      "hours": "Tuesday – Saturday · 5:30 pm – 10:00 pm · Sunday · 5:00 pm – 9:00 pm",
+      "blurb": "Small plates, skewers, sushi and a final bowl of rice or noodles.",
+      "sections": [
         {
-          "name": "Nigiri Selection",
-          "japanese": "握り",
-          "description": "Two pieces per order — salmon, tuna, yellowtail, shrimp and more.",
-          "signature": false,
-          "featured": false,
-          "featuredOrder": 0,
-          "tags": []
+          "id": "dinner-sharable-starters",
+          "title": "Sharable Starters",
+          "japanese": "おつまみ",
+          "blurb": "Very quick appetizers suitable for sharing.",
+          "dishes": [
+            {
+              "name": "Edamame",
+              "japanese": "枝豆",
+              "description": "Boiled soybeans.",
+              "price": "$5"
+            },
+            {
+              "name": "Mac & Potato Salad",
+              "japanese": "まかろに＋ぽてさら",
+              "description": "Japanese macaroni, bacon, mayo & potato salad.",
+              "price": "$5"
+            },
+            {
+              "name": "Maguro Kakuni",
+              "japanese": "まぐろ角煮",
+              "description": "Simmered bluefin tuna with sweet soy sauce.",
+              "price": "$5"
+            },
+            {
+              "name": "Dashimaki Tamago",
+              "japanese": "だし巻き卵",
+              "description": "Homemade, traditional Japanese egg roll.",
+              "price": "$7"
+            },
+            {
+              "name": "Tuna Tartare",
+              "japanese": "鮪のタルタル",
+              "description": "Minced tuna, avocado, onion and masago with rice chips.",
+              "price": "$9"
+            },
+            {
+              "name": "Pirikara Cucumber",
+              "japanese": "ピリ辛きゅうり",
+              "description": "Fresh cucumber marinated with spicy kimchi sauce.",
+              "price": "$5"
+            },
+            {
+              "name": "Eihire",
+              "japanese": "えいひれ",
+              "description": "Seared stingray fin.",
+              "price": "$6"
+            },
+            {
+              "name": "Shiso Kurage",
+              "japanese": "しそくらげ",
+              "description": "Shiso-marinated jellyfish.",
+              "price": "$5.5"
+            },
+            {
+              "name": "Tako Wasabi",
+              "japanese": "たこわさび",
+              "description": "Spicy marinated raw octopus with wasabi root.",
+              "price": "$6"
+            }
+          ]
         },
         {
-          "name": "Sashimi Platter",
-          "japanese": "刺身盛り",
-          "description": "Chef's selection of the day, sliced and plated simply.",
-          "signature": false,
-          "featured": false,
-          "featuredOrder": 0,
-          "tags": []
+          "id": "dinner-vegetables-tofu",
+          "title": "Vegetables & Tofu",
+          "japanese": "野菜",
+          "blurb": "",
+          "dishes": [
+            {
+              "name": "Miso Soup",
+              "japanese": "味噌汁",
+              "description": "Tofu, seaweed and green onion.",
+              "price": "$3"
+            },
+            {
+              "name": "House Salad",
+              "japanese": "ハウスサラダ",
+              "description": "Romaine lettuce, spring mix and carrot with creamy miso or yuzu soy.",
+              "price": "$4"
+            },
+            {
+              "name": "Agedashi Tofu",
+              "japanese": "揚げ出し豆腐",
+              "description": "Flash-fried tofu with bonito and green onion.",
+              "price": "$6"
+            },
+            {
+              "name": "Seaweed Salad",
+              "japanese": "海藻サラダ",
+              "description": "Marinated seaweed.",
+              "price": "$5"
+            },
+            {
+              "name": "Cucumber Sunomono",
+              "japanese": "きゅうりの酢の物",
+              "description": "Cucumber, seaweed and sesame in sunomono sauce.",
+              "price": "$5"
+            }
+          ]
         },
         {
-          "name": "Hamachi (Yellowtail)",
-          "japanese": "はまち",
-          "description": "Buttery yellowtail, a house favorite.",
-          "signature": true,
-          "featured": true,
-          "featuredOrder": 3,
-          "tags": [],
-          "image": {
-            "src": "/images/sashimi.jpg",
-            "alt": "Slices of sashimi plated with a dipping sauce"
-          }
+          "id": "dinner-sushi-bar",
+          "title": "From the Sushi Bar",
+          "japanese": "寿司場から",
+          "blurb": "Served with real wasabi.",
+          "dishes": [
+            {
+              "name": "Salmon Trio Sashimi",
+              "japanese": "鮭の食べ比べ",
+              "description": "Scottish salmon (2), Ora King salmon (2) and smoked salmon (2).",
+              "price": "$22"
+            },
+            {
+              "name": "Seared Sashimi",
+              "japanese": "炙り3種刺身盛り",
+              "description": "Pepper bluefin tuna (3), salmon (3) and scallop (4).",
+              "price": "$24"
+            },
+            {
+              "name": "Sashimi Combo A",
+              "japanese": "3種刺身盛り",
+              "description": "Bluefin tuna (3), salmon (3) and albacore tuna (3).",
+              "price": "$23"
+            },
+            {
+              "name": "Carpaccio",
+              "japanese": "カルパッチョ各種",
+              "description": "Choice of salmon, hamachi or pepper tuna with serrano pepper.",
+              "price": "$15"
+            },
+            {
+              "name": "Sashimi Combo B",
+              "japanese": "6種刺身盛り",
+              "description": "Bluefin tuna (3), salmon (3), yellowtail (3), white fish (3), albacore tuna (3) and scallop (2).",
+              "price": "$46"
+            }
+          ]
         },
         {
-          "name": "Memorial Roll",
-          "japanese": "メモリアルロール",
-          "description": "Our signature roll, named for the Memorial Drive dining room.",
-          "signature": true,
-          "featured": true,
-          "featuredOrder": 2,
-          "tags": [],
-          "image": {
-            "src": "/images/nigiri.jpg",
-            "alt": "Close-up of freshly made nigiri sushi"
-          }
+          "id": "dinner-kitchen",
+          "title": "From the Kitchen",
+          "japanese": "キッチンから",
+          "blurb": "Fried, grilled and steamed plates.",
+          "dishes": [
+            {
+              "name": "Potato Croquette",
+              "japanese": "男爵コロッケ",
+              "description": "Fried Hokkaido mashed potato with spicy mayo.",
+              "price": "$3.5"
+            },
+            {
+              "name": "Age Takoyaki",
+              "japanese": "屋台風揚げたこ焼き",
+              "description": "Deep-fried octopus balls with bonito, mayo, sauce and ginger.",
+              "price": "$8"
+            },
+            {
+              "name": "Tori no Tebasaki",
+              "japanese": "鶏の手羽先",
+              "description": "Chicken wings with garlic salt and pepper, or fried wings in sweet-sour soy.",
+              "price": "$9"
+            },
+            {
+              "name": "Shishamo",
+              "japanese": "子持ちししゃも",
+              "description": "Grilled karafuto smelt fish.",
+              "price": "$7"
+            },
+            {
+              "name": "Ika Ring",
+              "japanese": "いかリング",
+              "description": "Panko-fried calamari with jalapeno and spicy mayo.",
+              "price": "$7.5"
+            },
+            {
+              "name": "Vegetable Tempura",
+              "japanese": "野菜の天ぷら",
+              "description": "Five kinds of vegetable tempura.",
+              "price": "$9"
+            },
+            {
+              "name": "Prawn & Vegetable Tempura",
+              "japanese": "海老の天ぷら",
+              "description": "Prawn and sweet potato tempura.",
+              "price": "$16"
+            },
+            {
+              "name": "Kara Age",
+              "japanese": "若鶏のから揚げ",
+              "description": "6 oz fried natural chicken nuggets.",
+              "price": "$7.5"
+            },
+            {
+              "name": "Gindara",
+              "japanese": "自家製ぎんだら",
+              "description": "House-marinated Alaskan black cod.",
+              "price": "$16"
+            },
+            {
+              "name": "Chawan Mushi",
+              "japanese": "茶碗蒸し",
+              "description": "Steamed egg custard with chicken, shrimp and vegetables. Allow 20 min.",
+              "price": "$8"
+            },
+            {
+              "name": "Madai Kabutoni",
+              "japanese": "真鯛かぶと煮",
+              "description": "Simmered head of the Japanese snapper.",
+              "price": "$10"
+            },
+            {
+              "name": "Gyutan",
+              "japanese": "牛タンの塩焼き",
+              "description": "Sliced beef tongue with sesame oil and green onion.",
+              "price": "$14"
+            },
+            {
+              "name": "Wasabi Shumai",
+              "japanese": "辛ーいわさび焼売",
+              "description": "Steamed wasabi pork dumpling with spicy wasabi soy.",
+              "price": "$7"
+            },
+            {
+              "name": "Tako Karaage",
+              "japanese": "たこから揚げ",
+              "description": "Deep-fried octopus.",
+              "price": "$7"
+            },
+            {
+              "name": "Nasu Torimiso",
+              "japanese": "茄子の鶏みそ",
+              "description": "Flash-fried eggplant with sweet miso and ground chicken.",
+              "price": "$6.5"
+            },
+            {
+              "name": "Hamachi Kama",
+              "japanese": "はまちかま",
+              "description": "Grilled yellowtail collar.",
+              "price": "$7"
+            }
+          ]
         },
         {
-          "name": "Crunchy Shrimp Roll",
-          "japanese": "エビロール",
-          "description": "Crisp shrimp, avocado and a light drizzle of sauce.",
-          "signature": false,
-          "featured": false,
-          "featuredOrder": 0,
-          "tags": []
+          "id": "dinner-fried-skewers",
+          "title": "Fried Skewers",
+          "japanese": "串揚げ",
+          "blurb": "Two skewers per order, with Japanese panko and our house-made sauce.",
+          "dishes": [
+            {
+              "name": "Torimune",
+              "japanese": "鶏むね",
+              "description": "Natural chicken breast.",
+              "price": "$6.4"
+            },
+            {
+              "name": "Uzura",
+              "japanese": "うずらの卵",
+              "description": "Quail egg.",
+              "price": "$5"
+            },
+            {
+              "name": "Torimomo",
+              "japanese": "鶏もも",
+              "description": "Natural chicken thigh.",
+              "price": "$6.4"
+            },
+            {
+              "name": "Shishito",
+              "japanese": "ししとう",
+              "description": "Japanese jalapeno with bonito flake.",
+              "price": "$4.5"
+            },
+            {
+              "name": "Kushi Katsu",
+              "japanese": "麦富士豚の串カツ",
+              "description": "Wheat-fed pork loin from Canada.",
+              "price": "$7"
+            },
+            {
+              "name": "Nasu",
+              "japanese": "なす",
+              "description": "Eggplant.",
+              "price": "$4.5"
+            },
+            {
+              "name": "Ebi",
+              "japanese": "海老",
+              "description": "Shrimp with tartar sauce.",
+              "price": "$6"
+            },
+            {
+              "name": "5 Kinds Assorted Skewers",
+              "japanese": "串揚げ5種",
+              "description": "Torimune, kushikatsu, ebi, shishito and nasu. No substitutions.",
+              "price": "$12"
+            }
+          ]
         },
         {
-          "name": "Spicy Tuna Roll",
-          "japanese": "スパイシーツナ",
-          "description": "Chopped tuna with chili and scallion.",
-          "signature": false,
-          "featured": false,
-          "featuredOrder": 0,
-          "tags": []
+          "id": "dinner-grilled-skewers",
+          "title": "Grilled Skewers",
+          "japanese": "串焼き",
+          "blurb": "Dinner only. Two skewers per order, hand-turned and seasoned with kosher salt and our house-made sauce.",
+          "dishes": [
+            {
+              "name": "Yakitori Mune",
+              "japanese": "焼き鳥むね",
+              "description": "Natural chicken breast, sauce or salt.",
+              "price": "$6.8"
+            },
+            {
+              "name": "Yakitori Negima",
+              "japanese": "焼き鳥ねぎま",
+              "description": "Natural chicken thigh and negi, sauce or salt.",
+              "price": "$6.8"
+            },
+            {
+              "name": "Tsukune",
+              "japanese": "つくね",
+              "description": "Ground chicken meat with sauce. Egg yolk available on request.",
+              "price": "$7.6"
+            },
+            {
+              "name": "Torikawa",
+              "japanese": "とりかわ",
+              "description": "Grilled chicken skin with yuzu pepper.",
+              "price": "$6.8"
+            },
+            {
+              "name": "Tontoro",
+              "japanese": "麦富士とんとろ",
+              "description": "Wheat-fed pork belly (Mugifuji pork).",
+              "price": "$9"
+            },
+            {
+              "name": "Gyu Kushiyaki",
+              "japanese": "牛串のフィレ",
+              "description": "3 oz beef tenderloin.",
+              "price": "$11"
+            },
+            {
+              "name": "Aspara Bacon",
+              "japanese": "アスパラベーコン",
+              "description": "Asparagus wrapped with bacon.",
+              "price": "$6.8"
+            },
+            {
+              "name": "Japanese Sausage",
+              "japanese": "黒豚ソーセージ",
+              "description": "Kurobuta sausage with Japanese mayo and karashi.",
+              "price": "$4.8"
+            },
+            {
+              "name": "Toro Kushiyaki",
+              "japanese": "ねぎとろ串焼き",
+              "description": "One skewer — grilled fatty tuna with soy sauce and kizami wasabi.",
+              "price": "$10"
+            },
+            {
+              "name": "Hotate",
+              "japanese": "ほたて",
+              "description": "Sea scallop with ginger soy sauce.",
+              "price": "$8"
+            },
+            {
+              "name": "Yaki Ebi",
+              "japanese": "海老のガーリックオニオン",
+              "description": "Grilled shrimp with garlic onion butter sauce.",
+              "price": "$7.6"
+            },
+            {
+              "name": "Eringi",
+              "japanese": "えりんぎ",
+              "description": "King oyster mushroom.",
+              "price": "$4.8"
+            },
+            {
+              "name": "Shishito",
+              "japanese": "ししとう",
+              "description": "Japanese jalapeno with bonito flake.",
+              "price": "$4.5"
+            },
+            {
+              "name": "Nasu",
+              "japanese": "なす",
+              "description": "Eggplant.",
+              "price": "$4.5"
+            }
+          ]
         },
         {
-          "name": "Sushi Combo",
-          "japanese": "寿司セット",
-          "description": "A composed set of nigiri and a roll — a good way to start.",
-          "signature": false,
-          "featured": false,
-          "featuredOrder": 0,
-          "tags": []
-        }
-      ]
-    },
-    {
-      "id": "robata",
-      "title": "From the Grill",
-      "japanese": "炉端焼き・焼き鳥",
-      "blurb": "Skewers and grilled plates cooked over the fire — ask what's on the grill tonight.",
-      "dishes": [
-        {
-          "name": "Pork Belly",
-          "japanese": "豚バラ",
-          "description": "Charred, unctuous and salted — the most-ordered skewer.",
-          "signature": true,
-          "featured": true,
-          "featuredOrder": 1,
-          "tags": [],
-          "image": {
-            "src": "/images/yakitori.jpg",
-            "alt": "Grilled yakitori skewers on a plate"
-          }
+          "id": "dinner-nigiri-sashimi",
+          "title": "Nigiri & Sashimi",
+          "japanese": "握り・刺身",
+          "blurb": "The first price is nigiri (2 pieces); the second is sashimi. Sea urchin is market price. Add-ons are listed at the end.",
+          "dishes": [
+            {
+              "name": "Bluefin Tuna",
+              "japanese": "本まぐろ",
+              "description": "",
+              "price": "$4.5 / $18"
+            },
+            {
+              "name": "Pepper Tuna",
+              "japanese": "炙り本まぐろ",
+              "description": "",
+              "price": "$4.75 / $19"
+            },
+            {
+              "name": "Medium Fatty Tuna",
+              "japanese": "中とろ",
+              "description": "",
+              "price": "$9 / $36"
+            },
+            {
+              "name": "Fatty Tuna",
+              "japanese": "とろ",
+              "description": "",
+              "price": "$12 / $48"
+            },
+            {
+              "name": "Negitoro Gunkan",
+              "japanese": "ねぎとろ軍艦",
+              "description": "",
+              "price": "$4.5"
+            },
+            {
+              "name": "Fresh Salmon",
+              "japanese": "サーモン",
+              "description": "",
+              "price": "$4 / $16"
+            },
+            {
+              "name": "Smoked Salmon",
+              "japanese": "燻製サーモン",
+              "description": "",
+              "price": "$4.5 / $18"
+            },
+            {
+              "name": "Ora King Salmon",
+              "japanese": "紅鮭",
+              "description": "",
+              "price": "$5 / $20"
+            },
+            {
+              "name": "Amberjack",
+              "japanese": "かんぱち",
+              "description": "",
+              "price": "$4.5 / $18"
+            },
+            {
+              "name": "Yellowtail",
+              "japanese": "はまち",
+              "description": "",
+              "price": "$4.5 / $18"
+            },
+            {
+              "name": "Freshwater Eel",
+              "japanese": "うなぎ",
+              "description": "",
+              "price": "$4 / $16"
+            },
+            {
+              "name": "Shrimp",
+              "japanese": "えび",
+              "description": "",
+              "price": "$3 / $12"
+            },
+            {
+              "name": "Sweet Shrimp",
+              "japanese": "甘えび",
+              "description": "",
+              "price": "$9 / $18"
+            },
+            {
+              "name": "Salmon Roe",
+              "japanese": "いくら",
+              "description": "",
+              "price": "$4.5 / $18"
+            },
+            {
+              "name": "Wasabi Flying Fish Egg",
+              "japanese": "わさびとびこ",
+              "description": "",
+              "price": "$3.5 / $14"
+            },
+            {
+              "name": "Japanese Snapper",
+              "japanese": "まだい",
+              "description": "",
+              "price": "$4.5 / $18"
+            },
+            {
+              "name": "Hokkaido Scallop",
+              "japanese": "ほたて",
+              "description": "",
+              "price": "$4.25 / $17"
+            },
+            {
+              "name": "Spicy Chopped Scallop",
+              "japanese": "ぴりからほたて",
+              "description": "",
+              "price": "$4.75 / $19"
+            },
+            {
+              "name": "Sea Urchin",
+              "japanese": "うに",
+              "description": "",
+              "price": "MKT"
+            },
+            {
+              "name": "Egg Omelet",
+              "japanese": "玉子",
+              "description": "Homemade tamago.",
+              "price": "$2.5 / $7.5"
+            },
+            {
+              "name": "Mackerel",
+              "japanese": "さば",
+              "description": "",
+              "price": "$3.5 / $14"
+            },
+            {
+              "name": "Real Wasabi Root",
+              "japanese": "本生わさび",
+              "description": "Add to your sushi.",
+              "price": "$5"
+            },
+            {
+              "name": "Kizami Wasabi (chopped)",
+              "japanese": "刻みわさび",
+              "description": "Add to your sushi.",
+              "price": "$3"
+            },
+            {
+              "name": "Quail Egg",
+              "japanese": "うずら",
+              "description": "Add to your sushi.",
+              "price": "$1.5"
+            }
+          ]
         },
         {
-          "name": "Chicken Thigh Yakitori",
-          "japanese": "焼き鳥",
-          "description": "Glazed with tare or seasoned with salt.",
-          "signature": false,
-          "featured": false,
-          "featuredOrder": 0,
-          "tags": []
+          "id": "dinner-rolls",
+          "title": "Rolls & Hand Rolls",
+          "japanese": "ロール",
+          "blurb": "Made with top-quality seaweed for our hand rolls. Signature rolls are marked in red on our printed menu.",
+          "dishes": [
+            {
+              "name": "Memorial Roll",
+              "japanese": "メモリアルロール",
+              "description": "Spicy tuna or spicy salmon with fresh salmon on top, avocado and spicy mayo.",
+              "price": "$19"
+            },
+            {
+              "name": "Crunchy Shrimp",
+              "japanese": "クランチーシュリンプ",
+              "description": "Fried shrimp, avocado, salmon, eel, spicy mayo and red tobiko.",
+              "price": "$16"
+            },
+            {
+              "name": "Skydiver Roll",
+              "japanese": "スカイダイバーロール",
+              "description": "Softshell crab, eel, avocado, cucumber and eel sauce.",
+              "price": "$20"
+            },
+            {
+              "name": "5 Spices Roll",
+              "japanese": "5スパイスロール",
+              "description": "Pepper bluefin tuna, avocado, spicy sake, sriracha, wasabi mayo and wasabi tobiko.",
+              "price": "$19"
+            },
+            {
+              "name": "Boheme Roll",
+              "japanese": "ボヘミアンロール",
+              "description": "Shrimp tempura, spicy salmon, serrano pepper and spicy mayo.",
+              "price": "$16"
+            },
+            {
+              "name": "Wa Fu Futomaki",
+              "japanese": "和風太巻き",
+              "description": "Bluefin tuna, salmon, yellowtail, unagi, ikura and shiso.",
+              "price": "$16"
+            },
+            {
+              "name": "Rainbow Roll",
+              "japanese": "レインボーロール",
+              "description": "Bluefin tuna, salmon, yellowtail, white tuna, hotate, ebi, kanikama, avocado and cucumber.",
+              "price": "$19"
+            },
+            {
+              "name": "Cowboy Roll",
+              "japanese": "カウボーイロール",
+              "description": "Seared beef, cucumber, avocado, spicy mayo, chili, eel sauce and negi.",
+              "price": "$18"
+            },
+            {
+              "name": "California Roll",
+              "japanese": "カリフォルニアロール",
+              "description": "Kanikama, avocado, cucumber and sesame.",
+              "price": "$9"
+            },
+            {
+              "name": "Spicy Scallop",
+              "japanese": "スパイシーほたて",
+              "description": "Spicy scallop, green onion and spicy mayo.",
+              "price": "$13"
+            },
+            {
+              "name": "Spicy Tuna",
+              "japanese": "スパイシーツナ",
+              "description": "Spicy tuna and sesame.",
+              "price": "$12"
+            },
+            {
+              "name": "Spicy Salmon",
+              "japanese": "スパイシーサーモン",
+              "description": "Spicy salmon and sesame.",
+              "price": "$11"
+            },
+            {
+              "name": "Spicy Yellowtail",
+              "japanese": "スパイシーはまち",
+              "description": "Spicy yellowtail and sesame.",
+              "price": "$12"
+            },
+            {
+              "name": "Shaggy Dog",
+              "japanese": "シャギードッグ",
+              "description": "Shrimp tempura, kanikama and spicy mayo.",
+              "price": "$16"
+            },
+            {
+              "name": "Crazy Roll",
+              "japanese": "クレイジーロール",
+              "description": "Shrimp tempura, spicy tuna, cucumber, spicy mayo and soy paper.",
+              "price": "$14"
+            },
+            {
+              "name": "Tiger Eye Roll",
+              "japanese": "タイガーアイロール",
+              "description": "Tempura salmon, jalapeno, cream cheese, masago, spicy mayo, soy paper and seaweed.",
+              "price": "$11"
+            },
+            {
+              "name": "Caterpillar Roll",
+              "japanese": "キャタピラーロール",
+              "description": "Eel, avocado, ebi, eel sauce and sesame.",
+              "price": "$14"
+            },
+            {
+              "name": "Salmon Roll",
+              "japanese": "サーモンロール",
+              "description": "Fresh salmon.",
+              "price": "$10"
+            },
+            {
+              "name": "Philadelphia Roll",
+              "japanese": "フィラデルフィアロール",
+              "description": "Smoked salmon, cream cheese, avocado and sesame.",
+              "price": "$11"
+            },
+            {
+              "name": "Rock-n-Roll",
+              "japanese": "ロックンロール",
+              "description": "Shrimp tempura, masago, cucumber and spicy mayo.",
+              "price": "$10"
+            },
+            {
+              "name": "Spider Roll",
+              "japanese": "スパイダーロール",
+              "description": "Softshell crab, masago, cucumber and spicy mayo.",
+              "price": "$11"
+            },
+            {
+              "name": "Negihama Roll",
+              "japanese": "ねぎはまロール",
+              "description": "Yellowtail and green onion.",
+              "price": "$10"
+            },
+            {
+              "name": "Tekka Roll",
+              "japanese": "鉄火ロール",
+              "description": "Bluefin tuna.",
+              "price": "$12"
+            },
+            {
+              "name": "Oshinko Roll",
+              "japanese": "おしんこロール",
+              "description": "Takuwan and sesame.",
+              "price": "$6"
+            },
+            {
+              "name": "Toro Taku Roll",
+              "japanese": "とろたくロール",
+              "description": "Toro, takuwan and shiso. Limited supply daily.",
+              "price": "$13"
+            },
+            {
+              "name": "Battera (Saba Oshizushi)",
+              "japanese": "バッテラ",
+              "description": "Osaka-style box-pressed mackerel sushi.",
+              "price": "$12"
+            },
+            {
+              "name": "Tasting Bluefin Tuna",
+              "japanese": "本マグロ食べ比べ",
+              "description": "Tasting of bluefin tuna sushi — akami, chutoro, toro and negitoro gunkan.",
+              "price": "$22"
+            },
+            {
+              "name": "Chirashi Set",
+              "japanese": "ちらし寿司",
+              "description": "With miso soup. 11 kinds of ingredients over rice.",
+              "price": "$31"
+            },
+            {
+              "name": "Dinner Sushi Combo",
+              "japanese": "おまかせ握り",
+              "description": "With miso soup. Omakase — 5 kinds of nigiri, the chef's choice of ingredients.",
+              "price": "$20"
+            }
+          ]
         },
         {
-          "name": "Japanese Sausage",
-          "japanese": "ソーセージ",
-          "description": "Snappy grilled sausage, sliced for sharing.",
-          "signature": false,
-          "featured": false,
-          "featuredOrder": 0,
-          "tags": []
+          "id": "dinner-rice",
+          "title": "Rice Dishes",
+          "japanese": "お米",
+          "blurb": "Half-size portions are available. We use Tamanishiki premium rice.",
+          "dishes": [
+            {
+              "name": "Mugifuji Pork Katsu Curry",
+              "japanese": "麦富士豚カツカレー",
+              "description": "Half / regular.",
+              "price": "$8.5 / $17"
+            },
+            {
+              "name": "Chicken Katsu Curry",
+              "japanese": "チキンカツカレー",
+              "description": "Half / regular.",
+              "price": "$8 / $16"
+            },
+            {
+              "name": "Yaki Onigiri",
+              "japanese": "焼きおにぎり",
+              "description": "Grilled rice ball with soy butter.",
+              "price": "$4.5"
+            },
+            {
+              "name": "Sake Onigiri",
+              "japanese": "鮭おにぎり",
+              "description": "Grilled salmon.",
+              "price": "$4"
+            },
+            {
+              "name": "Sake Oyako Onigiri",
+              "japanese": "鮭親子おにぎり",
+              "description": "Grilled salmon and ikura.",
+              "price": "$6.5"
+            },
+            {
+              "name": "Tarako Onigiri",
+              "japanese": "たらこおにぎり",
+              "description": "Grilled cod roe.",
+              "price": "$4"
+            },
+            {
+              "name": "Steamed Rice",
+              "japanese": "白ご飯",
+              "description": "",
+              "price": "$3"
+            },
+            {
+              "name": "Sushi Rice",
+              "japanese": "酢飯",
+              "description": "",
+              "price": "$3.5"
+            }
+          ]
         },
         {
-          "name": "Beef Tongue",
-          "japanese": "牛タン",
-          "description": "Gyutan skewers, tender and smoky.",
-          "signature": false,
-          "featured": false,
-          "featuredOrder": 0,
-          "tags": []
+          "id": "dinner-noodles",
+          "title": "Noodle Dishes",
+          "japanese": "麺類",
+          "blurb": "Premium Inaniwa udon in a light Kansai-style dashi broth.",
+          "dishes": [
+            {
+              "name": "Beef Udon",
+              "japanese": "牛肉うどん",
+              "description": "Lightly cooked beef ribeye, green onion and fish cake. Half / regular.",
+              "price": "$8.5 / $17"
+            },
+            {
+              "name": "Chicken Udon",
+              "japanese": "鶏うどん",
+              "description": "Natural chicken breast, green onion and fish cake. Half / regular.",
+              "price": "$8 / $16"
+            },
+            {
+              "name": "Chicken Curry Udon",
+              "japanese": "特製カレーうどん",
+              "description": "Natural chicken, yellow onion, green onion and curry sauce.",
+              "price": "$17"
+            },
+            {
+              "name": "Gomoku Udon",
+              "japanese": "五目うどん",
+              "description": "Shrimp tempura, tofu skin, fish cake, beef, seaweed and green onion.",
+              "price": "$17"
+            },
+            {
+              "name": "Tempura Udon",
+              "japanese": "天ぷらうどん",
+              "description": "Shrimp, onion and potato tempura.",
+              "price": "$16"
+            }
+          ]
         },
         {
-          "name": "Grilled Whole Squid",
-          "japanese": "イカ焼き",
-          "description": "Ika brushed with sweet soy and grilled to order.",
-          "signature": false,
-          "featured": false,
-          "featuredOrder": 0,
-          "tags": []
-        },
-        {
-          "name": "Grilled Fish",
-          "japanese": "焼き魚",
-          "description": "Whole fish grilled simply and served with grated daikon.",
-          "signature": false,
-          "featured": true,
-          "featuredOrder": 5,
-          "tags": [],
-          "image": {
-            "src": "/images/grilled-fish.jpg",
-            "alt": "A whole fish grilled and served on a plate"
-          }
-        },
-        {
-          "name": "Bacon-Wrapped Asparagus",
-          "japanese": "アスパラベーコン",
-          "description": "Crisp asparagus wrapped in smoky bacon.",
-          "signature": false,
-          "featured": false,
-          "featuredOrder": 0,
-          "tags": []
-        },
-        {
-          "name": "Shiitake Mushroom",
-          "japanese": "椎茸",
-          "description": "Grilled mushrooms with a touch of soy.",
-          "signature": false,
-          "featured": false,
-          "featuredOrder": 0,
-          "tags": ["vegetarian"]
-        }
-      ]
-    },
-    {
-      "id": "rice-noodles",
-      "title": "Rice & Noodles",
-      "japanese": "ご飯・麺",
-      "blurb": "Hearty plates to round out the table.",
-      "dishes": [
-        {
-          "name": "Katsu Curry Rice",
-          "japanese": "カツカレー",
-          "description": "Crisp pork cutlet over rice with our house Japanese curry.",
-          "signature": true,
-          "featured": true,
-          "featuredOrder": 4,
-          "tags": [],
-          "image": {
-            "src": "/images/donburi.jpg",
-            "alt": "A rice bowl topped with sliced pork"
-          }
-        },
-        {
-          "name": "Pork Chashu Don",
-          "japanese": "チャーシュー丼",
-          "description": "Braised pork over steamed rice with scallion.",
-          "signature": false,
-          "featured": false,
-          "featuredOrder": 0,
-          "tags": []
-        },
-        {
-          "name": "Udon",
-          "japanese": "うどん",
-          "description": "Thick wheat noodles in a warm dashi broth.",
-          "signature": false,
-          "featured": false,
-          "featuredOrder": 0,
-          "tags": []
-        },
-        {
-          "name": "Onigiri",
-          "japanese": "おにぎり",
-          "description": "Hand-shaped rice balls with a savory filling.",
-          "signature": false,
-          "featured": false,
-          "featuredOrder": 0,
-          "tags": []
-        },
-        {
-          "name": "Miso Soup",
-          "japanese": "味噌汁",
-          "description": "Daily miso with tofu, wakame and scallion.",
-          "signature": false,
-          "featured": false,
-          "featuredOrder": 0,
-          "tags": []
-        }
-      ]
-    },
-    {
-      "id": "sweets",
-      "title": "Sweets",
-      "japanese": "甘味",
-      "blurb": "A quiet finish.",
-      "dishes": [
-        {
-          "name": "Matcha Ice Cream",
-          "japanese": "抹茶アイス",
-          "description": "Stone-ground green tea, bittersweet and cool.",
-          "signature": false,
-          "featured": false,
-          "featuredOrder": 0,
-          "tags": []
-        },
-        {
-          "name": "Mochi Ice Cream",
-          "japanese": "餅アイス",
-          "description": "Chewy mochi wrapped around ice cream.",
-          "signature": false,
-          "featured": false,
-          "featuredOrder": 0,
-          "tags": []
-        },
-        {
-          "name": "Black Sesame Pudding",
-          "japanese": "ごまプリン",
-          "description": "Silky goma purin with a toasted-sesame aroma.",
-          "signature": false,
-          "featured": false,
-          "featuredOrder": 0,
-          "tags": []
+          "id": "dinner-sweets",
+          "title": "Sweets",
+          "japanese": "でざーと",
+          "blurb": "Traditional Japanese desserts.",
+          "dishes": [
+            {
+              "name": "Maccha Montblanc Parfait",
+              "japanese": "抹茶モンブラン",
+              "description": "Served with ice cream, corn flake, whipped cream and red beans.",
+              "price": "$8"
+            },
+            {
+              "name": "Ice Cream",
+              "japanese": "アイス",
+              "description": "Green tea or vanilla. One scoop / two scoops.",
+              "price": "$2.5 / $4"
+            },
+            {
+              "name": "Green Tea Cheese Cake",
+              "japanese": "抹茶チーズケーキ",
+              "description": "Served with vanilla ice cream and chocolate syrup.",
+              "price": "$7"
+            },
+            {
+              "name": "Mochi Ice Cream",
+              "japanese": "モチアイス",
+              "description": "Choice of two kinds — green tea, mango or strawberry.",
+              "price": ""
+            }
+          ]
         }
       ]
     },
     {
       "id": "drinks",
-      "title": "Sake & Drinks",
-      "japanese": "お酒",
-      "blurb": "Drinks matter as much as the food here. Ask your server about the current sake flight.",
-      "dishes": [
+      "label": "Drinks",
+      "japanese": "ドリンク",
+      "hours": "",
+      "blurb": "Sake, beer, chu-hai and more.",
+      "sections": [
         {
-          "name": "Sake Flight",
-          "japanese": "利き酒",
-          "description": "A guided tasting of three sakes, chosen by the house.",
-          "signature": true,
-          "featured": true,
-          "featuredOrder": 6,
-          "tags": [],
-          "image": {
-            "src": "/images/sake.jpg",
-            "alt": "Bottles of sake lined up on a shelf"
-          }
+          "id": "drinks-non-alcoholic",
+          "title": "Non-Alcoholic",
+          "japanese": "お茶・ジュース",
+          "blurb": "",
+          "dishes": [
+            {
+              "name": "Bottled Sodas",
+              "japanese": "ソーダ",
+              "description": "Coke, Diet Coke, Sprite.",
+              "price": "$3.5"
+            },
+            {
+              "name": "Ramune",
+              "japanese": "ラムネ",
+              "description": "Original or strawberry.",
+              "price": "$3.5"
+            },
+            {
+              "name": "Red Bull",
+              "japanese": "レッドブル",
+              "description": "",
+              "price": "$3.5"
+            },
+            {
+              "name": "Bottle Juice",
+              "japanese": "ジュース",
+              "description": "Orange or cranberry.",
+              "price": "$3.5"
+            },
+            {
+              "name": "Calpis",
+              "japanese": "カルピス",
+              "description": "Japanese uncarbonated milky drink.",
+              "price": "$3.5"
+            },
+            {
+              "name": "Hot Green Tea / Iced Tea",
+              "japanese": "緑茶・アイスティー",
+              "description": "",
+              "price": "$3"
+            },
+            {
+              "name": "Iced Green Tea / Oolong Tea",
+              "japanese": "アイス緑茶・烏龍茶",
+              "description": "",
+              "price": "$3.5"
+            },
+            {
+              "name": "Asahi Super Dry 0.0%",
+              "japanese": "ノンアルコールビール",
+              "description": "11 oz, non-alcoholic beer from Italy.",
+              "price": "$5"
+            }
+          ]
         },
         {
-          "name": "Junmai · Ginjo · Daiginjo",
-          "japanese": "日本酒",
-          "description": "By the glass or the bottle, from crisp to fragrant.",
-          "signature": false,
-          "featured": false,
-          "featuredOrder": 0,
-          "tags": []
+          "id": "drinks-beer",
+          "title": "Beer",
+          "japanese": "麦酒",
+          "blurb": "Draft and bottled. Draft prices are for a glass or a 26 oz mug.",
+          "dishes": [
+            {
+              "name": "Asahi Super Dry Draft",
+              "japanese": "アサヒ生ビール",
+              "description": "Imported from Tokyo, pale lager 5%.",
+              "price": "$8 / $26"
+            },
+            {
+              "name": "Kirin Ichiban Draft",
+              "japanese": "キリン一番搾り",
+              "description": "Virginia pale lager 5%.",
+              "price": "$7.5 / $23"
+            },
+            {
+              "name": "Sapporo Draft",
+              "japanese": "サッポロ生",
+              "description": "Canada premium pale lager 5%.",
+              "price": "$7.5 / $23"
+            },
+            {
+              "name": "Karbach Love Street",
+              "japanese": "ヒューストン地ビール",
+              "description": "Houston, Kölsch-style blond 4.9%.",
+              "price": "$6.5 / $19"
+            },
+            {
+              "name": "Karbach Hopadillo IPA",
+              "japanese": "ヒューストン地ビール",
+              "description": "Houston, Texas-style IPA 6.6%.",
+              "price": "$7.5 / $23"
+            },
+            {
+              "name": "Saint Arnold Spring Bock",
+              "japanese": "ヒューストン地ビール",
+              "description": "Houston, German-style bock.",
+              "price": "$7.5 / $23"
+            },
+            {
+              "name": "Kirin Light",
+              "japanese": "キリンライト",
+              "description": "Bottled, 12 oz. Virginia pale lager 3.3%.",
+              "price": "$5.5"
+            },
+            {
+              "name": "Orion Premium Beer",
+              "japanese": "オリオンビール",
+              "description": "Bottled, 22 oz. Okinawa pale lager 5%.",
+              "price": "$13"
+            },
+            {
+              "name": "Kyoto Maccha IPA",
+              "japanese": "京都抹茶IPA",
+              "description": "Bottled. Kyoto American IPA 8.5%.",
+              "price": "$13"
+            },
+            {
+              "name": "Asahi Super Dry Bottle",
+              "japanese": "アサヒ瓶ビール",
+              "description": "Bottled, 21 oz. Italy pale lager 5.2%.",
+              "price": "$11"
+            }
+          ]
         },
         {
-          "name": "Shochu Highball",
+          "id": "drinks-chuhai",
+          "title": "Chu-Hai",
           "japanese": "酎ハイ",
-          "description": "Shochu and soda, bright and easy — a classic izakaya drink.",
-          "signature": false,
-          "featured": false,
-          "featuredOrder": 0,
-          "tags": []
+          "blurb": "Japanese shochu cocktail.",
+          "dishes": [
+            {
+              "name": "Gari Chuhai",
+              "japanese": "ガリチュー",
+              "description": "Shochu, ginger and club soda.",
+              "price": "$8.5"
+            },
+            {
+              "name": "Lemon Chuhai",
+              "japanese": "生絞りレモン酎ハイ",
+              "description": "Shochu, fresh-squeezed lemon and club soda.",
+              "price": "$8"
+            },
+            {
+              "name": "Melon Sour Chuhai",
+              "japanese": "メロンサワー",
+              "description": "Shochu, Midori, sweet-sour mix and club soda.",
+              "price": "$8"
+            },
+            {
+              "name": "Umeboshi Chuhai",
+              "japanese": "紀州梅干酎ハイ",
+              "description": "Shochu, Kishu plum and club soda.",
+              "price": "$9"
+            },
+            {
+              "name": "Oolong Chuhai",
+              "japanese": "ウーロンハイ",
+              "description": "Shochu and oolong tea.",
+              "price": "$8"
+            },
+            {
+              "name": "Calpis Chuhai",
+              "japanese": "カルピス酎ハイ",
+              "description": "Shochu, Calpis, club soda and cherry.",
+              "price": "$8"
+            },
+            {
+              "name": "Umeshu Sour",
+              "japanese": "梅酒サワー",
+              "description": "Shochu, plum wine and club soda.",
+              "price": "$8"
+            },
+            {
+              "name": "Shirley Temple Chuhai",
+              "japanese": "シャーリーテンプル酎ハイ",
+              "description": "Shochu, cherry juice and Sprite.",
+              "price": "$8"
+            }
+          ]
         },
         {
-          "name": "Japanese Beer",
-          "japanese": "ビール",
-          "description": "Asahi, Sapporo and Kirin, ice cold.",
-          "signature": false,
-          "featured": false,
-          "featuredOrder": 0,
-          "tags": []
+          "id": "drinks-sake-nigori",
+          "title": "Sake — Nigori & Sparkling",
+          "japanese": "にごり・発泡",
+          "blurb": "",
+          "dishes": [
+            {
+              "name": "Hana Awaka Peach Sparkling",
+              "japanese": "桃の発泡酒",
+              "description": "10 oz. Japan, junmai sparkling 7%.",
+              "price": "$19"
+            },
+            {
+              "name": "Hana Awaka Yuzu Sparkling",
+              "japanese": "柚子の発泡酒",
+              "description": "10 oz. Japan, junmai sparkling 7%.",
+              "price": "$19"
+            },
+            {
+              "name": "Kikusui Perfect Snow Nigori Can",
+              "japanese": "菊水にごり酒",
+              "description": "6.8 oz. A crisp, dynamic flavor despite its sweet, full-bodied unfiltered palate.",
+              "price": "$13"
+            },
+            {
+              "name": "Sayuri Nigori",
+              "japanese": "さゆりにごり酒",
+              "description": "10 oz. Japan, junmai nigori 15.5% — semi-sweet, smooth.",
+              "price": "$19"
+            }
+          ]
         },
         {
-          "name": "Japanese Whisky",
-          "japanese": "ウイスキー",
-          "description": "Neat, on the rocks, or as a highball.",
-          "signature": false,
-          "featured": false,
-          "featuredOrder": 0,
-          "tags": []
+          "id": "drinks-sake-junmai",
+          "title": "Sake — Junmai",
+          "japanese": "純米",
+          "blurb": "",
+          "dishes": [
+            {
+              "name": "House Hot Sake",
+              "japanese": "熱燗",
+              "description": "USA, junmai. 5 oz / 24 oz.",
+              "price": "$5 / $18"
+            },
+            {
+              "name": "Kikusui Funaguchi Can",
+              "japanese": "菊水ふなぐち生原酒",
+              "description": "6.8 oz. Niigata, honjozo — sweet, thick and powerful.",
+              "price": "$14"
+            },
+            {
+              "name": "Kibo Junmai Sake Can",
+              "japanese": "希望純米缶",
+              "description": "Iwate, junmai. A recovery-support sake.",
+              "price": "$13"
+            },
+            {
+              "name": "Masumi Okuden Kantsukuri",
+              "japanese": "真澄奥伝寒造り",
+              "description": "5 oz / 24 oz. Nagano, junmai — soft nose of mixed berries.",
+              "price": "$12 / $54"
+            },
+            {
+              "name": "Hakkaisan Tokubetsu Junmai",
+              "japanese": "八海山特別純米",
+              "description": "5 oz / 24 oz. Niigata, tokubetsu junmai — a very clean and dry body.",
+              "price": "$14 / $63"
+            },
+            {
+              "name": "Hakutsuru Chika Junmai Sake Cup",
+              "japanese": "白鶴千花",
+              "description": "200 ml. Hyogo — smooth and refreshing, light-bodied and dry.",
+              "price": "$10"
+            },
+            {
+              "name": "Inatahime Junmai",
+              "japanese": "稲田姫純米酒",
+              "description": "5 oz / 24 oz. Tottori, junmai — light, dry, rich and umami.",
+              "price": "$13 / $59"
+            }
+          ]
         },
         {
-          "name": "Umeshu",
-          "japanese": "梅酒",
-          "description": "Sweet-sour plum wine, served chilled.",
-          "signature": false,
-          "featured": false,
-          "featuredOrder": 0,
-          "tags": []
+          "id": "drinks-sake-honjozo",
+          "title": "Sake — Honjozo",
+          "japanese": "本醸造",
+          "blurb": "",
+          "dishes": [
+            {
+              "name": "Kikusui No Karakuchi",
+              "japanese": "菊水の辛口",
+              "description": "10 oz. A captivating, smoothened and crisp dry finish.",
+              "price": "$20"
+            },
+            {
+              "name": "Kikusui Nama-Chozo Honjozo",
+              "japanese": "菊水生貯蔵",
+              "description": "5 oz / 24 oz. Nagano, nama-chozo honjozo.",
+              "price": "$11 / $51"
+            }
+          ]
+        },
+        {
+          "id": "drinks-sake-ginjo",
+          "title": "Sake — Junmai Ginjo",
+          "japanese": "純米吟醸",
+          "blurb": "",
+          "dishes": [
+            {
+              "name": "Kikusui Junmai Ginjo",
+              "japanese": "菊水純米吟醸",
+              "description": "5 oz / 24 oz. Niigata.",
+              "price": "$13 / $59"
+            },
+            {
+              "name": "Inatahime Junmai Ginjo",
+              "japanese": "稲田姫純米吟醸",
+              "description": "5 oz / 24 oz. Tottori — fruity, light and dry, rich and umami.",
+              "price": "$15 / $68"
+            }
+          ]
+        },
+        {
+          "id": "drinks-sake-daiginjo",
+          "title": "Sake — Junmai Daiginjo",
+          "japanese": "純米大吟醸",
+          "blurb": "",
+          "dishes": [
+            {
+              "name": "UKA Dry Organic Junmai Daiginjo",
+              "japanese": "羽化",
+              "description": "5 oz / 24 oz. Fukushima, 16% — smooth and balanced, a hint of honey.",
+              "price": "$16 / $75"
+            },
+            {
+              "name": "Kubota Junmai Daiginjo",
+              "japanese": "久保田大吟醸",
+              "description": "5 oz / 24 oz. Niigata, 15% — an elegant aroma of pear and melon.",
+              "price": "$16 / $75"
+            },
+            {
+              "name": "Hakutsuru Shoune Daiginjo",
+              "japanese": "白鶴翔雲大吟醸",
+              "description": "5 oz / 24 oz. Hyogo, 15.5% — dry, crisp, fruity and floral.",
+              "price": "$13 / $59"
+            },
+            {
+              "name": "Dassai 45: Otter Fest",
+              "japanese": "獺祭45",
+              "description": "5 oz / 24 oz. Yamaguchi, 15% — light, balanced, clean and easy drinking.",
+              "price": "$16 / $75"
+            },
+            {
+              "name": "Hoyo Kura no Hana",
+              "japanese": "鳳陽",
+              "description": "17 oz bottle. Miyagi, 15% — light with sweetness, delicacy and finesse.",
+              "price": "$70"
+            },
+            {
+              "name": "Kubota Hekiju",
+              "japanese": "久保田碧寿",
+              "description": "24 oz bottle. Niigata — clean, dry, crisp and cutting.",
+              "price": "$92"
+            },
+            {
+              "name": "Dassai 39: Junmai Daiginjo",
+              "japanese": "獺祭39",
+              "description": "24 oz bottle. Yamaguchi — light fruit flavors and a mild acidity.",
+              "price": "$95"
+            },
+            {
+              "name": "Dassai 23: Junmai Daiginjo",
+              "japanese": "獺祭23",
+              "description": "24 oz bottle. Yamaguchi, 16.5% — rice milled to 23%, elegant.",
+              "price": "$175"
+            },
+            {
+              "name": "Inatahime Junmai Daiginjo",
+              "japanese": "稲田姫純米大吟醸",
+              "description": "24 oz bottle. Tottori — fruity, light and dry, rich and umami.",
+              "price": "$240"
+            }
+          ]
+        },
+        {
+          "id": "drinks-wine",
+          "title": "Wine",
+          "japanese": "葡萄酒",
+          "blurb": "By the glass or the bottle.",
+          "dishes": [
+            {
+              "name": "Choya Plum Wine",
+              "japanese": "チョウヤ梅酒",
+              "description": "4 oz / 24 oz. Japan, 15% — Japan's No. 1 plum wine brand.",
+              "price": "$8 / $40"
+            },
+            {
+              "name": "J. Lohr Seven Oaks Cabernet Sauvignon 2021",
+              "japanese": "",
+              "description": "Fresh aromas of black currant, elderberry, lilac and pepper, with a rich palate of cassis.",
+              "price": "$10 / $39"
+            },
+            {
+              "name": "Harvey & Harriet Red Wine Blend 2021",
+              "japanese": "",
+              "description": "San Luis Obispo County — full-bodied, with vanilla, black fruits and dark chocolate.",
+              "price": "$12 / $48"
+            },
+            {
+              "name": "My Favorite Neighbor Paso Robles 2021",
+              "japanese": "",
+              "description": "Full-bodied red with layered aromas and a silky, smooth finish.",
+              "price": "$70"
+            },
+            {
+              "name": "Opus Overture",
+              "japanese": "",
+              "description": "Oakville — a spectrum of nuances and a soft, supple palate.",
+              "price": "$210"
+            },
+            {
+              "name": "Opus One 2016 / 2018",
+              "japanese": "",
+              "description": "Oakville — satiny tannins, cassis, blackberry and black cherry.",
+              "price": "$450"
+            },
+            {
+              "name": "J. Lohr Falcon's Perch Pinot Noir 2022",
+              "japanese": "",
+              "description": "Bright cherry, blood orange and holiday spices, with vibrant fruit and talc.",
+              "price": "$10 / $39"
+            },
+            {
+              "name": "J. Lohr Riverstone Chardonnay 2022",
+              "japanese": "",
+              "description": "Monterey — plush green apple, pear and white peach, fresh acidity and a hint of honey.",
+              "price": "$10 / $40"
+            },
+            {
+              "name": "Jordan Chardonnay, Russian River Valley 2021",
+              "japanese": "",
+              "description": "Bright stone-fruit flavors, crisp acidity and lingering minerality.",
+              "price": "$65"
+            },
+            {
+              "name": "J Vineyards Pinot Gris, California 2023",
+              "japanese": "",
+              "description": "Hints of spearmint and minerals, with ripe apple and honeydew.",
+              "price": "$9 / $35"
+            },
+            {
+              "name": "Matua Sauvignon Blanc, Marlborough 2023",
+              "japanese": "",
+              "description": "Bright and lively gooseberry and passion fruit.",
+              "price": "$9 / $35"
+            },
+            {
+              "name": "Fleurs de Prairie Rosé, Provence 2023",
+              "japanese": "",
+              "description": "Traditional Provençal style, pale salmon color with delicate strawberry flavors.",
+              "price": "$10 / $40"
+            },
+            {
+              "name": "Prosecco La Marca, Italy",
+              "japanese": "",
+              "description": "187 ml.",
+              "price": "$13"
+            },
+            {
+              "name": "Lucien Albrecht Crémant Brut",
+              "japanese": "",
+              "description": "France — an expressive nose of floral and fresh fruits.",
+              "price": "$40"
+            }
+          ]
+        },
+        {
+          "id": "drinks-liquor",
+          "title": "Liquor",
+          "japanese": "強いお酒",
+          "blurb": "",
+          "dishes": [
+            {
+              "name": "Bombay Sapphire",
+              "japanese": "ジン",
+              "description": "Gin.",
+              "price": "$8"
+            },
+            {
+              "name": "Suntory Roku Gin",
+              "japanese": "ジン",
+              "description": "Gin.",
+              "price": "$9"
+            },
+            {
+              "name": "Etsu (Japan)",
+              "japanese": "ジン",
+              "description": "Gin.",
+              "price": "$10"
+            },
+            {
+              "name": "Nikka Coffey Gin",
+              "japanese": "ジン",
+              "description": "Gin.",
+              "price": "$12"
+            },
+            {
+              "name": "Patron Silver",
+              "japanese": "テキーラ",
+              "description": "Tequila.",
+              "price": "$12"
+            },
+            {
+              "name": "Casamigos Blanco",
+              "japanese": "テキーラ",
+              "description": "Tequila.",
+              "price": "$12"
+            },
+            {
+              "name": "Casamigos Reposado",
+              "japanese": "テキーラ",
+              "description": "Tequila.",
+              "price": "$13"
+            },
+            {
+              "name": "Codigo 1530 Rosa Blanco",
+              "japanese": "テキーラ",
+              "description": "Tequila.",
+              "price": "$16"
+            },
+            {
+              "name": "Titos from Texas",
+              "japanese": "ウォッカ",
+              "description": "Vodka.",
+              "price": "$8"
+            },
+            {
+              "name": "Suntory Haku / Grey Goose",
+              "japanese": "ウォッカ",
+              "description": "Vodka.",
+              "price": "$10"
+            },
+            {
+              "name": "Nikka Coffey Vodka",
+              "japanese": "ウォッカ",
+              "description": "Vodka.",
+              "price": "$11"
+            }
+          ]
+        },
+        {
+          "id": "drinks-highball",
+          "title": "Japanese-Style Highball",
+          "japanese": "ハイボール",
+          "blurb": "Whisky with squeezed lemon, soda and a beer mug.",
+          "dishes": [
+            {
+              "name": "J&B / Ballantine",
+              "japanese": "スコッチハイボール",
+              "description": "Scotch highball.",
+              "price": "$10"
+            },
+            {
+              "name": "Maker's Mark",
+              "japanese": "バーボンハイボール",
+              "description": "Bourbon highball.",
+              "price": "$10"
+            }
+          ]
+        },
+        {
+          "id": "drinks-shochu",
+          "title": "Shochu",
+          "japanese": "焼酎",
+          "blurb": "5 oz / 24 oz bottle.",
+          "dishes": [
+            {
+              "name": "Iichiko Silhouette",
+              "japanese": "いいちこシルエット",
+              "description": "Wheat — Oita, 25%. A rank above the classic Iichiko.",
+              "price": "$7 / $80"
+            },
+            {
+              "name": "Iichiko Saiten",
+              "japanese": "彩天",
+              "description": "Wheat — Oita, 43%. Makes the most of the koji's umami.",
+              "price": "$8 / $85"
+            },
+            {
+              "name": "Yokaichi Mugi",
+              "japanese": "よかいち",
+              "description": "Wheat — Miyazaki, 25%.",
+              "price": "$6 / $70"
+            },
+            {
+              "name": "Sato Black Label",
+              "japanese": "佐藤 黒ラベル",
+              "description": "Potato — Kagoshima, 25%. The aroma of golden senkan and a bold sweetness.",
+              "price": "$8 / $100"
+            },
+            {
+              "name": "Tomi No Hozan Imo",
+              "japanese": "富乃宝山",
+              "description": "Potato — Kagoshima, 25%.",
+              "price": "$7.5 / $85"
+            },
+            {
+              "name": "Kiccho Hozan Imo",
+              "japanese": "吉兆宝山",
+              "description": "Potato — Kagoshima, 25%. Black koji with a punchy depth and aroma.",
+              "price": "$7.5 / $85"
+            },
+            {
+              "name": "Kaido Imo Shochu",
+              "japanese": "海童",
+              "description": "Potato — Kagoshima, 25%. A blend of red sweet potato and golden senkan.",
+              "price": "$6.5 / $73"
+            },
+            {
+              "name": "Satsuma Shiranami",
+              "japanese": "薩摩白波",
+              "description": "Potato — Kagoshima, 25%. A deep sweetness and true sweet-potato aroma.",
+              "price": "$6 / $70"
+            },
+            {
+              "name": "Towari Soba Shochu",
+              "japanese": "十割",
+              "description": "Soba — Miyazaki, 25%. The industry's first 100% buckwheat shochu.",
+              "price": "$6 / $70"
+            },
+            {
+              "name": "Sudachi Shochu",
+              "japanese": "すだち酎",
+              "description": "Sudachi — Tokushima, 20%. The tartness of sudachi with a gentle bitterness.",
+              "price": "$6 / $70"
+            }
+          ]
+        },
+        {
+          "id": "drinks-japanese-whisky",
+          "title": "Japanese Whisky",
+          "japanese": "日本産ウイスキー",
+          "blurb": "",
+          "dishes": [
+            {
+              "name": "Iwai Mars",
+              "japanese": "岩井",
+              "description": "",
+              "price": "$11"
+            },
+            {
+              "name": "Toki",
+              "japanese": "季",
+              "description": "",
+              "price": "$11"
+            },
+            {
+              "name": "Akashi",
+              "japanese": "明石",
+              "description": "",
+              "price": "$15"
+            },
+            {
+              "name": "Hatozaki",
+              "japanese": "波戸崎",
+              "description": "",
+              "price": "$16"
+            },
+            {
+              "name": "Nikka Coffey Grain",
+              "japanese": "ニッカウヰスキー",
+              "description": "",
+              "price": "$18"
+            },
+            {
+              "name": "Nikka Coffey Malt",
+              "japanese": "ニッカウヰスキー",
+              "description": "",
+              "price": "$18"
+            },
+            {
+              "name": "Nikka Taketsuru",
+              "japanese": "竹鶴",
+              "description": "",
+              "price": "$20"
+            },
+            {
+              "name": "Ichiro's Malt",
+              "japanese": "イチローズモルト",
+              "description": "",
+              "price": "$20"
+            },
+            {
+              "name": "Hibiki Harmony",
+              "japanese": "響",
+              "description": "",
+              "price": "$23"
+            },
+            {
+              "name": "Yamazaki 12",
+              "japanese": "山崎12年",
+              "description": "",
+              "price": "$35"
+            }
+          ]
+        },
+        {
+          "id": "drinks-scotch",
+          "title": "Scotch Whisky",
+          "japanese": "シングルモルト",
+          "blurb": "",
+          "dishes": [
+            {
+              "name": "Glenfiddich 12",
+              "japanese": "",
+              "description": "",
+              "price": "$12"
+            },
+            {
+              "name": "Macallan 12 Highland Single Malt",
+              "japanese": "",
+              "description": "",
+              "price": "$16"
+            }
+          ]
+        },
+        {
+          "id": "drinks-canadian",
+          "title": "Canadian Whisky",
+          "japanese": "カナダ産ウイスキー",
+          "blurb": "",
+          "dishes": [
+            {
+              "name": "Crown Royal",
+              "japanese": "",
+              "description": "",
+              "price": "$10"
+            }
+          ]
+        },
+        {
+          "id": "drinks-bourbon",
+          "title": "Bourbon Whiskey",
+          "japanese": "バーボンウイスキー",
+          "blurb": "",
+          "dishes": [
+            {
+              "name": "Maker's Mark / Jack Daniel's / Buffalo Trace",
+              "japanese": "",
+              "description": "",
+              "price": "$10"
+            }
+          ]
+        },
+        {
+          "id": "drinks-blended",
+          "title": "Blended Whisky",
+          "japanese": "ブレンデッドウイスキー",
+          "blurb": "",
+          "dishes": [
+            {
+              "name": "J&B / Ballantine's",
+              "japanese": "",
+              "description": "",
+              "price": "$9"
+            },
+            {
+              "name": "TX Blended Whiskey",
+              "japanese": "",
+              "description": "",
+              "price": "$12"
+            }
+          ]
+        },
+        {
+          "id": "drinks-irish",
+          "title": "Irish Whiskey",
+          "japanese": "アイリッシュウイスキー",
+          "blurb": "",
+          "dishes": [
+            {
+              "name": "Jameson",
+              "japanese": "",
+              "description": "",
+              "price": "$10"
+            }
+          ]
         }
       ]
+    }
+  ],
+  "featured": [
+    {
+      "name": "Memorial Roll",
+      "japanese": "メモリアルロール",
+      "description": "Our signature roll — spicy tuna or salmon with fresh salmon on top, avocado and spicy mayo.",
+      "image": {
+        "src": "/images/nigiri.jpg",
+        "alt": "Close-up of freshly made nigiri sushi"
+      }
+    },
+    {
+      "name": "Tontoro",
+      "japanese": "麦富士とんとろ",
+      "description": "Wheat-fed pork belly skewers, hand-turned over the fire and finished with kosher salt.",
+      "image": {
+        "src": "/images/yakitori.jpg",
+        "alt": "Grilled yakitori skewers on a plate"
+      }
+    },
+    {
+      "name": "Sashimi Combo A",
+      "japanese": "3種刺身盛り",
+      "description": "Bluefin tuna, salmon and albacore, sliced to order and served with real wasabi.",
+      "image": {
+        "src": "/images/sashimi.jpg",
+        "alt": "Slices of sashimi plated with a dipping sauce"
+      }
+    },
+    {
+      "name": "Mugifuji Pork Katsu Curry",
+      "japanese": "麦富士豚カツカレー",
+      "description": "Crisp wheat-fed pork cutlet over rice with our house curry, simmered for 48 hours.",
+      "image": {
+        "src": "/images/donburi.jpg",
+        "alt": "A rice bowl topped with sliced pork"
+      }
+    },
+    {
+      "name": "Hamachi Kama",
+      "japanese": "はまちかま",
+      "description": "Grilled yellowtail collar, simply salted and served with grated daikon.",
+      "image": {
+        "src": "/images/grilled-fish.jpg",
+        "alt": "A whole fish grilled and served on a plate"
+      }
+    },
+    {
+      "name": "Dassai 45",
+      "japanese": "獺祭45",
+      "description": "A junmai daiginjo from Yamaguchi — light, balanced, clean and easy drinking.",
+      "image": {
+        "src": "/images/sake.jpg",
+        "alt": "Bottles of sake lined up on a shelf"
+      }
     }
   ],
   "cta": {
