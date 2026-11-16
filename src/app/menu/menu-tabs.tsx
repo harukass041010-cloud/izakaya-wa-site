@@ -7,6 +7,10 @@ import { Photo } from "@/components/photo";
 import { Eyebrow, Section } from "@/components/section";
 import type { Dish, ImageRef, MenuTab } from "@/lib/content";
 
+/* How many of a tab's photos make up the opening grid; the rest go to the
+   closing gallery. */
+const LEAD_COUNT = 6;
+
 /* Varied shapes for the closing gallery, so it reads as a magazine spread
    rather than a uniform grid. */
 const GALLERY_ASPECTS = [
@@ -62,49 +66,61 @@ function DishList({
   );
 }
 
-/* The opening spread: one large photo with two smaller ones beneath it. */
-function LeadCollage({ photos }: { photos: ImageRef[] }) {
-  const [main, ...rest] = photos;
-  if (!main) return null;
+/* A row of photos, about three across on wider screens. */
+function PhotoRow({ photos }: { photos: ImageRef[] }) {
+  if (!photos.length) return null;
 
   return (
-    <div className="grid grid-cols-2 gap-4 sm:gap-5">
-      <Photo
-        src={main.src}
-        alt={main.alt}
-        className="col-span-2 aspect-[16/10] rounded-2xl shadow-soft ring-1 ring-ink/5"
-        sizes="(min-width: 1024px) 70vw, 100vw"
-      />
-      {rest.length === 1 ? (
+    <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 sm:gap-4">
+      {photos.map((photo, index) => (
         <Photo
-          src={rest[0].src}
-          alt={rest[0].alt}
-          className="col-span-2 aspect-[16/9] rounded-2xl shadow-soft ring-1 ring-ink/5"
-          sizes="(min-width: 1024px) 70vw, 100vw"
+          key={`${photo.src}-${index}`}
+          src={photo.src}
+          alt={photo.alt}
+          className="aspect-[4/3] rounded-2xl shadow-soft ring-1 ring-ink/5"
+          sizes="(min-width: 640px) 30vw, 45vw"
         />
-      ) : (
-        rest.slice(0, 2).map((photo, index) => (
-          <Photo
-            key={`${photo.src}-${index}`}
-            src={photo.src}
-            alt={photo.alt}
-            className="aspect-square rounded-2xl shadow-soft ring-1 ring-ink/5"
-            sizes="(min-width: 1024px) 34vw, 50vw"
-          />
-        ))
-      )}
+      ))}
     </div>
   );
 }
 
-/* A closing gallery with mixed shapes, laid out as masonry columns. */
+/* The small photo grid that sits beside a section's dish list. Three across on
+   phones; two across in the side column on desktop, with an odd last photo
+   spanning the width. */
+function SectionPhotos({ photos }: { photos: ImageRef[] }) {
+  if (!photos.length) return null;
+
+  return (
+    <div className="grid grid-cols-3 gap-3 sm:gap-4 lg:sticky lg:top-44 lg:grid-cols-2 lg:self-start">
+      {photos.map((photo, index) => {
+        const lastSpans =
+          photos.length % 2 === 1 && index === photos.length - 1;
+        return (
+          <Photo
+            key={`${photo.src}-${index}`}
+            src={photo.src}
+            alt={photo.alt}
+            className={cn(
+              "aspect-square rounded-xl shadow-soft ring-1 ring-ink/5",
+              lastSpans && "lg:col-span-2 lg:aspect-[2/1]",
+            )}
+            sizes="(min-width: 1024px) 11rem, 33vw"
+          />
+        );
+      })}
+    </div>
+  );
+}
+
+/* A closing gallery with mixed shapes, about three across. */
 function PhotoGallery({ photos }: { photos: ImageRef[] }) {
   if (!photos.length) return null;
 
   return (
-    <div className="columns-2 gap-4 sm:columns-3 sm:gap-5 lg:columns-4">
+    <div className="columns-2 gap-3 sm:columns-3 sm:gap-4">
       {photos.map((photo, index) => (
-        <div key={`${photo.src}-${index}`} className="mb-4 break-inside-avoid sm:mb-5">
+        <div key={`${photo.src}-${index}`} className="mb-3 break-inside-avoid sm:mb-4">
           <Photo
             src={photo.src}
             alt={photo.alt}
@@ -112,7 +128,7 @@ function PhotoGallery({ photos }: { photos: ImageRef[] }) {
               "w-full rounded-2xl shadow-soft ring-1 ring-ink/5",
               GALLERY_ASPECTS[index % GALLERY_ASPECTS.length],
             )}
-            sizes="(min-width: 1024px) 25vw, (min-width: 640px) 33vw, 50vw"
+            sizes="(min-width: 640px) 30vw, 45vw"
           />
         </div>
       ))}
@@ -135,7 +151,7 @@ export function MenuTabs({
   if (!active) return null;
 
   const photos = active.photos ?? [];
-  const gallery = photos.slice(3);
+  const gallery = photos.slice(LEAD_COUNT);
 
   return (
     <>
@@ -203,10 +219,10 @@ export function MenuTabs({
           </div>
         </div>
 
-        {/* Opening photo spread */}
+        {/* Opening photo grid */}
         {photos.length ? (
           <div className="mt-10">
-            <LeadCollage photos={photos} />
+            <PhotoRow photos={photos.slice(0, LEAD_COUNT)} />
           </div>
         ) : null}
 
@@ -229,10 +245,7 @@ export function MenuTabs({
         <div className="mt-16 space-y-20">
           {active.sections.map((section, index) => {
             const isOdd = index % 2 === 1;
-            /* Long sections pair the photo with the list; short ones use a
-               wide banner so no column is left half empty. */
-            const sideImage =
-              Boolean(section.image) && section.dishes.length >= 4;
+            const sectionPhotos = section.photos ?? [];
 
             return (
               <section
@@ -258,40 +271,22 @@ export function MenuTabs({
                   ) : null}
                 </div>
 
-                {section.image && sideImage ? (
-                  <div
-                    className={cn(
-                      "mt-10 grid gap-10 lg:gap-14",
-                      isOdd
-                        ? "lg:grid-cols-[minmax(0,3fr)_minmax(0,2fr)]"
-                        : "lg:grid-cols-[minmax(0,2fr)_minmax(0,3fr)]",
-                    )}
-                  >
-                    <Photo
-                      src={section.image.src}
-                      alt={section.image.alt}
-                      className={cn(
-                        "aspect-[16/10] rounded-2xl shadow-soft ring-1 ring-ink/5",
-                        "lg:sticky lg:top-44 lg:aspect-[4/5] lg:self-start",
-                        isOdd && "lg:order-2",
-                      )}
-                      sizes="(min-width: 1024px) 30vw, 100vw"
-                    />
-                    <DishList dishes={section.dishes} />
-                  </div>
-                ) : (
-                  <>
-                    {section.image ? (
-                      <Photo
-                        src={section.image.src}
-                        alt={section.image.alt}
-                        className="mt-8 aspect-[16/9] rounded-2xl shadow-soft ring-1 ring-ink/5 sm:aspect-[2.35/1]"
-                        sizes="(min-width: 1024px) 70rem, 100vw"
-                      />
-                    ) : null}
-                    <DishList dishes={section.dishes} className="mt-8" />
-                  </>
-                )}
+                <div
+                  className={cn(
+                    "mt-10 grid gap-10 lg:gap-12",
+                    sectionPhotos.length > 0 &&
+                      (isOdd
+                        ? "lg:grid-cols-[minmax(0,22rem)_minmax(0,1fr)]"
+                        : "lg:grid-cols-[minmax(0,1fr)_minmax(0,22rem)]"),
+                  )}
+                >
+                  <DishList dishes={section.dishes} />
+                  {sectionPhotos.length > 0 ? (
+                    <div className={cn(isOdd && "lg:order-first")}>
+                      <SectionPhotos photos={sectionPhotos} />
+                    </div>
+                  ) : null}
+                </div>
               </section>
             );
           })}

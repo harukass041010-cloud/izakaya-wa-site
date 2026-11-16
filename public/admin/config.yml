@@ -213,9 +213,15 @@ collections:
                   - { name: title, label: Section title, widget: string }
                   - { name: japanese, label: Japanese title, widget: string, required: false }
                   - { name: blurb, label: Short description, widget: text, required: false }
-                  - <<: *image
+                  - name: photos
+                    label: Photos beside the dishes
+                    widget: list
                     required: false
-                    hint: "Optional photo shown with this section. Leave empty for no photo."
+                    summary: "{{fields.alt}}"
+                    hint: "Two or three small photos shown next to this section's dishes. Leave empty for no photos."
+                    fields:
+                      - *srcField
+                      - *altField
                   - name: dishes
                     label: Dishes
                     widget: list

@@ -122,11 +122,11 @@ the image field and upload the restaurant's own photo. Always fill in the
   including the dollar sign — for example `$5`, `$4.5 / $18` (nigiri / sashimi)
   or `MKT` for market price. Leave it blank for no price.
 - Menu tabs, sections and dishes can be added, reordered or removed freely.
-- Each menu tab has a **Photos for this menu** list. The first three photos form
-  a large opening spread, and the rest appear as a gallery at the end of the tab.
-  Add as many as you like, in the order you want them shown.
-- Each section also has an optional **Image**. It appears beside the dishes on
-  wide screens and as a wide banner on phones. Leave it empty for no photo.
+- Each menu tab has a **Photos for this menu** list. The first six form a grid
+  at the top of the tab, and the rest appear as a gallery at the end. Add as
+  many as you like, in the order you want them shown.
+- Each section has a **Photos beside the dishes** list. Two or three small
+  photos appear next to that section's dishes. Leave it empty for no photos.
 - The **Home-page highlights** list controls the **"A few of our signatures"**
   grid on the home page, in order. Add a photo to each highlight.
 - **Location note** appears beside the notice at the top of the menu page — use
