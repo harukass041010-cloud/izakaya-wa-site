@@ -131,8 +131,6 @@ export type MenuTab = {
   blurb: string;
   /* Photos shown in the grid at the top of the tab. */
   openingPhotos?: ImageRef[];
-  /* Photos shown in the gallery at the end of the tab. */
-  galleryPhotos?: ImageRef[];
   sections: MenuSection[];
 };
 

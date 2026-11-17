@@ -50,32 +50,6 @@
           "alt": "Maki rolls"
         }
       ],
-      "galleryPhotos": [
-        {
-          "src": "/images/menu-lunch-more-01.jpg",
-          "alt": "Donburi Rice bowl of Chicken Teriyaki with Tomato"
-        },
-        {
-          "src": "/images/menu-lunch-more-02.jpg",
-          "alt": "2009 Tsurutontan cream shrimps udon"
-        },
-        {
-          "src": "/images/menu-lunch-more-03.jpg",
-          "alt": "Fish shop selling grilled mackerel , Obama, May 2016"
-        },
-        {
-          "src": "/images/menu-lunch-more-04.jpg",
-          "alt": "Bibimbap don and Miso soup 01"
-        },
-        {
-          "src": "/images/menu-lunch-more-05.jpg",
-          "alt": "3 pieces of Soy-Gyoza, 3 pieces of Gimmari, Appetizer Pearly Set"
-        },
-        {
-          "src": "/images/menu-lunch-more-06.jpg",
-          "alt": "Dessert- coffee jelly, ginger ice cream and banana, matcha cake, mochi and fruit"
-        }
-      ],
       "sections": [
         {
           "id": "lunch-appetizers",
@@ -944,32 +918,6 @@
         {
           "src": "/images/menu-dinner-top-06.jpg",
           "alt": "Deep fried Tempura dishesCNE 02"
-        }
-      ],
-      "galleryPhotos": [
-        {
-          "src": "/images/menu-dinner-more-01.jpg",
-          "alt": "Salmon and avocado uramaki with smelt egg topping, avocado norimaki"
-        },
-        {
-          "src": "/images/menu-dinner-more-02.jpg",
-          "alt": "Agedashi Tofu"
-        },
-        {
-          "src": "/images/menu-dinner-more-03.jpg",
-          "alt": "BK Whopper Bar South Beach 8 July 2025 - People at counter"
-        },
-        {
-          "src": "/images/menu-dinner-more-04.jpg",
-          "alt": "Chirashi-zushi"
-        },
-        {
-          "src": "/images/menu-dinner-more-05.jpg",
-          "alt": "Fresh ramen noodle 001"
-        },
-        {
-          "src": "/images/menu-dinner-more-06.jpg",
-          "alt": "Korean cookie and mochi red bean ice cream - Flickr - stu spivack"
         }
       ],
       "sections": [
@@ -2136,20 +2084,6 @@
         {
           "src": "/images/menu-drinks-top-06.jpg",
           "alt": "Boathouse Ōhori Park The interior of the 1st-floor restaurant Ōhorikōen Chūō-ku Fukuoka 20260616 164028"
-        }
-      ],
-      "galleryPhotos": [
-        {
-          "src": "/images/menu-drinks-more-01.jpg",
-          "alt": "純米吟醸"
-        },
-        {
-          "src": "/images/menu-drinks-more-02.jpg",
-          "alt": "Beer in Japan"
-        },
-        {
-          "src": "/images/menu-drinks-more-03.jpg",
-          "alt": "Matcha Green Tea Latte"
         }
       ],
       "sections": [

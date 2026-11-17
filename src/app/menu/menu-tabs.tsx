@@ -7,15 +7,6 @@ import { Photo } from "@/components/photo";
 import { Eyebrow, Section } from "@/components/section";
 import type { Dish, ImageRef, MenuTab } from "@/lib/content";
 
-/* Varied shapes for the closing gallery, so it reads as a magazine spread
-   rather than a uniform grid. */
-const GALLERY_ASPECTS = [
-  "aspect-[4/5]",
-  "aspect-square",
-  "aspect-[3/4]",
-  "aspect-[4/3]",
-];
-
 function DishList({
   dishes,
   className,
@@ -109,29 +100,6 @@ function SectionPhotos({ photos }: { photos: ImageRef[] }) {
   );
 }
 
-/* A closing gallery with mixed shapes, about three across. */
-function PhotoGallery({ photos }: { photos: ImageRef[] }) {
-  if (!photos.length) return null;
-
-  return (
-    <div className="columns-2 gap-3 sm:columns-3 sm:gap-4">
-      {photos.map((photo, index) => (
-        <div key={`${photo.src}-${index}`} className="mb-3 break-inside-avoid sm:mb-4">
-          <Photo
-            src={photo.src}
-            alt={photo.alt}
-            className={cn(
-              "w-full rounded-2xl shadow-soft ring-1 ring-ink/5",
-              GALLERY_ASPECTS[index % GALLERY_ASPECTS.length],
-            )}
-            sizes="(min-width: 640px) 30vw, 45vw"
-          />
-        </div>
-      ))}
-    </div>
-  );
-}
-
 export function MenuTabs({
   menus,
   notice,
@@ -147,7 +115,6 @@ export function MenuTabs({
   if (!active) return null;
 
   const opening = active.openingPhotos ?? [];
-  const gallery = active.galleryPhotos ?? [];
 
   return (
     <>
@@ -287,13 +254,6 @@ export function MenuTabs({
             );
           })}
         </div>
-
-        {/* Closing gallery */}
-        {gallery.length ? (
-          <div className="mt-20 border-t border-ink/10 pt-14">
-            <PhotoGallery photos={gallery} />
-          </div>
-        ) : null}
       </Section>
     </>
   );
