@@ -4,6 +4,7 @@ import menuJson from "@/content/pages/menu.json";
 import galleryJson from "@/content/pages/gallery.json";
 import reservationsJson from "@/content/pages/reservations.json";
 import contactJson from "@/content/pages/contact.json";
+import menuCreditsJson from "@/content/menu-credits.json";
 
 /*
   All page copy and photography lives in /src/content as JSON. These files are
@@ -116,7 +117,7 @@ export type MenuSection = {
   title: string;
   japanese: string;
   blurb: string;
-  /* Optional photos shown beside the dish list (a small grid). */
+  /* Photos shown beside this section's dish list (a small grid). */
   photos?: ImageRef[];
   dishes: Dish[];
 };
@@ -128,9 +129,10 @@ export type MenuTab = {
   japanese: string;
   hours: string;
   blurb: string;
-  /* Photos for the tab: the first few form the opening grid, the rest a
-     gallery at the end. All optional, so a tab with no photos still works. */
-  photos?: ImageRef[];
+  /* Photos shown in the grid at the top of the tab. */
+  openingPhotos?: ImageRef[];
+  /* Photos shown in the gallery at the end of the tab. */
+  galleryPhotos?: ImageRef[];
   sections: MenuSection[];
 };
 
@@ -245,6 +247,11 @@ export const menuContent = menuJson as MenuContent;
 export const galleryContent = galleryJson as GalleryContent;
 export const reservationsContent = reservationsJson as ReservationsContent;
 export const contactContent = contactJson as ContactContent;
+
+/* Attribution for the placeholder menu photography. Kept out of the CMS so the
+   client's editing screens stay clean; the gallery page lists these credits. */
+export type PhotoCredit = { credit: string; license: string; href: string };
+export const menuPhotoCredits = menuCreditsJson as PhotoCredit[];
 
 /* Dishes highlighted on the home page, in the order set in the CMS. */
 export const featuredDishes = menuContent.featured;

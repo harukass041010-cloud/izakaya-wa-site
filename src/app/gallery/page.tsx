@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Section, SectionHeading } from "@/components/section";
 import { PageHero } from "@/components/page-hero";
 import { Photo } from "@/components/photo";
-import { galleryContent } from "@/lib/content";
+import { galleryContent, menuPhotoCredits } from "@/lib/content";
 
 export const metadata: Metadata = {
   title: galleryContent.seo.title,
@@ -10,9 +10,18 @@ export const metadata: Metadata = {
   alternates: { canonical: "/gallery" },
 };
 
-const uniqueCredits = Array.from(
+/* Credits for the gallery photos plus the placeholder menu photography,
+   de-duplicated by source link. */
+const allCredits = Array.from(
   new Map(
-    galleryContent.photos.map((photo) => [photo.credit, photo]),
+    [
+      ...galleryContent.photos.map((photo) => ({
+        credit: photo.credit,
+        license: photo.license,
+        href: photo.href,
+      })),
+      ...menuPhotoCredits,
+    ].map((credit) => [credit.href, credit]),
   ).values(),
 );
 
@@ -58,21 +67,21 @@ export default function GalleryPage() {
           intro={credits.intro}
         />
         <ul className="mt-10 grid gap-x-12 gap-y-3 text-sm md:grid-cols-2">
-          {uniqueCredits.map((photo) => (
+          {allCredits.map((credit) => (
             <li
-              key={photo.src}
+              key={credit.href}
               className="flex flex-col gap-0.5 border-b border-ink/10 py-2.5"
             >
               <a
-                href={photo.href}
+                href={credit.href}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-ink transition-colors hover:text-vermilion"
               >
-                {photo.credit}
+                {credit.credit}
               </a>
               <span className="text-xs uppercase tracking-[0.14em] text-clay">
-                {photo.license} · Wikimedia Commons
+                {credit.license} · Wikimedia Commons
               </span>
             </li>
           ))}

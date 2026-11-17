@@ -195,12 +195,21 @@ collections:
               - { name: japanese, label: Japanese label, widget: string, required: false }
               - { name: hours, label: Serving hours, widget: string, required: false }
               - { name: blurb, label: Short description, widget: text, required: false }
-              - name: photos
-                label: Photos for this menu
+              - name: openingPhotos
+                label: "1. Photos at the TOP of this menu (the grid)"
                 widget: list
                 required: false
                 summary: "{{fields.alt}}"
-                hint: "The first three photos appear as a large spread at the top; the rest appear as a gallery at the end."
+                hint: "These appear in the grid at the top of this menu tab. Aim for six."
+                fields:
+                  - *srcField
+                  - *altField
+              - name: galleryPhotos
+                label: "2. Photos at the BOTTOM of this menu (the gallery)"
+                widget: list
+                required: false
+                summary: "{{fields.alt}}"
+                hint: "These appear in the gallery at the very end of this menu tab."
                 fields:
                   - *srcField
                   - *altField
@@ -214,11 +223,11 @@ collections:
                   - { name: japanese, label: Japanese title, widget: string, required: false }
                   - { name: blurb, label: Short description, widget: text, required: false }
                   - name: photos
-                    label: Photos beside the dishes
+                    label: "Photos beside these dishes"
                     widget: list
                     required: false
                     summary: "{{fields.alt}}"
-                    hint: "Two or three small photos shown next to this section's dishes. Leave empty for no photos."
+                    hint: "Shown next to this section's dish list. Two or three small photos work best. Leave empty for no photos."
                     fields:
                       - *srcField
                       - *altField

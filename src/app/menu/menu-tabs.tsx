@@ -7,10 +7,6 @@ import { Photo } from "@/components/photo";
 import { Eyebrow, Section } from "@/components/section";
 import type { Dish, ImageRef, MenuTab } from "@/lib/content";
 
-/* How many of a tab's photos make up the opening grid; the rest go to the
-   closing gallery. */
-const LEAD_COUNT = 6;
-
 /* Varied shapes for the closing gallery, so it reads as a magazine spread
    rather than a uniform grid. */
 const GALLERY_ASPECTS = [
@@ -150,8 +146,8 @@ export function MenuTabs({
 
   if (!active) return null;
 
-  const photos = active.photos ?? [];
-  const gallery = photos.slice(LEAD_COUNT);
+  const opening = active.openingPhotos ?? [];
+  const gallery = active.galleryPhotos ?? [];
 
   return (
     <>
@@ -220,9 +216,9 @@ export function MenuTabs({
         </div>
 
         {/* Opening photo grid */}
-        {photos.length ? (
+        {opening.length ? (
           <div className="mt-10">
-            <PhotoRow photos={photos.slice(0, LEAD_COUNT)} />
+            <PhotoRow photos={opening} />
           </div>
         ) : null}
 

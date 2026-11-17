@@ -122,18 +122,25 @@ the image field and upload the restaurant's own photo. Always fill in the
   including the dollar sign — for example `$5`, `$4.5 / $18` (nigiri / sashimi)
   or `MKT` for market price. Leave it blank for no price.
 - Menu tabs, sections and dishes can be added, reordered or removed freely.
-- Each menu tab has a **Photos for this menu** list. The first six form a grid
-  at the top of the tab, and the rest appear as a gallery at the end. Add as
-  many as you like, in the order you want them shown.
-- Each section has a **Photos beside the dishes** list. Two or three small
-  photos appear next to that section's dishes. Leave it empty for no photos.
+- Every menu photo has its own slot, and no photo is reused — each place on the
+  page has a separate picture. Photos are named after where they appear
+  (`menu-lunch-appetizers-1.jpg`), so you can always tell which is which.
+- Each menu tab has two photo lists:
+  - **1. Photos at the TOP of this menu (the grid)** — the row of photos under
+    the tab heading. Six is ideal.
+  - **2. Photos at the BOTTOM of this menu (the gallery)** — the gallery at the
+    very end of the tab.
+- Each section has a **Photos beside these dishes** list. Two or three small
+  photos appear next to that section's dish list. Leave it empty for no photos.
 - The **Home-page highlights** list controls the **"A few of our signatures"**
   grid on the home page, in order. Add a photo to each highlight.
 - **Location note** appears beside the notice at the top of the menu page — use
   it while only one location's menu is shown.
 
-> The menu photos shipped with the site are **placeholders**. Replace them with
-> the restaurant's own photography — open a photo field, click it and upload.
+> The menu photos shipped with the site are **placeholders**, each a different
+> photo from Wikimedia Commons. Replace them with the restaurant's own
+> photography — open a photo field, click it and upload. The placeholder
+> attributions are listed on the **Gallery** page under "Image credits".
 
 ## Reservations
 
