@@ -128,7 +128,9 @@ the image field and upload the restaurant's own photo. Always fill in the
 - Each menu tab has a **Photos at the top of this menu (the grid)** list — the
   row of photos under the tab heading. Six is ideal.
 - Each section has a **Photos beside these dishes** list. Two or three small
-  photos appear next to that section's dish list. Leave it empty for no photos.
+  photos appear next to most sections' dish lists. Keep the current number for
+  each section: **Soups & Salads has no photos**, and **Weekly Half & Half** and
+  **Gourmet Curry Rice** each have just one. Leave the list empty for no photos.
 - The **Home-page highlights** list controls the **"A few of our signatures"**
   grid on the home page, in order. Add a photo to each highlight.
 - **Location note** appears beside the notice at the top of the menu page — use

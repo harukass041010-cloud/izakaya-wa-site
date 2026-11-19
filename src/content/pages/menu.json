@@ -176,20 +176,7 @@
           "title": "Soups & Salads",
           "japanese": "汁物・サラダ",
           "blurb": "",
-          "photos": [
-            {
-              "src": "/images/menu-lunch-soups-salads-1.jpg",
-              "alt": "Bibimbap don and Miso soup 02"
-            },
-            {
-              "src": "/images/menu-lunch-soups-salads-2.jpg",
-              "alt": "Hainan chicken rice, steamed okra with mustard, cellophane noodle salad, wakame seaweed soup 海南鶏飯、蒸しオクラの辛子和え、春雨サラダ、ワカメスー"
-            },
-            {
-              "src": "/images/menu-lunch-soups-salads-3.jpg",
-              "alt": "Chicken curry, miso soup, Idstein"
-            }
-          ],
+          "photos": [],
           "dishes": [
             {
               "name": "Tofu Miso Soup",
@@ -315,14 +302,6 @@
             {
               "src": "/images/menu-lunch-half-and-half-1.jpg",
               "alt": "Fusion of Japanese and Meitei cuisines - Mixed bowl of octopus ramen noodles and traditional Meetei vegetables - Imphal,"
-            },
-            {
-              "src": "/images/menu-lunch-half-and-half-2.jpg",
-              "alt": "JP 日本 Japan 京都 Kyoto 四條 Shijo side Sukiya Restaurant food Gyudon 牛肉丼 beef toppings and rice bowl 1914pm June 2026 N13P 0"
-            },
-            {
-              "src": "/images/menu-lunch-half-and-half-3.jpg",
-              "alt": "Beef curry rice 001"
             }
           ],
           "dishes": [
@@ -344,14 +323,6 @@
             {
               "src": "/images/menu-lunch-curry-1.jpg",
               "alt": "Beef curry rice 002"
-            },
-            {
-              "src": "/images/menu-lunch-curry-2.jpg",
-              "alt": "JP 日本 Japan 京都 Kyoto 四條 Shijo side Sukiya Restaurant food Gyudon 牛肉丼 beef toppings and rice bowl 1914pm June 2026 N13P 0"
-            },
-            {
-              "src": "/images/menu-lunch-curry-3.jpg",
-              "alt": "Beef curry rice 003"
             }
           ],
           "dishes": [

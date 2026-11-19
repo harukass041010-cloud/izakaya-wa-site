@@ -218,7 +218,7 @@ collections:
                     widget: list
                     required: false
                     summary: "{{fields.alt}}"
-                    hint: "Shown next to this section's dish list. Two or three small photos work best. Leave empty for no photos."
+                    hint: "Shown next to this section's dish list. Keep the current number of photos — some sections have none (Soups & Salads) or just one (Weekly Half & Half, Gourmet Curry Rice). Leave the list empty for no photos."
                     fields:
                       - *srcField
                       - *altField
