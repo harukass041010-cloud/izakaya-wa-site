@@ -127,10 +127,12 @@ the image field and upload the restaurant's own photo. Always fill in the
   (`menu-lunch-appetizers-1.jpg`), so you can always tell which is which.
 - Each menu tab has a **Photos at the top of this menu (the grid)** list — the
   row of photos under the tab heading. Six is ideal.
-- Each section has a **Photos beside these dishes** list. Two or three small
-  photos appear next to most sections' dish lists. Keep the current number for
-  each section: **Soups & Salads has no photos**, and **Weekly Half & Half** and
-  **Gourmet Curry Rice** each have just one. Leave the list empty for no photos.
+- Each section is one of two types in the CMS: **Section with photos** (dishes
+  plus a small photo grid — two or three photos for most sections, but just one
+  for **Weekly Half & Half** and **Gourmet Curry Rice**), or **Section without
+  photos** (dishes only, no photo field at all). **Soups & Salads** uses the
+  second type, so there is no photo slot to fill in for it. If you add a new
+  section, pick the type that matches.
 - The **Home-page highlights** list controls the **"A few of our signatures"**
   grid on the home page, in order. Add a photo to each highlight.
 - **Location note** appears beside the notice at the top of the menu page — use

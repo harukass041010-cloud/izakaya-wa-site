@@ -53,6 +53,7 @@
       "galleryPhotos": [],
       "sections": [
         {
+          "type": "with_photos",
           "id": "lunch-appetizers",
           "title": "Appetizers",
           "japanese": "前菜",
@@ -173,24 +174,11 @@
           ]
         },
         {
+          "type": "no_photos",
           "id": "lunch-soups-salads",
           "title": "Soups & Salads",
           "japanese": "汁物・サラダ",
           "blurb": "",
-          "photos": [
-            {
-              "src": "/images/menu-lunch-soups-salads-1.jpg",
-              "alt": "Bibimbap don and Miso soup 02"
-            },
-            {
-              "src": "/images/menu-lunch-soups-salads-2.jpg",
-              "alt": "Hainan chicken rice, steamed okra with mustard, cellophane noodle salad, wakame seaweed soup 海南鶏飯、蒸しオクラの辛子和え、春雨サラダ、ワカメスー"
-            },
-            {
-              "src": "/images/menu-lunch-soups-salads-3.jpg",
-              "alt": "Chicken curry, miso soup, Idstein"
-            }
-          ],
           "dishes": [
             {
               "name": "Tofu Miso Soup",
@@ -216,6 +204,7 @@
           ]
         },
         {
+          "type": "with_photos",
           "id": "lunch-teishoku",
           "title": "Teishoku — Lunch Plate",
           "japanese": "定食",
@@ -308,6 +297,7 @@
           ]
         },
         {
+          "type": "with_photos",
           "id": "lunch-half-and-half",
           "title": "Weekly Half & Half",
           "japanese": "ハーフ＆ハーフ",
@@ -316,14 +306,6 @@
             {
               "src": "/images/IMG_1529.jpeg",
               "alt": "Fusion of Japanese and Meitei cuisines - Mixed bowl of octopus ramen noodles and traditional Meetei vegetables - Imphal,"
-            },
-            {
-              "src": "/images/menu-lunch-half-and-half-2.jpg",
-              "alt": "JP 日本 Japan 京都 Kyoto 四條 Shijo side Sukiya Restaurant food Gyudon 牛肉丼 beef toppings and rice bowl 1914pm June 2026 N13P 0"
-            },
-            {
-              "src": "/images/menu-lunch-half-and-half-3.jpg",
-              "alt": "Beef curry rice 001"
             }
           ],
           "dishes": [
@@ -337,6 +319,7 @@
           ]
         },
         {
+          "type": "with_photos",
           "id": "lunch-curry",
           "title": "Gourmet Curry Rice",
           "japanese": "カレーライス",
@@ -345,14 +328,6 @@
             {
               "src": "/images/menu-lunch-curry-1.jpg",
               "alt": "Beef curry rice 002"
-            },
-            {
-              "src": "/images/menu-lunch-curry-2.jpg",
-              "alt": "JP 日本 Japan 京都 Kyoto 四條 Shijo side Sukiya Restaurant food Gyudon 牛肉丼 beef toppings and rice bowl 1914pm June 2026 N13P 0"
-            },
-            {
-              "src": "/images/menu-lunch-curry-3.jpg",
-              "alt": "Beef curry rice 003"
             }
           ],
           "dishes": [
@@ -373,6 +348,7 @@
           ]
         },
         {
+          "type": "with_photos",
           "id": "lunch-noodles",
           "title": "Noodle Soup",
           "japanese": "麺",
@@ -423,6 +399,7 @@
           ]
         },
         {
+          "type": "with_photos",
           "id": "lunch-sushi-combos",
           "title": "Sushi Combos",
           "japanese": "寿司コンボ",
@@ -494,6 +471,7 @@
           ]
         },
         {
+          "type": "with_photos",
           "id": "lunch-nigiri-sashimi",
           "title": "Nigiri & Sashimi",
           "japanese": "握り・刺身",
@@ -691,6 +669,7 @@
           ]
         },
         {
+          "type": "with_photos",
           "id": "lunch-rolls",
           "title": "Rolls & Hand Rolls",
           "japanese": "ロール",
@@ -924,6 +903,7 @@
       "galleryPhotos": [],
       "sections": [
         {
+          "type": "with_photos",
           "id": "dinner-sharable-starters",
           "title": "Sharable Starters",
           "japanese": "おつまみ",
@@ -1009,6 +989,7 @@
           ]
         },
         {
+          "type": "with_photos",
           "id": "dinner-vegetables-tofu",
           "title": "Vegetables & Tofu",
           "japanese": "野菜",
@@ -1066,6 +1047,7 @@
           ]
         },
         {
+          "type": "with_photos",
           "id": "dinner-sushi-bar",
           "title": "From the Sushi Bar",
           "japanese": "寿司場から",
@@ -1123,6 +1105,7 @@
           ]
         },
         {
+          "type": "with_photos",
           "id": "dinner-kitchen",
           "title": "From the Kitchen",
           "japanese": "キッチンから",
@@ -1257,6 +1240,7 @@
           ]
         },
         {
+          "type": "with_photos",
           "id": "dinner-fried-skewers",
           "title": "Fried Skewers",
           "japanese": "串揚げ",
@@ -1335,6 +1319,7 @@
           ]
         },
         {
+          "type": "with_photos",
           "id": "dinner-grilled-skewers",
           "title": "Grilled Skewers",
           "japanese": "串焼き",
@@ -1455,6 +1440,7 @@
           ]
         },
         {
+          "type": "with_photos",
           "id": "dinner-nigiri-sashimi",
           "title": "Nigiri & Sashimi",
           "japanese": "握り・刺身",
@@ -1645,6 +1631,7 @@
           ]
         },
         {
+          "type": "with_photos",
           "id": "dinner-rolls",
           "title": "Rolls & Hand Rolls",
           "japanese": "ロール",
@@ -1870,6 +1857,7 @@
           ]
         },
         {
+          "type": "with_photos",
           "id": "dinner-rice",
           "title": "Rice Dishes",
           "japanese": "お米",
@@ -1948,6 +1936,7 @@
           ]
         },
         {
+          "type": "with_photos",
           "id": "dinner-noodles",
           "title": "Noodle Dishes",
           "japanese": "麺類",
@@ -2005,6 +1994,7 @@
           ]
         },
         {
+          "type": "with_photos",
           "id": "dinner-sweets",
           "title": "Sweets",
           "japanese": "でざーと",
@@ -2091,6 +2081,7 @@
       "galleryPhotos": [],
       "sections": [
         {
+          "type": "with_photos",
           "id": "drinks-non-alcoholic",
           "title": "Non-Alcoholic",
           "japanese": "お茶・ジュース",
@@ -2169,6 +2160,7 @@
           ]
         },
         {
+          "type": "with_photos",
           "id": "drinks-beer",
           "title": "Beer",
           "japanese": "麦酒",
@@ -2261,6 +2253,7 @@
           ]
         },
         {
+          "type": "with_photos",
           "id": "drinks-chuhai",
           "title": "Chu-Hai",
           "japanese": "酎ハイ",
@@ -2339,6 +2332,7 @@
           ]
         },
         {
+          "type": "with_photos",
           "id": "drinks-sake-nigori",
           "title": "Sake — Nigori & Sparkling",
           "japanese": "にごり・発泡",
@@ -2389,6 +2383,7 @@
           ]
         },
         {
+          "type": "with_photos",
           "id": "drinks-sake-junmai",
           "title": "Sake — Junmai",
           "japanese": "純米",
@@ -2460,6 +2455,7 @@
           ]
         },
         {
+          "type": "with_photos",
           "id": "drinks-sake-honjozo",
           "title": "Sake — Honjozo",
           "japanese": "本醸造",
@@ -2496,6 +2492,7 @@
           ]
         },
         {
+          "type": "with_photos",
           "id": "drinks-sake-ginjo",
           "title": "Sake — Junmai Ginjo",
           "japanese": "純米吟醸",
@@ -2532,6 +2529,7 @@
           ]
         },
         {
+          "type": "with_photos",
           "id": "drinks-sake-daiginjo",
           "title": "Sake — Junmai Daiginjo",
           "japanese": "純米大吟醸",
@@ -2617,6 +2615,7 @@
           ]
         },
         {
+          "type": "with_photos",
           "id": "drinks-wine",
           "title": "Wine",
           "japanese": "葡萄酒",
@@ -2737,6 +2736,7 @@
           ]
         },
         {
+          "type": "with_photos",
           "id": "drinks-liquor",
           "title": "Liquor",
           "japanese": "強いお酒",
@@ -2836,6 +2836,7 @@
           ]
         },
         {
+          "type": "with_photos",
           "id": "drinks-highball",
           "title": "Japanese-Style Highball",
           "japanese": "ハイボール",
@@ -2872,6 +2873,7 @@
           ]
         },
         {
+          "type": "with_photos",
           "id": "drinks-shochu",
           "title": "Shochu",
           "japanese": "焼酎",
@@ -2964,6 +2966,7 @@
           ]
         },
         {
+          "type": "with_photos",
           "id": "drinks-japanese-whisky",
           "title": "Japanese Whisky",
           "japanese": "日本産ウイスキー",
@@ -3056,6 +3059,7 @@
           ]
         },
         {
+          "type": "with_photos",
           "id": "drinks-scotch",
           "title": "Scotch Whisky",
           "japanese": "シングルモルト",
@@ -3092,6 +3096,7 @@
           ]
         },
         {
+          "type": "with_photos",
           "id": "drinks-canadian",
           "title": "Canadian Whisky",
           "japanese": "カナダ産ウイスキー",
@@ -3121,6 +3126,7 @@
           ]
         },
         {
+          "type": "with_photos",
           "id": "drinks-bourbon",
           "title": "Bourbon Whiskey",
           "japanese": "バーボンウイスキー",
@@ -3150,6 +3156,7 @@
           ]
         },
         {
+          "type": "with_photos",
           "id": "drinks-blended",
           "title": "Blended Whisky",
           "japanese": "ブレンデッドウイスキー",
@@ -3186,6 +3193,7 @@
           ]
         },
         {
+          "type": "with_photos",
           "id": "drinks-irish",
           "title": "Irish Whiskey",
           "japanese": "アイリッシュウイスキー",

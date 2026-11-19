@@ -113,6 +113,8 @@ export type Dish = {
 };
 
 export type MenuSection = {
+  /* CMS-only marker: "with_photos" or "no_photos". Ignored by the site. */
+  type?: string;
   id: string;
   title: string;
   japanese: string;

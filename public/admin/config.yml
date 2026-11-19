@@ -207,35 +207,65 @@ collections:
               - name: sections
                 label: Sections
                 widget: list
-                summary: "{{fields.title}}"
-                fields:
-                  - { name: id, label: Section id, widget: string, hint: "Lowercase, no spaces, e.g. lunch-appetizers." }
-                  - { name: title, label: Section title, widget: string }
-                  - { name: japanese, label: Japanese title, widget: string, required: false }
-                  - { name: blurb, label: Short description, widget: text, required: false }
-                  - name: photos
-                    label: "Photos beside these dishes"
-                    widget: list
-                    required: false
-                    summary: "{{fields.alt}}"
-                    hint: "Shown next to this section's dish list. Keep the current number of photos — some sections have none (Soups & Salads) or just one (Weekly Half & Half, Gourmet Curry Rice). Leave the list empty for no photos."
+                summary: "{{title}}"
+                hint: "Most sections have photos beside the dishes. Soups & Salads is the one section without a photo area — if you add a new section, choose the matching type below."
+                types:
+                  - name: with_photos
+                    label: Section with photos
+                    description: "Dishes plus a small photo grid beside them"
+                    summary: "{{title}}"
                     fields:
-                      - *srcField
-                      - *altField
-                  - name: dishes
-                    label: Dishes
-                    widget: list
-                    summary: "{{fields.name}}"
-                    fields:
-                      - { name: name, label: Name, widget: string }
-                      - { name: japanese, label: Japanese name, widget: string, required: false }
-                      - { name: description, label: Description, widget: text, required: false }
-                      - { name: price, label: Price, widget: string, required: false, hint: "Include the $ sign: $5, $4.5 / $18 or MKT." }
-                      - name: tags
-                        label: Tags
+                      - { name: id, label: Section id, widget: string, hint: "Lowercase, no spaces, e.g. lunch-appetizers." }
+                      - { name: title, label: Section title, widget: string }
+                      - { name: japanese, label: Japanese title, widget: string, required: false }
+                      - { name: blurb, label: Short description, widget: text, required: false }
+                      - name: photos
+                        label: "Photos beside these dishes"
                         widget: list
                         required: false
-                        field: { name: tag, label: Tag, widget: string }
+                        summary: "{{fields.alt}}"
+                        hint: "Shown next to this section's dish list. Keep the current number of photos — Weekly Half & Half and Gourmet Curry Rice have just one."
+                        fields:
+                          - *srcField
+                          - *altField
+                      - name: dishes
+                        label: Dishes
+                        widget: list
+                        summary: "{{fields.name}}"
+                        fields:
+                          - { name: name, label: Name, widget: string }
+                          - { name: japanese, label: Japanese name, widget: string, required: false }
+                          - { name: description, label: Description, widget: text, required: false }
+                          - { name: price, label: Price, widget: string, required: false, hint: "Include the $ sign: $5, $4.5 / $18 or MKT." }
+                          - name: tags
+                            label: Tags
+                            widget: list
+                            required: false
+                            field: { name: tag, label: Tag, widget: string }
+                  - name: no_photos
+                    label: Section without photos
+                    description: "Dishes only — no photo area at all"
+                    hint: "This section has no photo slots. Used for Soups & Salads."
+                    summary: "{{title}}"
+                    fields:
+                      - { name: id, label: Section id, widget: string, hint: "Lowercase, no spaces, e.g. lunch-appetizers." }
+                      - { name: title, label: Section title, widget: string }
+                      - { name: japanese, label: Japanese title, widget: string, required: false }
+                      - { name: blurb, label: Short description, widget: text, required: false }
+                      - name: dishes
+                        label: Dishes
+                        widget: list
+                        summary: "{{fields.name}}"
+                        fields:
+                          - { name: name, label: Name, widget: string }
+                          - { name: japanese, label: Japanese name, widget: string, required: false }
+                          - { name: description, label: Description, widget: text, required: false }
+                          - { name: price, label: Price, widget: string, required: false, hint: "Include the $ sign: $5, $4.5 / $18 or MKT." }
+                          - name: tags
+                            label: Tags
+                            widget: list
+                            required: false
+                            field: { name: tag, label: Tag, widget: string }
 
           - name: featured
             label: Home-page highlights
