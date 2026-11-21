@@ -50,10 +50,8 @@
           "alt": "Maki rolls"
         }
       ],
-      "galleryPhotos": [],
       "sections": [
         {
-          "type": "with_photos",
           "id": "lunch-appetizers",
           "title": "Appetizers",
           "japanese": "前菜",
@@ -70,6 +68,14 @@
             {
               "src": "/images/IMG_4102.jpeg",
               "alt": "Agedashi Tofu"
+            },
+            {
+              "src": "/images/IMG_2674.jpeg",
+              "alt": "a"
+            },
+            {
+              "src": "/images/IMG_1551.jpeg",
+              "alt": "a"
             }
           ],
           "dishes": [
@@ -174,11 +180,24 @@
           ]
         },
         {
-          "type": "no_photos",
           "id": "lunch-soups-salads",
           "title": "Soups & Salads",
           "japanese": "汁物・サラダ",
           "blurb": "",
+          "photos": [
+            {
+              "src": "/images/menu-lunch-soups-salads-1.jpg",
+              "alt": "Bibimbap don and Miso soup 02"
+            },
+            {
+              "src": "/images/menu-lunch-soups-salads-2.jpg",
+              "alt": "Hainan chicken rice, steamed okra with mustard, cellophane noodle salad, wakame seaweed soup 海南鶏飯、蒸しオクラの辛子和え、春雨サラダ、ワカメスー"
+            },
+            {
+              "src": "/images/menu-lunch-soups-salads-3.jpg",
+              "alt": "Chicken curry, miso soup, Idstein"
+            }
+          ],
           "dishes": [
             {
               "name": "Tofu Miso Soup",
@@ -204,7 +223,6 @@
           ]
         },
         {
-          "type": "with_photos",
           "id": "lunch-teishoku",
           "title": "Teishoku — Lunch Plate",
           "japanese": "定食",
@@ -221,6 +239,30 @@
             {
               "src": "/images/IMG_9178.jpeg",
               "alt": "Food sample of a Kanazawa set meal with grilled fish, March 2026"
+            },
+            {
+              "src": "/images/IMG_9187.jpeg",
+              "alt": "a"
+            },
+            {
+              "src": "/images/IMG_9157.jpeg",
+              "alt": "a"
+            },
+            {
+              "src": "/images/IMG_9080.jpeg",
+              "alt": "a"
+            },
+            {
+              "src": "/images/IMG_1724.jpeg",
+              "alt": "a"
+            },
+            {
+              "src": "/images/IMG_1723.jpeg",
+              "alt": "a"
+            },
+            {
+              "src": "/images/IMG_1600.jpeg",
+              "alt": "a"
             }
           ],
           "dishes": [
@@ -297,7 +339,6 @@
           ]
         },
         {
-          "type": "with_photos",
           "id": "lunch-half-and-half",
           "title": "Weekly Half & Half",
           "japanese": "ハーフ＆ハーフ",
@@ -319,15 +360,18 @@
           ]
         },
         {
-          "type": "with_photos",
           "id": "lunch-curry",
           "title": "Gourmet Curry Rice",
           "japanese": "カレーライス",
           "blurb": "Our original curry, simmered for 48 hours. Includes house salad.",
           "photos": [
             {
-              "src": "/images/menu-lunch-curry-1.jpg",
-              "alt": "Beef curry rice 002"
+              "src": "/images/menu-lunch-curry-2.jpg",
+              "alt": "JP 日本 Japan 京都 Kyoto 四條 Shijo side Sukiya Restaurant food Gyudon 牛肉丼 beef toppings and rice bowl 1914pm June 2026 N13P 0"
+            },
+            {
+              "src": "/images/menu-lunch-curry-3.jpg",
+              "alt": "Beef curry rice 003"
             }
           ],
           "dishes": [
@@ -348,23 +392,14 @@
           ]
         },
         {
-          "type": "with_photos",
           "id": "lunch-noodles",
           "title": "Noodle Soup",
           "japanese": "麺",
           "blurb": "Premium Inaniwa udon from Japan in a light Kansai-style dashi broth.",
           "photos": [
             {
-              "src": "/images/menu-lunch-noodles-1.jpg",
+              "src": "/images/IMG_2680.jpeg",
               "alt": "Hot Spicy Ramen"
-            },
-            {
-              "src": "/images/menu-lunch-noodles-2.jpg",
-              "alt": "Aerial view of Udon Thani City"
-            },
-            {
-              "src": "/images/menu-lunch-noodles-3.jpg",
-              "alt": "Beef filet on soba noodles, with soy sauce, salt, and black pepper - Arlington, MA"
             }
           ],
           "dishes": [
@@ -399,22 +434,21 @@
           ]
         },
         {
-          "type": "with_photos",
           "id": "lunch-sushi-combos",
           "title": "Sushi Combos",
           "japanese": "寿司コンボ",
           "blurb": "Includes miso soup and house salad. No substitutions.",
           "photos": [
             {
-              "src": "/images/menu-lunch-sushi-combos-1.jpg",
+              "src": "/images/IMG_0367.jpeg",
               "alt": "Nigiri Sushi"
             },
             {
-              "src": "/images/menu-lunch-sushi-combos-2.jpg",
+              "src": "/images/IMG_3005.jpeg",
               "alt": "2007feb-sushi-odaiba-manytypes"
             },
             {
-              "src": "/images/menu-lunch-sushi-combos-3.jpg",
+              "src": "/images/IMG_3007.jpeg",
               "alt": "California Crab Sushi Roll"
             }
           ],
@@ -471,25 +505,11 @@
           ]
         },
         {
-          "type": "with_photos",
           "id": "lunch-nigiri-sashimi",
           "title": "Nigiri & Sashimi",
           "japanese": "握り・刺身",
           "blurb": "The first price is nigiri (2 pieces); the second is sashimi. Sea urchin is market price. Add-ons are listed at the end.",
-          "photos": [
-            {
-              "src": "/images/menu-lunch-nigiri-sashimi-1.jpg",
-              "alt": "Nigiri Sushi"
-            },
-            {
-              "src": "/images/menu-lunch-nigiri-sashimi-2.jpg",
-              "alt": "Blooming Colours in Spring Recovery"
-            },
-            {
-              "src": "/images/menu-lunch-nigiri-sashimi-3.jpg",
-              "alt": "Nigiri Sushi"
-            }
-          ],
+          "photos": [],
           "dishes": [
             {
               "name": "Bluefin Tuna",
@@ -669,7 +689,6 @@
           ]
         },
         {
-          "type": "with_photos",
           "id": "lunch-rolls",
           "title": "Rolls & Hand Rolls",
           "japanese": "ロール",
@@ -866,7 +885,8 @@
             }
           ]
         }
-      ]
+      ],
+      "galleryPhotos": []
     },
     {
       "id": "dinner",
@@ -900,10 +920,8 @@
           "alt": "Deep fried Tempura dishesCNE 02"
         }
       ],
-      "galleryPhotos": [],
       "sections": [
         {
-          "type": "with_photos",
           "id": "dinner-sharable-starters",
           "title": "Sharable Starters",
           "japanese": "おつまみ",
@@ -989,7 +1007,6 @@
           ]
         },
         {
-          "type": "with_photos",
           "id": "dinner-vegetables-tofu",
           "title": "Vegetables & Tofu",
           "japanese": "野菜",
@@ -1047,7 +1064,6 @@
           ]
         },
         {
-          "type": "with_photos",
           "id": "dinner-sushi-bar",
           "title": "From the Sushi Bar",
           "japanese": "寿司場から",
@@ -1105,7 +1121,6 @@
           ]
         },
         {
-          "type": "with_photos",
           "id": "dinner-kitchen",
           "title": "From the Kitchen",
           "japanese": "キッチンから",
@@ -1240,7 +1255,6 @@
           ]
         },
         {
-          "type": "with_photos",
           "id": "dinner-fried-skewers",
           "title": "Fried Skewers",
           "japanese": "串揚げ",
@@ -1319,7 +1333,6 @@
           ]
         },
         {
-          "type": "with_photos",
           "id": "dinner-grilled-skewers",
           "title": "Grilled Skewers",
           "japanese": "串焼き",
@@ -1440,7 +1453,6 @@
           ]
         },
         {
-          "type": "with_photos",
           "id": "dinner-nigiri-sashimi",
           "title": "Nigiri & Sashimi",
           "japanese": "握り・刺身",
@@ -1631,7 +1643,6 @@
           ]
         },
         {
-          "type": "with_photos",
           "id": "dinner-rolls",
           "title": "Rolls & Hand Rolls",
           "japanese": "ロール",
@@ -1857,7 +1868,6 @@
           ]
         },
         {
-          "type": "with_photos",
           "id": "dinner-rice",
           "title": "Rice Dishes",
           "japanese": "お米",
@@ -1936,7 +1946,6 @@
           ]
         },
         {
-          "type": "with_photos",
           "id": "dinner-noodles",
           "title": "Noodle Dishes",
           "japanese": "麺類",
@@ -1994,7 +2003,6 @@
           ]
         },
         {
-          "type": "with_photos",
           "id": "dinner-sweets",
           "title": "Sweets",
           "japanese": "でざーと",
@@ -2044,7 +2052,8 @@
             }
           ]
         }
-      ]
+      ],
+      "galleryPhotos": []
     },
     {
       "id": "drinks",
@@ -2078,10 +2087,8 @@
           "alt": "Boathouse Ōhori Park The interior of the 1st-floor restaurant Ōhorikōen Chūō-ku Fukuoka 20260616 164028"
         }
       ],
-      "galleryPhotos": [],
       "sections": [
         {
-          "type": "with_photos",
           "id": "drinks-non-alcoholic",
           "title": "Non-Alcoholic",
           "japanese": "お茶・ジュース",
@@ -2160,7 +2167,6 @@
           ]
         },
         {
-          "type": "with_photos",
           "id": "drinks-beer",
           "title": "Beer",
           "japanese": "麦酒",
@@ -2253,7 +2259,6 @@
           ]
         },
         {
-          "type": "with_photos",
           "id": "drinks-chuhai",
           "title": "Chu-Hai",
           "japanese": "酎ハイ",
@@ -2332,7 +2337,6 @@
           ]
         },
         {
-          "type": "with_photos",
           "id": "drinks-sake-nigori",
           "title": "Sake — Nigori & Sparkling",
           "japanese": "にごり・発泡",
@@ -2383,7 +2387,6 @@
           ]
         },
         {
-          "type": "with_photos",
           "id": "drinks-sake-junmai",
           "title": "Sake — Junmai",
           "japanese": "純米",
@@ -2455,7 +2458,6 @@
           ]
         },
         {
-          "type": "with_photos",
           "id": "drinks-sake-honjozo",
           "title": "Sake — Honjozo",
           "japanese": "本醸造",
@@ -2492,7 +2494,6 @@
           ]
         },
         {
-          "type": "with_photos",
           "id": "drinks-sake-ginjo",
           "title": "Sake — Junmai Ginjo",
           "japanese": "純米吟醸",
@@ -2529,7 +2530,6 @@
           ]
         },
         {
-          "type": "with_photos",
           "id": "drinks-sake-daiginjo",
           "title": "Sake — Junmai Daiginjo",
           "japanese": "純米大吟醸",
@@ -2615,7 +2615,6 @@
           ]
         },
         {
-          "type": "with_photos",
           "id": "drinks-wine",
           "title": "Wine",
           "japanese": "葡萄酒",
@@ -2736,7 +2735,6 @@
           ]
         },
         {
-          "type": "with_photos",
           "id": "drinks-liquor",
           "title": "Liquor",
           "japanese": "強いお酒",
@@ -2836,7 +2834,6 @@
           ]
         },
         {
-          "type": "with_photos",
           "id": "drinks-highball",
           "title": "Japanese-Style Highball",
           "japanese": "ハイボール",
@@ -2873,7 +2870,6 @@
           ]
         },
         {
-          "type": "with_photos",
           "id": "drinks-shochu",
           "title": "Shochu",
           "japanese": "焼酎",
@@ -2966,7 +2962,6 @@
           ]
         },
         {
-          "type": "with_photos",
           "id": "drinks-japanese-whisky",
           "title": "Japanese Whisky",
           "japanese": "日本産ウイスキー",
@@ -3059,7 +3054,6 @@
           ]
         },
         {
-          "type": "with_photos",
           "id": "drinks-scotch",
           "title": "Scotch Whisky",
           "japanese": "シングルモルト",
@@ -3096,7 +3090,6 @@
           ]
         },
         {
-          "type": "with_photos",
           "id": "drinks-canadian",
           "title": "Canadian Whisky",
           "japanese": "カナダ産ウイスキー",
@@ -3126,7 +3119,6 @@
           ]
         },
         {
-          "type": "with_photos",
           "id": "drinks-bourbon",
           "title": "Bourbon Whiskey",
           "japanese": "バーボンウイスキー",
@@ -3156,7 +3148,6 @@
           ]
         },
         {
-          "type": "with_photos",
           "id": "drinks-blended",
           "title": "Blended Whisky",
           "japanese": "ブレンデッドウイスキー",
@@ -3193,7 +3184,6 @@
           ]
         },
         {
-          "type": "with_photos",
           "id": "drinks-irish",
           "title": "Irish Whiskey",
           "japanese": "アイリッシュウイスキー",
@@ -3222,7 +3212,8 @@
             }
           ]
         }
-      ]
+      ],
+      "galleryPhotos": []
     }
   ],
   "featured": [
