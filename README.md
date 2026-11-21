@@ -137,9 +137,10 @@ crop, which is intentional.
 - Each menu tab has a **Photos at the top of this menu (the grid)** list — the
   row of photos under the tab heading. Six is ideal.
 - Each section is one of two types in the CMS: **Section with photos** (dishes
-  plus a small photo grid — two or three photos for most sections, but just one
-  for **Weekly Half & Half** and **Gourmet Curry Rice**), or **Section without
-  photos** (dishes only, no photo field at all). **Soups & Salads** uses the
+  plus a magazine-style photo grid **below** them — two or three photos for most
+  sections, but just one for **Weekly Half & Half** and **Gourmet Curry Rice**),
+  or **Section without photos** (dishes only, no photo field at all).
+  **Soups & Salads** uses the
   second type, so there is no photo slot to fill in for it. If you add a new
   section, pick the type that matches.
 - The **Home-page highlights** list controls the **"A few of our signatures"**

@@ -77,25 +77,19 @@ function PhotoRow({ photos }: { photos: ImageRef[] }) {
   );
 }
 
-/* The small photos beside a section's dish list. They keep their own aspect
-   ratios; on desktop they stack in the narrow side column. */
+/* A magazine-style photo grid shown below a section's dish list. Each photo
+   keeps its own aspect ratio. Sections with many photos use more columns so
+   the row stays wide instead of growing into a tall vertical strip. */
 function SectionPhotos({ photos }: { photos: ImageRef[] }) {
   if (!photos.length) return null;
 
   const columns =
-    photos.length === 1
-      ? "columns-1"
-      : photos.length === 2
-        ? "columns-2"
-        : "columns-3 lg:columns-2";
+    photos.length > 3
+      ? "columns-2 sm:columns-3 lg:columns-4"
+      : "columns-2 sm:columns-3";
 
   return (
-    <div
-      className={cn(
-        columns,
-        "gap-3 sm:gap-4 lg:sticky lg:top-44 lg:self-start",
-      )}
-    >
+    <div className={cn(columns, "gap-3 sm:gap-4")}>
       {photos.map((photo, index) => (
         <div
           key={`${photo.src}-${index}`}
@@ -105,7 +99,7 @@ function SectionPhotos({ photos }: { photos: ImageRef[] }) {
             src={photo.src}
             alt={photo.alt}
             className="rounded-xl shadow-soft ring-1 ring-ink/5"
-            sizes="(min-width: 1024px) 11rem, 33vw"
+            sizes="(min-width: 1024px) 25vw, (min-width: 640px) 30vw, 45vw"
           />
         </div>
       ))}
@@ -219,8 +213,7 @@ export function MenuTabs({
         </nav>
 
         <div className="mt-16 space-y-20">
-          {active.sections.map((section, index) => {
-            const isOdd = index % 2 === 1;
+          {active.sections.map((section) => {
             const sectionPhotos = section.photos ?? [];
 
             return (
@@ -247,22 +240,12 @@ export function MenuTabs({
                   ) : null}
                 </div>
 
-                <div
-                  className={cn(
-                    "mt-10 grid gap-10 lg:gap-12",
-                    sectionPhotos.length > 0 &&
-                      (isOdd
-                        ? "lg:grid-cols-[minmax(0,22rem)_minmax(0,1fr)]"
-                        : "lg:grid-cols-[minmax(0,1fr)_minmax(0,22rem)]"),
-                  )}
-                >
-                  <DishList dishes={section.dishes} />
-                  {sectionPhotos.length > 0 ? (
-                    <div className={cn(isOdd && "lg:order-first")}>
-                      <SectionPhotos photos={sectionPhotos} />
-                    </div>
-                  ) : null}
-                </div>
+                <DishList dishes={section.dishes} className="mt-10" />
+                {sectionPhotos.length > 0 ? (
+                  <div className="mt-10">
+                    <SectionPhotos photos={sectionPhotos} />
+                  </div>
+                ) : null}
               </section>
             );
           })}

@@ -208,11 +208,11 @@ collections:
                 label: Sections
                 widget: list
                 summary: "{{title}}"
-                hint: "Most sections have photos beside the dishes. Soups & Salads is the one section without a photo area — if you add a new section, choose the matching type below."
+                hint: "Most sections have a photo grid below the dishes. Soups & Salads is the one section without a photo area — if you add a new section, choose the matching type below."
                 types:
                   - name: with_photos
                     label: Section with photos
-                    description: "Dishes plus a small photo grid beside them"
+                    description: "Dishes plus a magazine-style photo grid below them"
                     summary: "{{title}}"
                     fields:
                       - { name: id, label: Section id, widget: string, hint: "Lowercase, no spaces, e.g. lunch-appetizers." }
@@ -220,11 +220,11 @@ collections:
                       - { name: japanese, label: Japanese title, widget: string, required: false }
                       - { name: blurb, label: Short description, widget: text, required: false }
                       - name: photos
-                        label: "Photos beside these dishes"
+                        label: "Photos below these dishes"
                         widget: list
                         required: false
                         summary: "{{fields.alt}}"
-                        hint: "Shown next to this section's dish list. Keep the current number of photos — Weekly Half & Half and Gourmet Curry Rice have just one."
+                        hint: "Shown below this section's dish list. Keep the current number of photos — Weekly Half & Half and Gourmet Curry Rice have just one."
                         fields:
                           - *srcField
                           - *altField

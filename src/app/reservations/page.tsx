@@ -84,7 +84,7 @@ export default function ReservationsPage() {
           </div>
         </div>
 
-        <div className="mt-14 grid gap-14 lg:grid-cols-[0.9fr_1.1fr] lg:gap-16">
+        <div className="mt-14 grid gap-14 lg:grid-cols-[0.9fr_1.1fr] lg:items-start lg:gap-16">
           <div>
             <Eyebrow>{intro.eyebrow}</Eyebrow>
             <h2 className="mt-5 text-3xl leading-tight sm:text-4xl">
