@@ -161,10 +161,12 @@ export type MenuContent = {
   };
 };
 
+/* Credit fields are only present for borrowed placeholder photos. Photos the
+   restaurant uploads in the CMS don't have them. */
 export type GalleryPhoto = ImageRef & {
-  credit: string;
-  license: string;
-  href: string;
+  credit?: string;
+  license?: string;
+  href?: string;
 };
 
 export type GalleryContent = {

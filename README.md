@@ -276,11 +276,13 @@ Everything below is editable in the CMS at `/admin` unless noted.
 
 ## Image credits
 
-All photography is sourced from [Wikimedia Commons](https://commons.wikimedia.org)
-under open licenses and is used here as a placeholder. The same list is shown
-publicly on the [Gallery](/gallery) page (the `#credits` section).
+The Gallery page now shows only the restaurant's own photos, uploaded through
+the CMS. A few menu, home and About images are still placeholders from
+[Wikimedia Commons](https://commons.wikimedia.org) under open licenses. Their
+attributions are recorded in `src/content/menu-credits.json` and shown publicly
+on the [Gallery](/gallery) page under "Image credits".
 
-| File | Credit | License |
+| Placeholder file | Credit | License |
 | ---- | ------ | ------- |
 | `hero-sushi-platter.jpg` | Sushi platter, Nikko, Japan — Joli Rumi | CC BY-SA 4.0 |
 | `nigiri.jpg` | Nigiri Sushi — Tim Reckmann | CC BY 2.0 |
@@ -304,9 +306,9 @@ publicly on the [Gallery](/gallery) page (the `#credits` section).
 | `omakase-donburi.jpg` | Take-out omakase donburi — Andy Li | CC0 |
 
 Each photo's source URL is recorded alongside its credit in
-`src/content/pages/gallery.json`. If you keep any of these images, retain the
+`src/content/menu-credits.json`. If you keep any of these images, retain the
 attribution and license; CC BY / CC BY-SA require credit (and share-alike for
-derivatives).
+derivatives). The gallery's photo list lives in `src/content/pages/gallery.json`.
 
 ## SEO & performance
 

@@ -362,6 +362,7 @@ collections:
             label: Photos
             widget: list
             summary: "{{fields.alt}}"
+            hint: "Only the restaurant's own photos belong here. The credit fields below are for borrowed placeholder images only."
             fields:
               - *srcField
               - *altField
