@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { cn } from "@/lib/cn";
 import { Container } from "@/components/container";
-import { Photo } from "@/components/photo";
+import { NaturalPhoto } from "@/components/natural-photo";
 import { Eyebrow, Section } from "@/components/section";
 import type { Dish, ImageRef, MenuTab } from "@/lib/content";
 
@@ -53,49 +53,62 @@ function DishList({
   );
 }
 
-/* A row of photos, about three across on wider screens. */
+/* A magazine-style row: each photo keeps its own shape, about three across on
+   wider screens, so the whole dish stays in frame. */
 function PhotoRow({ photos }: { photos: ImageRef[] }) {
   if (!photos.length) return null;
 
   return (
-    <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 sm:gap-4">
+    <div className="columns-2 gap-3 sm:columns-3 sm:gap-4">
       {photos.map((photo, index) => (
-        <Photo
+        <div
           key={`${photo.src}-${index}`}
-          src={photo.src}
-          alt={photo.alt}
-          className="aspect-[4/3] rounded-2xl shadow-soft ring-1 ring-ink/5"
-          sizes="(min-width: 640px) 30vw, 45vw"
-        />
+          className="mb-3 break-inside-avoid sm:mb-4"
+        >
+          <NaturalPhoto
+            src={photo.src}
+            alt={photo.alt}
+            className="rounded-2xl shadow-soft ring-1 ring-ink/5"
+            sizes="(min-width: 640px) 30vw, 45vw"
+          />
+        </div>
       ))}
     </div>
   );
 }
 
-/* The small photo grid that sits beside a section's dish list. Three across on
-   phones; two across in the side column on desktop, with an odd last photo
-   spanning the width. */
+/* The small photos beside a section's dish list. They keep their own aspect
+   ratios; on desktop they stack in the narrow side column. */
 function SectionPhotos({ photos }: { photos: ImageRef[] }) {
   if (!photos.length) return null;
 
+  const columns =
+    photos.length === 1
+      ? "columns-1"
+      : photos.length === 2
+        ? "columns-2"
+        : "columns-3 lg:columns-2";
+
   return (
-    <div className="grid grid-cols-3 gap-3 sm:gap-4 lg:sticky lg:top-44 lg:grid-cols-2 lg:self-start">
-      {photos.map((photo, index) => {
-        const lastSpans =
-          photos.length % 2 === 1 && index === photos.length - 1;
-        return (
-          <Photo
-            key={`${photo.src}-${index}`}
+    <div
+      className={cn(
+        columns,
+        "gap-3 sm:gap-4 lg:sticky lg:top-44 lg:self-start",
+      )}
+    >
+      {photos.map((photo, index) => (
+        <div
+          key={`${photo.src}-${index}`}
+          className="mb-3 break-inside-avoid sm:mb-4"
+        >
+          <NaturalPhoto
             src={photo.src}
             alt={photo.alt}
-            className={cn(
-              "aspect-square rounded-xl shadow-soft ring-1 ring-ink/5",
-              lastSpans && "lg:col-span-2 lg:aspect-[2/1]",
-            )}
+            className="rounded-xl shadow-soft ring-1 ring-ink/5"
             sizes="(min-width: 1024px) 11rem, 33vw"
           />
-        );
-      })}
+        </div>
+      ))}
     </div>
   );
 }

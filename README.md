@@ -113,6 +113,15 @@ Images uploaded in the CMS are committed to `public/images/` and referenced as
 the image field and upload the restaurant's own photo. Always fill in the
 **Alt text** field — it is used for accessibility and SEO.
 
+Food photos on the menu, home and gallery pages are shown at their **own aspect
+ratio** and are never cropped, so the whole dish stays in frame. Their sizes
+are read from the JPEG files at build time into
+`src/content/image-dimensions.json` (run by the `prebuild` script), so newly
+uploaded photos need no extra setup — they are indexed on the next deploy.
+Because photos keep their original shapes, rows have a magazine-like, uneven
+height rather than a rigid grid. Hero and background images still use a fixed
+crop, which is intentional.
+
 ### Menus and the home page
 
 - The menu page is split into three tabs — **Lunch**, **Dinner** and

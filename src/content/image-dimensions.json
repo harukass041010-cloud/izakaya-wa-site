@@ -1,0 +1,598 @@
+{
+  "/images/IMG_0223.jpeg": {
+    "height": 3024,
+    "width": 4032
+  },
+  "/images/IMG_0237.jpeg": {
+    "height": 3024,
+    "width": 4032
+  },
+  "/images/IMG_1529.jpeg": {
+    "height": 3024,
+    "width": 4032
+  },
+  "/images/IMG_1777.jpeg": {
+    "height": 1773,
+    "width": 2364
+  },
+  "/images/IMG_3001.jpeg": {
+    "height": 3024,
+    "width": 4032
+  },
+  "/images/IMG_4067.jpeg": {
+    "height": 3024,
+    "width": 4032
+  },
+  "/images/IMG_4088.jpeg": {
+    "height": 3024,
+    "width": 4032
+  },
+  "/images/IMG_4102.jpeg": {
+    "height": 3024,
+    "width": 4032
+  },
+  "/images/IMG_4110.jpeg": {
+    "height": 3024,
+    "width": 4032
+  },
+  "/images/IMG_4116.jpeg": {
+    "height": 3024,
+    "width": 4032
+  },
+  "/images/IMG_4938.jpeg": {
+    "height": 3024,
+    "width": 4032
+  },
+  "/images/IMG_6731.jpeg": {
+    "height": 2761,
+    "width": 3681
+  },
+  "/images/IMG_7557.jpeg": {
+    "height": 3024,
+    "width": 4032
+  },
+  "/images/IMG_8157.jpeg": {
+    "height": 496,
+    "width": 640
+  },
+  "/images/IMG_9164.jpeg": {
+    "height": 3024,
+    "width": 4032
+  },
+  "/images/IMG_9178.jpeg": {
+    "height": 3024,
+    "width": 4032
+  },
+  "/images/IMG_9208.jpeg": {
+    "height": 3024,
+    "width": 4032
+  },
+  "/images/beer.jpg": {
+    "height": 600,
+    "width": 800
+  },
+  "/images/donburi.jpg": {
+    "height": 1440,
+    "width": 1920
+  },
+  "/images/grilled-fish.jpg": {
+    "height": 1446,
+    "width": 1920
+  },
+  "/images/hero-sushi-platter.jpg": {
+    "height": 1080,
+    "width": 1920
+  },
+  "/images/interior-kaiten.jpg": {
+    "height": 1440,
+    "width": 1920
+  },
+  "/images/izakaya-interior-2.jpg": {
+    "height": 1446,
+    "width": 1920
+  },
+  "/images/izakaya-interior-3.jpg": {
+    "height": 1446,
+    "width": 1920
+  },
+  "/images/izakaya-interior.jpg": {
+    "height": 1446,
+    "width": 1920
+  },
+  "/images/matcha.jpg": {
+    "height": 1280,
+    "width": 1920
+  },
+  "/images/menu-dinner-fried-skewers-1.jpg": {
+    "height": 1050,
+    "width": 1400
+  },
+  "/images/menu-dinner-fried-skewers-2.jpg": {
+    "height": 1054,
+    "width": 1400
+  },
+  "/images/menu-dinner-fried-skewers-3.jpg": {
+    "height": 999,
+    "width": 1400
+  },
+  "/images/menu-dinner-grilled-skewers-1.jpg": {
+    "height": 933,
+    "width": 1400
+  },
+  "/images/menu-dinner-grilled-skewers-2.jpg": {
+    "height": 1050,
+    "width": 1400
+  },
+  "/images/menu-dinner-grilled-skewers-3.jpg": {
+    "height": 1050,
+    "width": 1400
+  },
+  "/images/menu-dinner-kitchen-1.jpg": {
+    "height": 933,
+    "width": 1400
+  },
+  "/images/menu-dinner-kitchen-2.jpg": {
+    "height": 2100,
+    "width": 1400
+  },
+  "/images/menu-dinner-kitchen-3.jpg": {
+    "height": 1050,
+    "width": 1400
+  },
+  "/images/menu-dinner-nigiri-sashimi-1.jpg": {
+    "height": 933,
+    "width": 1400
+  },
+  "/images/menu-dinner-nigiri-sashimi-2.jpg": {
+    "height": 1050,
+    "width": 1400
+  },
+  "/images/menu-dinner-nigiri-sashimi-3.jpg": {
+    "height": 933,
+    "width": 1400
+  },
+  "/images/menu-dinner-noodles-1.jpg": {
+    "height": 1050,
+    "width": 1400
+  },
+  "/images/menu-dinner-noodles-2.jpg": {
+    "height": 1054,
+    "width": 1400
+  },
+  "/images/menu-dinner-noodles-3.jpg": {
+    "height": 1867,
+    "width": 1400
+  },
+  "/images/menu-dinner-rice-1.jpg": {
+    "height": 1867,
+    "width": 1400
+  },
+  "/images/menu-dinner-rice-2.jpg": {
+    "height": 1600,
+    "width": 1200
+  },
+  "/images/menu-dinner-rice-3.jpg": {
+    "height": 1867,
+    "width": 1400
+  },
+  "/images/menu-dinner-rolls-1.jpg": {
+    "height": 1600,
+    "width": 1200
+  },
+  "/images/menu-dinner-rolls-2.jpg": {
+    "height": 1133,
+    "width": 1400
+  },
+  "/images/menu-dinner-rolls-3.jpg": {
+    "height": 1050,
+    "width": 1400
+  },
+  "/images/menu-dinner-sharable-starters-1.jpg": {
+    "height": 1050,
+    "width": 1400
+  },
+  "/images/menu-dinner-sharable-starters-2.jpg": {
+    "height": 1050,
+    "width": 1400
+  },
+  "/images/menu-dinner-sharable-starters-3.jpg": {
+    "height": 1050,
+    "width": 1400
+  },
+  "/images/menu-dinner-sushi-bar-1.jpg": {
+    "height": 1050,
+    "width": 1400
+  },
+  "/images/menu-dinner-sushi-bar-2.jpg": {
+    "height": 933,
+    "width": 1400
+  },
+  "/images/menu-dinner-sushi-bar-3.jpg": {
+    "height": 1049,
+    "width": 1400
+  },
+  "/images/menu-dinner-sweets-1.jpg": {
+    "height": 562,
+    "width": 1024
+  },
+  "/images/menu-dinner-sweets-2.jpg": {
+    "height": 1400,
+    "width": 1400
+  },
+  "/images/menu-dinner-sweets-3.jpg": {
+    "height": 788,
+    "width": 1400
+  },
+  "/images/menu-dinner-top-01.jpg": {
+    "height": 1050,
+    "width": 1400
+  },
+  "/images/menu-dinner-top-02.jpg": {
+    "height": 933,
+    "width": 1400
+  },
+  "/images/menu-dinner-top-03.jpg": {
+    "height": 933,
+    "width": 1400
+  },
+  "/images/menu-dinner-top-04.jpg": {
+    "height": 1867,
+    "width": 1400
+  },
+  "/images/menu-dinner-top-05.jpg": {
+    "height": 1867,
+    "width": 1400
+  },
+  "/images/menu-dinner-top-06.jpg": {
+    "height": 1078,
+    "width": 1400
+  },
+  "/images/menu-dinner-vegetables-tofu-1.jpg": {
+    "height": 1050,
+    "width": 1400
+  },
+  "/images/menu-dinner-vegetables-tofu-2.jpg": {
+    "height": 933,
+    "width": 1400
+  },
+  "/images/menu-dinner-vegetables-tofu-3.jpg": {
+    "height": 1867,
+    "width": 1400
+  },
+  "/images/menu-drinks-beer-1.jpg": {
+    "height": 1046,
+    "width": 1400
+  },
+  "/images/menu-drinks-beer-2.jpg": {
+    "height": 716,
+    "width": 1400
+  },
+  "/images/menu-drinks-beer-3.jpg": {
+    "height": 788,
+    "width": 1400
+  },
+  "/images/menu-drinks-blended-1.jpg": {
+    "height": 1400,
+    "width": 1400
+  },
+  "/images/menu-drinks-blended-2.jpg": {
+    "height": 1867,
+    "width": 1400
+  },
+  "/images/menu-drinks-blended-3.jpg": {
+    "height": 1788,
+    "width": 1199
+  },
+  "/images/menu-drinks-bourbon-1.jpg": {
+    "height": 2472,
+    "width": 1248
+  },
+  "/images/menu-drinks-bourbon-2.jpg": {
+    "height": 1400,
+    "width": 1400
+  },
+  "/images/menu-drinks-bourbon-3.jpg": {
+    "height": 1867,
+    "width": 1400
+  },
+  "/images/menu-drinks-canadian-1.jpg": {
+    "height": 788,
+    "width": 1400
+  },
+  "/images/menu-drinks-canadian-2.jpg": {
+    "height": 2640,
+    "width": 1400
+  },
+  "/images/menu-drinks-canadian-3.jpg": {
+    "height": 2489,
+    "width": 1400
+  },
+  "/images/menu-drinks-chuhai-1.jpg": {
+    "height": 1024,
+    "width": 1024
+  },
+  "/images/menu-drinks-chuhai-2.jpg": {
+    "height": 788,
+    "width": 1400
+  },
+  "/images/menu-drinks-chuhai-3.jpg": {
+    "height": 2107,
+    "width": 1400
+  },
+  "/images/menu-drinks-highball-1.jpg": {
+    "height": 1261,
+    "width": 1400
+  },
+  "/images/menu-drinks-highball-2.jpg": {
+    "height": 842,
+    "width": 1200
+  },
+  "/images/menu-drinks-highball-3.jpg": {
+    "height": 1750,
+    "width": 1400
+  },
+  "/images/menu-drinks-irish-1.jpg": {
+    "height": 1050,
+    "width": 1400
+  },
+  "/images/menu-drinks-irish-2.jpg": {
+    "height": 1867,
+    "width": 1400
+  },
+  "/images/menu-drinks-irish-3.jpg": {
+    "height": 1050,
+    "width": 1400
+  },
+  "/images/menu-drinks-japanese-whisky-1.jpg": {
+    "height": 931,
+    "width": 1400
+  },
+  "/images/menu-drinks-japanese-whisky-2.jpg": {
+    "height": 2305,
+    "width": 1400
+  },
+  "/images/menu-drinks-japanese-whisky-3.jpg": {
+    "height": 930,
+    "width": 1400
+  },
+  "/images/menu-drinks-liquor-1.jpg": {
+    "height": 2100,
+    "width": 1400
+  },
+  "/images/menu-drinks-liquor-2.jpg": {
+    "height": 933,
+    "width": 1400
+  },
+  "/images/menu-drinks-liquor-3.jpg": {
+    "height": 1050,
+    "width": 1400
+  },
+  "/images/menu-drinks-non-alcoholic-1.jpg": {
+    "height": 1050,
+    "width": 1400
+  },
+  "/images/menu-drinks-non-alcoholic-2.jpg": {
+    "height": 1859,
+    "width": 1400
+  },
+  "/images/menu-drinks-non-alcoholic-3.jpg": {
+    "height": 2445,
+    "width": 1400
+  },
+  "/images/menu-drinks-sake-daiginjo-1.jpg": {
+    "height": 933,
+    "width": 1400
+  },
+  "/images/menu-drinks-sake-daiginjo-2.jpg": {
+    "height": 1050,
+    "width": 1400
+  },
+  "/images/menu-drinks-sake-daiginjo-3.jpg": {
+    "height": 1050,
+    "width": 1400
+  },
+  "/images/menu-drinks-sake-ginjo-1.jpg": {
+    "height": 1670,
+    "width": 1400
+  },
+  "/images/menu-drinks-sake-ginjo-2.jpg": {
+    "height": 1385,
+    "width": 1400
+  },
+  "/images/menu-drinks-sake-ginjo-3.jpg": {
+    "height": 917,
+    "width": 1400
+  },
+  "/images/menu-drinks-sake-honjozo-1.jpg": {
+    "height": 933,
+    "width": 1400
+  },
+  "/images/menu-drinks-sake-honjozo-2.jpg": {
+    "height": 1050,
+    "width": 1400
+  },
+  "/images/menu-drinks-sake-honjozo-3.jpg": {
+    "height": 1867,
+    "width": 1400
+  },
+  "/images/menu-drinks-sake-junmai-1.jpg": {
+    "height": 1867,
+    "width": 1400
+  },
+  "/images/menu-drinks-sake-junmai-2.jpg": {
+    "height": 933,
+    "width": 1400
+  },
+  "/images/menu-drinks-sake-junmai-3.jpg": {
+    "height": 932,
+    "width": 1400
+  },
+  "/images/menu-drinks-sake-nigori-1.jpg": {
+    "height": 933,
+    "width": 1400
+  },
+  "/images/menu-drinks-sake-nigori-2.jpg": {
+    "height": 1867,
+    "width": 1400
+  },
+  "/images/menu-drinks-sake-nigori-3.jpg": {
+    "height": 1050,
+    "width": 1400
+  },
+  "/images/menu-drinks-scotch-1.jpg": {
+    "height": 1050,
+    "width": 1400
+  },
+  "/images/menu-drinks-scotch-2.jpg": {
+    "height": 1867,
+    "width": 1400
+  },
+  "/images/menu-drinks-scotch-3.jpg": {
+    "height": 1867,
+    "width": 1400
+  },
+  "/images/menu-drinks-shochu-1.jpg": {
+    "height": 828,
+    "width": 1263
+  },
+  "/images/menu-drinks-shochu-2.jpg": {
+    "height": 585,
+    "width": 1090
+  },
+  "/images/menu-drinks-shochu-3.jpg": {
+    "height": 933,
+    "width": 1400
+  },
+  "/images/menu-drinks-top-01.jpg": {
+    "height": 2107,
+    "width": 1400
+  },
+  "/images/menu-drinks-top-02.jpg": {
+    "height": 2142,
+    "width": 1400
+  },
+  "/images/menu-drinks-top-03.jpg": {
+    "height": 1992,
+    "width": 1400
+  },
+  "/images/menu-drinks-top-04.jpg": {
+    "height": 1050,
+    "width": 1400
+  },
+  "/images/menu-drinks-top-05.jpg": {
+    "height": 933,
+    "width": 1400
+  },
+  "/images/menu-drinks-top-06.jpg": {
+    "height": 1049,
+    "width": 1400
+  },
+  "/images/menu-drinks-wine-1.jpg": {
+    "height": 1050,
+    "width": 1400
+  },
+  "/images/menu-drinks-wine-2.jpg": {
+    "height": 923,
+    "width": 1400
+  },
+  "/images/menu-drinks-wine-3.jpg": {
+    "height": 928,
+    "width": 1400
+  },
+  "/images/menu-lunch-curry-1.jpg": {
+    "height": 930,
+    "width": 1400
+  },
+  "/images/menu-lunch-nigiri-sashimi-1.jpg": {
+    "height": 933,
+    "width": 1400
+  },
+  "/images/menu-lunch-nigiri-sashimi-2.jpg": {
+    "height": 1867,
+    "width": 1400
+  },
+  "/images/menu-lunch-nigiri-sashimi-3.jpg": {
+    "height": 933,
+    "width": 1400
+  },
+  "/images/menu-lunch-noodles-1.jpg": {
+    "height": 1867,
+    "width": 1400
+  },
+  "/images/menu-lunch-noodles-2.jpg": {
+    "height": 1050,
+    "width": 1400
+  },
+  "/images/menu-lunch-noodles-3.jpg": {
+    "height": 1401,
+    "width": 1400
+  },
+  "/images/menu-lunch-rolls-1.jpg": {
+    "height": 1050,
+    "width": 1400
+  },
+  "/images/menu-lunch-rolls-2.jpg": {
+    "height": 1577,
+    "width": 1200
+  },
+  "/images/menu-lunch-rolls-3.jpg": {
+    "height": 933,
+    "width": 1400
+  },
+  "/images/menu-lunch-sushi-combos-1.jpg": {
+    "height": 933,
+    "width": 1400
+  },
+  "/images/menu-lunch-sushi-combos-2.jpg": {
+    "height": 788,
+    "width": 1400
+  },
+  "/images/menu-lunch-sushi-combos-3.jpg": {
+    "height": 1050,
+    "width": 1400
+  },
+  "/images/miso-soup.jpg": {
+    "height": 1441,
+    "width": 1920
+  },
+  "/images/nigiri.jpg": {
+    "height": 1280,
+    "width": 1920
+  },
+  "/images/omakase-donburi.jpg": {
+    "height": 1440,
+    "width": 1920
+  },
+  "/images/ramen.jpg": {
+    "height": 1440,
+    "width": 1920
+  },
+  "/images/sake.jpg": {
+    "height": 1278,
+    "width": 1920
+  },
+  "/images/sashimi.jpg": {
+    "height": 1440,
+    "width": 1920
+  },
+  "/images/tempura.jpg": {
+    "height": 1233,
+    "width": 1920
+  },
+  "/images/udon.jpg": {
+    "height": 1920,
+    "width": 1920
+  },
+  "/images/wagyu.jpg": {
+    "height": 2560,
+    "width": 1920
+  },
+  "/images/yakitori-shop.jpg": {
+    "height": 1446,
+    "width": 1920
+  },
+  "/images/yakitori.jpg": {
+    "height": 1442,
+    "width": 1920
+  }
+}

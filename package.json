@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "prebuild": "node scripts/image-dimensions.mjs",
     "build": "next build",
     "preview": "npx --yes serve@latest out",
     "lint": "eslint"

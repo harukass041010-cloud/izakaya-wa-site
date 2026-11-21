@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Container } from "@/components/container";
-import { Photo } from "@/components/photo";
+import { NaturalPhoto } from "@/components/natural-photo";
 import { HeroVisual } from "@/components/hero-visual";
 import { Section, SectionHeading, Eyebrow } from "@/components/section";
 import { Seigaiha } from "@/components/seigaiha";
@@ -112,31 +112,37 @@ export default function HomePage() {
             </div>
           </div>
 
-          <div className="order-1 grid grid-cols-2 gap-4 lg:order-2">
+          <div className="order-1 space-y-4 lg:order-2">
             {philosophyMain ? (
-              <Photo
+              <NaturalPhoto
                 src={philosophyMain.src}
                 alt={philosophyMain.alt}
-                className="col-span-2 aspect-[16/10] rounded-2xl shadow-soft"
+                className="rounded-2xl shadow-soft"
                 sizes="(min-width: 1024px) 40vw, 100vw"
               />
             ) : null}
-            {philosophySmallA ? (
-              <Photo
-                src={philosophySmallA.src}
-                alt={philosophySmallA.alt}
-                className="aspect-square rounded-2xl shadow-soft"
-                sizes="(min-width: 1024px) 20vw, 50vw"
-              />
-            ) : null}
-            {philosophySmallB ? (
-              <Photo
-                src={philosophySmallB.src}
-                alt={philosophySmallB.alt}
-                className="aspect-square rounded-2xl shadow-soft"
-                sizes="(min-width: 1024px) 20vw, 50vw"
-              />
-            ) : null}
+            <div className="columns-2 gap-4">
+              {philosophySmallA ? (
+                <div className="mb-4 break-inside-avoid">
+                  <NaturalPhoto
+                    src={philosophySmallA.src}
+                    alt={philosophySmallA.alt}
+                    className="rounded-2xl shadow-soft"
+                    sizes="(min-width: 1024px) 20vw, 50vw"
+                  />
+                </div>
+              ) : null}
+              {philosophySmallB ? (
+                <div className="mb-4 break-inside-avoid">
+                  <NaturalPhoto
+                    src={philosophySmallB.src}
+                    alt={philosophySmallB.alt}
+                    className="rounded-2xl shadow-soft"
+                    sizes="(min-width: 1024px) 20vw, 50vw"
+                  />
+                </div>
+              ) : null}
+            </div>
           </div>
         </div>
       </Section>
@@ -148,20 +154,19 @@ export default function HomePage() {
           title={signature.title}
           intro={signature.intro}
         />
-        <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-12 columns-1 gap-6 sm:columns-2 lg:columns-3">
           {featuredDishes.map((dish) => {
             const image = dish.image;
             if (!image) return null;
             return (
               <article
                 key={dish.name}
-                className="group flex flex-col overflow-hidden rounded-2xl border border-ink/10 bg-paper shadow-soft transition-shadow duration-300 hover:shadow-lift"
+                className="group mb-6 break-inside-avoid flex flex-col overflow-hidden rounded-2xl border border-ink/10 bg-paper shadow-soft transition-shadow duration-300 hover:shadow-lift"
               >
-                <Photo
+                <NaturalPhoto
                   src={image.src}
                   alt={image.alt}
-                  className="aspect-[4/3] w-full"
-                  imageClassName="transition-transform duration-500 group-hover:scale-[1.04]"
+                  className="transition-transform duration-500 group-hover:scale-[1.04]"
                   sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
                 />
                 <div className="flex flex-1 flex-col gap-2 p-6">
@@ -198,16 +203,15 @@ export default function HomePage() {
           title={experience.title}
           intro={experience.intro}
         />
-        <div className="mt-12 grid gap-6 md:grid-cols-3">
+        <div className="mt-12 columns-1 gap-6 md:columns-3">
           {experience.items.map((item) => (
             <article
               key={item.title}
-              className="overflow-hidden rounded-2xl border border-rice/10 bg-charcoal"
+              className="mb-6 break-inside-avoid overflow-hidden rounded-2xl border border-rice/10 bg-charcoal"
             >
-              <Photo
+              <NaturalPhoto
                 src={item.image.src}
                 alt={item.image.alt}
-                className="aspect-[5/4] w-full"
                 sizes="(min-width: 768px) 33vw, 100vw"
               />
               <div className="space-y-3 p-6">

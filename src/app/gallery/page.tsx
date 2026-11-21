@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Section, SectionHeading } from "@/components/section";
 import { PageHero } from "@/components/page-hero";
-import { Photo } from "@/components/photo";
+import { NaturalPhoto } from "@/components/natural-photo";
 import { galleryContent, menuPhotoCredits } from "@/lib/content";
 
 export const metadata: Metadata = {
@@ -39,17 +39,16 @@ export default function GalleryPage() {
       />
 
       <Section tone="rice">
-        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="columns-1 gap-4 sm:columns-2 lg:columns-3">
           {photos.map((photo) => (
             <figure
               key={photo.src}
-              className="group relative overflow-hidden rounded-2xl shadow-soft"
+              className="group relative mb-4 break-inside-avoid overflow-hidden rounded-2xl shadow-soft"
             >
-              <Photo
+              <NaturalPhoto
                 src={photo.src}
                 alt={photo.alt}
-                className="aspect-[4/3] w-full"
-                imageClassName="transition-transform duration-500 group-hover:scale-[1.05]"
+                className="transition-transform duration-500 group-hover:scale-[1.05]"
                 sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
               />
               <figcaption className="pointer-events-none absolute inset-x-0 bottom-0 translate-y-2 bg-gradient-to-t from-ink/85 to-transparent p-4 text-xs text-rice/90 opacity-0 transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100">
