@@ -177,14 +177,14 @@
               "price": "$6.5",
               "tags": []
             }
-          ],
-          "type": "with_photos"
+          ]
         },
         {
           "id": "lunch-soups-salads",
           "title": "Soups & Salads",
           "japanese": "汁物・サラダ",
           "blurb": "",
+          "photos": [],
           "dishes": [
             {
               "name": "Tofu Miso Soup",
@@ -207,8 +207,7 @@
               "price": "$4",
               "tags": []
             }
-          ],
-          "type": "no_photos"
+          ]
         },
         {
           "id": "lunch-teishoku",
@@ -324,8 +323,7 @@
               "price": "$16",
               "tags": []
             }
-          ],
-          "type": "with_photos"
+          ]
         },
         {
           "id": "lunch-half-and-half",
@@ -346,8 +344,7 @@
               "price": "$15",
               "tags": []
             }
-          ],
-          "type": "with_photos"
+          ]
         },
         {
           "id": "lunch-curry",
@@ -356,8 +353,12 @@
           "blurb": "Our original curry, simmered for 48 hours. Includes house salad.",
           "photos": [
             {
-              "src": "/images/menu-lunch-curry-1.jpg",
-              "alt": "Beef curry rice 002"
+              "src": "/images/menu-lunch-curry-2.jpg",
+              "alt": "JP 日本 Japan 京都 Kyoto 四條 Shijo side Sukiya Restaurant food Gyudon 牛肉丼 beef toppings and rice bowl 1914pm June 2026 N13P 0"
+            },
+            {
+              "src": "/images/menu-lunch-curry-3.jpg",
+              "alt": "Beef curry rice 003"
             }
           ],
           "dishes": [
@@ -375,8 +376,7 @@
               "price": "$16",
               "tags": []
             }
-          ],
-          "type": "with_photos"
+          ]
         },
         {
           "id": "lunch-noodles",
@@ -418,8 +418,7 @@
               "price": "$16",
               "tags": []
             }
-          ],
-          "type": "with_photos"
+          ]
         },
         {
           "id": "lunch-sushi-combos",
@@ -490,8 +489,7 @@
               "price": "$17",
               "tags": []
             }
-          ],
-          "type": "with_photos"
+          ]
         },
         {
           "id": "lunch-nigiri-sashimi",
@@ -675,8 +673,7 @@
               "price": "$1.5",
               "tags": []
             }
-          ],
-          "type": "with_photos"
+          ]
         },
         {
           "id": "lunch-rolls",
@@ -873,8 +870,7 @@
               "price": "$13",
               "tags": []
             }
-          ],
-          "type": "with_photos"
+          ]
         }
       ],
       "galleryPhotos": []
@@ -995,8 +991,7 @@
               "price": "$6",
               "tags": []
             }
-          ],
-          "type": "with_photos"
+          ]
         },
         {
           "id": "dinner-vegetables-tofu",
@@ -1053,8 +1048,7 @@
               "price": "$5",
               "tags": []
             }
-          ],
-          "type": "with_photos"
+          ]
         },
         {
           "id": "dinner-sushi-bar",
@@ -1111,8 +1105,7 @@
               "price": "$46",
               "tags": []
             }
-          ],
-          "type": "with_photos"
+          ]
         },
         {
           "id": "dinner-kitchen",
@@ -1246,8 +1239,7 @@
               "price": "$7",
               "tags": []
             }
-          ],
-          "type": "with_photos"
+          ]
         },
         {
           "id": "dinner-fried-skewers",
@@ -1325,8 +1317,7 @@
               "price": "$12",
               "tags": []
             }
-          ],
-          "type": "with_photos"
+          ]
         },
         {
           "id": "dinner-grilled-skewers",
@@ -1446,8 +1437,7 @@
               "price": "$4.5",
               "tags": []
             }
-          ],
-          "type": "with_photos"
+          ]
         },
         {
           "id": "dinner-nigiri-sashimi",
@@ -1637,8 +1627,7 @@
               "price": "$1.5",
               "tags": []
             }
-          ],
-          "type": "with_photos"
+          ]
         },
         {
           "id": "dinner-rolls",
@@ -1863,8 +1852,7 @@
               "price": "$20",
               "tags": []
             }
-          ],
-          "type": "with_photos"
+          ]
         },
         {
           "id": "dinner-rice",
@@ -1942,8 +1930,7 @@
               "price": "$3.5",
               "tags": []
             }
-          ],
-          "type": "with_photos"
+          ]
         },
         {
           "id": "dinner-noodles",
@@ -2000,8 +1987,7 @@
               "price": "$16",
               "tags": []
             }
-          ],
-          "type": "with_photos"
+          ]
         },
         {
           "id": "dinner-sweets",
@@ -2051,8 +2037,7 @@
               "price": "",
               "tags": []
             }
-          ],
-          "type": "with_photos"
+          ]
         }
       ],
       "galleryPhotos": []
@@ -2166,8 +2151,7 @@
               "price": "$5",
               "tags": []
             }
-          ],
-          "type": "with_photos"
+          ]
         },
         {
           "id": "drinks-beer",
@@ -2259,8 +2243,7 @@
               "price": "$11",
               "tags": []
             }
-          ],
-          "type": "with_photos"
+          ]
         },
         {
           "id": "drinks-chuhai",
@@ -2338,8 +2321,7 @@
               "price": "$8",
               "tags": []
             }
-          ],
-          "type": "with_photos"
+          ]
         },
         {
           "id": "drinks-sake-nigori",
@@ -2389,8 +2371,7 @@
               "price": "$19",
               "tags": []
             }
-          ],
-          "type": "with_photos"
+          ]
         },
         {
           "id": "drinks-sake-junmai",
@@ -2461,8 +2442,7 @@
               "price": "$13 / $59",
               "tags": []
             }
-          ],
-          "type": "with_photos"
+          ]
         },
         {
           "id": "drinks-sake-honjozo",
@@ -2498,8 +2478,7 @@
               "price": "$11 / $51",
               "tags": []
             }
-          ],
-          "type": "with_photos"
+          ]
         },
         {
           "id": "drinks-sake-ginjo",
@@ -2535,8 +2514,7 @@
               "price": "$15 / $68",
               "tags": []
             }
-          ],
-          "type": "with_photos"
+          ]
         },
         {
           "id": "drinks-sake-daiginjo",
@@ -2621,8 +2599,7 @@
               "price": "$240",
               "tags": []
             }
-          ],
-          "type": "with_photos"
+          ]
         },
         {
           "id": "drinks-wine",
@@ -2742,8 +2719,7 @@
               "price": "$40",
               "tags": []
             }
-          ],
-          "type": "with_photos"
+          ]
         },
         {
           "id": "drinks-liquor",
@@ -2842,8 +2818,7 @@
               "price": "$11",
               "tags": []
             }
-          ],
-          "type": "with_photos"
+          ]
         },
         {
           "id": "drinks-highball",
@@ -2879,8 +2854,7 @@
               "price": "$10",
               "tags": []
             }
-          ],
-          "type": "with_photos"
+          ]
         },
         {
           "id": "drinks-shochu",
@@ -2972,8 +2946,7 @@
               "price": "$6 / $70",
               "tags": []
             }
-          ],
-          "type": "with_photos"
+          ]
         },
         {
           "id": "drinks-japanese-whisky",
@@ -3065,8 +3038,7 @@
               "price": "$35",
               "tags": []
             }
-          ],
-          "type": "with_photos"
+          ]
         },
         {
           "id": "drinks-scotch",
@@ -3102,8 +3074,7 @@
               "price": "$16",
               "tags": []
             }
-          ],
-          "type": "with_photos"
+          ]
         },
         {
           "id": "drinks-canadian",
@@ -3132,8 +3103,7 @@
               "price": "$10",
               "tags": []
             }
-          ],
-          "type": "with_photos"
+          ]
         },
         {
           "id": "drinks-bourbon",
@@ -3162,8 +3132,7 @@
               "price": "$10",
               "tags": []
             }
-          ],
-          "type": "with_photos"
+          ]
         },
         {
           "id": "drinks-blended",
@@ -3199,8 +3168,7 @@
               "price": "$12",
               "tags": []
             }
-          ],
-          "type": "with_photos"
+          ]
         },
         {
           "id": "drinks-irish",
@@ -3229,8 +3197,7 @@
               "price": "$10",
               "tags": []
             }
-          ],
-          "type": "with_photos"
+          ]
         }
       ],
       "galleryPhotos": []
